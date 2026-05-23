@@ -164,6 +164,14 @@ Once the remaining baselines arrive, additional sector averages can be computed 
 
 ---
 
+## Update Cadence & Pending Refreshes
+
+This dashboard is updated quarterly. Each update refreshes current values from the Q-end FMB business database and revises any pre-Ian baselines as new Lee County and Town of FMB data becomes available.
+
+> **Refresh in progress — requested May 23, 2026.** FMB-specific FY26 Q1 (Oct–Dec 2025) bed tax data has been requested from the Lee County Clerk of Court via the FMB Chamber of Commerce. Publicly-published Lee County reports contain aggregate county totals only (Tourist Development Tax data is exempt from public records by Florida statute); FMB-specific figures require a direct request through the appropriate channel. This dashboard will be updated when the new figures are received.
+
+---
+
 *Q1 2026 baseline · Last updated March 20, 2026 · Next update: Q2 2026*
 *Prepared by Mark Bole · FGCU Ain Technology and Design Hub*
 *Methodology adapted from the Sanibel Solutions recovery framework*

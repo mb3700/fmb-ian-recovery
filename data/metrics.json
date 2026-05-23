@@ -9,6 +9,15 @@
     "category": "Category 4",
     "monthsSinceLandfall": 42
   },
+  "dataRefreshStatus": [
+    {
+      "metric": "Bed Tax — FMB-specific FY26 Q1 (Oct–Dec 2025)",
+      "channel": "Lee County Clerk of Court via FMB Chamber of Commerce",
+      "requestedAt": "2026-05-23",
+      "status": "pending",
+      "note": "Publicly-published Lee County reports contain aggregate county totals only; Tourist Development Tax data is exempt from public records under Florida statute. FMB-specific figures require direct request through the appropriate channel."
+    }
+  ],
   "headline": {
     "recoveryPercent": 48,
     "label": "Bed Tax Recovery (FY25 YTD vs FY22 YTD)",

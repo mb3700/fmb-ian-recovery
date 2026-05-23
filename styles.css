@@ -307,6 +307,18 @@ main {
 }
 .metric-source a:hover { text-decoration: underline; }
 
+.refresh-status {
+  font-size: 0.78rem;
+  color: #6B5400;
+  background: #FFF8DB;
+  border-left: 3px solid var(--warn);
+  border-radius: 4px;
+  margin-top: 12px;
+  padding: 10px 12px;
+  line-height: 1.5;
+}
+.refresh-status strong { color: #4A3900; }
+
 /* ============ PROGRESS BAR ============ */
 .progress-bar {
   background: var(--warm-sand);

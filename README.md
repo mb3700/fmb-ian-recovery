@@ -2,8 +2,10 @@
 
 Tracks the measurable signals of Fort Myers Beach's recovery from Hurricane Ian, with transparent methodology and sourced pre-Ian baselines. Built in the framework first developed for the Sanibel Solutions recovery dashboard.
 
-**Live site:** [URL added after Vercel deploy]
+**Live site:** https://fmb-ian-recovery.vercel.app
 **Methodology:** [methodology.html](methodology.html)
+
+> **Refresh in progress (requested May 23, 2026):** FMB-specific FY26 Q1 (Oct–Dec 2025) bed tax data has been requested from the Lee County Clerk of Court via the FMB Chamber of Commerce. Dashboard will be updated when figures are received. Current bed-tax data is FY25 YTD through August 2025.
 
 ## Snapshot (Q1 2026)
 
