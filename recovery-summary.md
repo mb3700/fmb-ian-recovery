@@ -1,6 +1,6 @@
 # Fort Myers Beach Recovery: May 2026 Update
 
-> The live dashboard at [fmb-ian-recovery.vercel.app](https://fmb-ian-recovery.vercel.app) now surfaces this audit trail as a first-class "Data Decisions" section in the sticky nav. This markdown file remains the durable source-of-truth record; the live section is rendered from the same data.
+> The live dashboard at [fmb-ian-recovery.vercel.app](https://fmb-ian-recovery.vercel.app) now surfaces this audit trail as a dedicated **[Data Decisions](https://fmb-ian-recovery.vercel.app/data-decisions.html)** page (linked from the sticky nav). This markdown file remains the durable source-of-truth record.
 
 
 ### How We Track Hurricane Ian Recovery on Fort Myers Beach
@@ -57,7 +57,7 @@ Lodging capacity 67% recovered, bed-tax revenue 48% recovered. The gap matters.
 
 **Hotels (9 projects · 909 rooms):**
 - Arches Bayfront — 263 rooms · Council approved June 2025 (4-1, Allers opposed); pre-construction
-- London Bay (former Outrigger site) — 150 rooms (100 hotel + 50 condo-hotel, plus 46 residences in same project) · LPA recommended denial May 2026; Town Council hearing June 2026
+- London Bay project — 150 rooms (100 hotel + 50 condo-hotel, plus 46 residences in same project) · LPA recommended denial May 2026; Town Council hearing June 2026
 - Wyndham — 150 rooms · old 103-room hotel demolished April 2025 (Ian damage); new plans being prepared with The Neighborhood Company; no LPA filing yet
 - Compass Rose — 140 rooms · permanent holding pattern (per Chamber)
 - Silver Sands / TPI Hospitality — 60 rooms · 5-story hotel adjacent to Margaritaville; plans to go before Town June 2026; opening 2028–29
@@ -80,7 +80,7 @@ The table below documents every line where this dashboard differs from the Chamb
 | Project | Chamber March 2026 | Our value | Authorizing source |
 |---|---|---|---|
 | Arches Bayfront | 256 rms, approved | 263 rms, Council approved June 2025 (4-1, Allers opposed) | Beach Observer, *"Fort Myers Beach Council approves Arches Bayfront hotel and commercial center by 4-1 vote"* (June 2025); WINK News; Gulfshore Business |
-| London Bay (Outrigger) | 150 rms, planning | 150 rms (unchanged); status: "LPA recommended denial May 2026; Council hearing June 2026" | Town of FMB LPA agenda and meeting record, May 12, 2026 |
+| London Bay project | 150 rms, planning | 150 rms (unchanged); status: "LPA recommended denial May 2026; Council hearing June 2026" | Town of FMB LPA agenda and meeting record, May 12, 2026 |
 | Wyndham | 150 rms, "food truck park then resort" | 150 rms (unchanged); status updated to factual: "Old 103-room hotel demolished April 2025; plans being prepared with The Neighborhood Company; no LPA filing yet" | Beach Observer, *"Wyndham Garden Hotel on Fort Myers Beach demolished due to damage from Hurricane Ian"* (April 2025); Beach Talk Radio, *"Demo Work on The Wyndham Has Begun"* + *"What's Going on at The Wyndham Property?"* |
 | Compass Rose | 140 rms, "permanent holding pattern" | No override — Chamber baseline retained | n/a |
 | Lighthouse Island Resort | +70 rms, approved | +55 rms (75 → 130), Council June 2025 with 11 deviations | B1039, *"Fort Myers Beach Council Gives Green Light to 130-Room Lighthouse Resort Expansion"* (May 22, 2025); Beach Observer, *"Lighthouse Resort gets approval from town council to expand"* (June 2025) |

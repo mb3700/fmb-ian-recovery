@@ -66,7 +66,7 @@
       "Hideaway Village (23)",
       "Island House (5)",
       "LA Villa Resort (10)",
-      "Outrigger Beach Resort (144, sold to London Bay)",
+      "Outrigger Beach Resort (144 rooms)",
       "Periwinkle Motel (5)",
       "Sandcastle Beach (53)",
       "Sandy Beach Hotel (11)",
@@ -152,7 +152,7 @@
     "projects": {
       "hotels": [
         {"name": "Arches Bayfront", "rooms": 263, "status": "Approved by Town Council June 2025 (4-1, Mayor Allers opposed); pre-construction, several years out"},
-        {"name": "London Bay (former Outrigger / Charley's site)", "rooms": 150, "status": "100 hotel rooms + 50 condo-hotel (plus 46 residences in same project). LPA recommended denial May 2026; Town Council hearing June 2026"},
+        {"name": "London Bay project", "rooms": 150, "status": "100 hotel rooms + 50 condo-hotel (plus 46 residences in same project). LPA recommended denial May 2026; Town Council hearing June 2026"},
         {"name": "Wyndham", "rooms": 150, "status": "Old 103-room hotel demolished April 2025 (Ian damage). New plans being prepared with The Neighborhood Company; no LPA filing yet"},
         {"name": "Compass Rose", "rooms": 140, "status": "Permanent holding pattern (per Chamber)"},
         {"name": "Lighthouse Island Resort expansion", "rooms": 55, "status": "Approved by Town Council June 2025 with 11 zoning deviations; expansion from 75 to 130 rooms"},

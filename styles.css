@@ -556,6 +556,46 @@ main {
   .audit-table th, .audit-table td { padding: 8px 6px; }
 }
 
+/* ============ EXECUTIVE TL;DR ============ */
+.executive-tldr {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-style: italic;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  padding: 22px 26px;
+  margin: 24px 0;
+  border-left: 4px solid var(--seafoam);
+  background: rgba(255, 248, 230, 0.5);
+  max-width: 920px;
+}
+
+/* ============ DATA FRESHNESS BANNER ============ */
+.freshness-banner {
+  background: rgba(45, 158, 185, 0.08);
+  border-bottom: 1px solid rgba(45, 158, 185, 0.25);
+  padding: 10px 24px;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+.freshness-banner strong {
+  color: var(--ocean-navy);
+  font-weight: 600;
+}
+.freshness-banner a {
+  color: var(--seafoam-dark, var(--seafoam));
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  .executive-tldr { font-size: 1rem; padding: 18px 20px; }
+  .freshness-banner { font-size: 0.75rem; padding: 8px 12px; line-height: 1.5; }
+}
+
 /* ============ DATA DECISIONS (audit trail) ============ */
 .override-chip {
   display: inline-block;

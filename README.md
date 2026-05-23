@@ -13,7 +13,7 @@ Tracks the measurable signals of Fort Myers Beach's recovery from Hurricane Ian,
 - **Bed tax revenue: 48% recovered** (FY25 YTD vs FY22 YTD — Lee County Clerk of Court)
 - **1,175 lodging units in development** across 14 named projects (909 hotel + 266 VR); Chamber March 2026 baseline with sourced post-March overrides; per-override audit trail in recovery-summary.md (verified May 23, 2026)
 - **753 rooms permanently lost** (18 destroyed hotels + 226 VR rooms; Chamber's published count was 19 hotels / 590 rooms, revised with Sandpiper Gulf Resort verified reopened — see audit trail)
-- **Audit Trail** — every override vs Chamber baseline is documented with sources in the live dashboard's "Data Decisions" section, plus pending-clarification items and a dated changelog
+- **Audit Trail** — every override vs Chamber baseline is documented with sources on the dedicated [data-decisions.html](data-decisions.html) page, plus pending-clarification items and a dated changelog
 - **Watchlist:** 160 delinquent VR licenses, 3 of 7 cafés temporarily closed
 
 ## What's in the repo

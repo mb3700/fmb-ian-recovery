@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Decisions | Fort Myers Beach Hurricane Ian Recovery Dashboard</title>
+  <meta name="description" content="The audit trail for the FMB Recovery Dashboard — every override vs Chamber March 2026 baseline, documented with sources. Pending Chamber-side clarifications. Dated changelog.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Data Decisions | FMB Recovery Dashboard">
+  <meta property="og:description" content="Audit trail for the FMB Recovery Dashboard: per-line overrides vs Chamber baseline with sources, plus pending clarifications and changelog.">
+
+  <!-- Fonts: Libre Baskerville (headings) + Inter (body), matching the Sanibel dashboard typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Beta banner -->
+<div class="beta-banner">
+  <strong>Beta:</strong> Update through May 2026. This is the audit-trail page — every published number that differs from the FMB Chamber's March 2026 baseline is documented here with sources. The dashboard itself is at <a href="index.html">index.html</a>.
+</div>
+
+<!-- Page header -->
+<header class="editorial-hero" style="padding: 48px 24px 32px;">
+  <div class="editorial-hero-inner">
+    <div class="editorial-breadcrumb">
+      <a href="index.html">← Back to Dashboard</a>
+      <span>›</span>
+      <span>Data Decisions</span>
+    </div>
+
+    <div class="editorial-meta">
+      <span class="editorial-tag">Audit Trail</span>
+      <span class="editorial-date">Last updated: May 23, 2026</span>
+    </div>
+
+    <h1>Data Decisions</h1>
+
+    <p class="lead">
+      This dashboard is a living document. Every number that differs from the FMB Chamber's
+      March 2026 Accommodations baseline is documented below with the source authorizing the
+      change. Stakeholders, journalists, and the Chamber itself can use this page to verify or
+      challenge any line. Where Chamber-side uncertainty kept us from making a sourced override,
+      items are flagged for follow-up rather than guessed.
+    </p>
+  </div>
+</header>
+
+<!-- Sticky navigation (same shape as home page; "Data Decisions" is the current page) -->
+<nav class="section-nav">
+  <div class="section-nav-inner">
+    <a href="index.html#tourism">Tourism & Lodging</a>
+    <a href="index.html#capacity-vs-revenue">Capacity vs Revenue</a>
+    <a href="index.html#lodging-mix">Lodging Mix</a>
+    <a href="index.html#sister-cities">Sister-City</a>
+    <a href="index.html#housing-market">Housing Market</a>
+    <a href="index.html#economic">Economic Activity</a>
+    <a href="index.html#watchlist">Watchlist</a>
+    <a href="index.html#pipeline">In Development</a>
+    <a href="index.html#rebuilding-activity">Rebuilding Activity</a>
+    <a href="data-decisions.html" style="font-weight: 700; color: var(--seafoam-dark, var(--seafoam));">Data Decisions</a>
+    <a href="index.html#about-data">About the Data</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ============ OVERRIDE LOG ============ -->
+  <section class="recovery-section" id="override-log">
+    <div class="section-header">
+      <h2>Override Log</h2>
+      <p class="section-lead">
+        Where this dashboard differs from the Chamber March 2026 Accommodations file — with the
+        dated source authorizing each change. Anyone can verify or challenge a line.
+      </p>
+    </div>
+
+    <div class="metric-grid">
+      <div class="metric-card" style="grid-column: span 2;">
+        <div class="metric-label">10 sourced overrides vs Chamber March 2026</div>
+        <div class="audit-table-wrap">
+          <table class="audit-table">
+            <thead>
+              <tr><th>#</th><th>Item</th><th>Chamber March 2026</th><th>We publish</th><th>Authorizing source</th></tr>
+            </thead>
+            <tbody>
+              <tr id="override-1">
+                <td>1</td>
+                <td><strong>Sandpiper Gulf Resort</strong><br><small>(63 rooms; destroyed-hotels list)</small></td>
+                <td>"destroyed and sold" — in the 19-hotel destroyed list</td>
+                <td>Reopened 2025; currently operating as renovated hotel. Cascading effect: hotel rooms 1,306 → 1,369; capacity recovery 66% → 67%; permanent losses 17/590 → 18/527.</td>
+                <td>Visit Fort Myers Beach tourism site; Yelp updated Feb 2026 (84 photos, 34 current-operation reviews); Expedia, Hotels.com, Kayak active reservations</td>
+              </tr>
+              <tr id="override-2">
+                <td>2</td>
+                <td><strong>Arches Bayfront</strong><br><small>(pipeline)</small></td>
+                <td>256 rooms, "Project approved"</td>
+                <td>263 rooms; Council approved June 2025 (4-1, Mayor Allers opposed); pre-construction, several years out</td>
+                <td>Beach Observer, <em>"Fort Myers Beach Council approves Arches Bayfront hotel and commercial center by 4-1 vote"</em> (June 2025); WINK News; Gulfshore Business</td>
+              </tr>
+              <tr id="override-3">
+                <td>3</td>
+                <td><strong>London Bay project</strong><br><small>(pipeline)</small></td>
+                <td>150 rooms, "100 rooms, 50 condos, 46 residences. Project planning in process."</td>
+                <td>150 lodging units unchanged. Status updated: LPA recommended denial May 12, 2026; Town Council hearing June 2026</td>
+                <td>Town of FMB LPA agenda and meeting record, May 12, 2026</td>
+              </tr>
+              <tr id="override-4">
+                <td>4</td>
+                <td><strong>Lighthouse Island Resort expansion</strong><br><small>(pipeline)</small></td>
+                <td>+70 rooms, "new rooms, project approved"</td>
+                <td>+55 rooms (75 → 130); Council June 2025 with 11 zoning deviations</td>
+                <td>B1039, <em>"Fort Myers Beach Council Gives Green Light to 130-Room Lighthouse Resort Expansion"</em> (May 22, 2025); Beach Observer (June 2025)</td>
+              </tr>
+              <tr id="override-5">
+                <td>5</td>
+                <td><strong>Times Square (Persaud)</strong><br><small>(pipeline)</small></td>
+                <td>50 rooms, "Project going to LPA"</td>
+                <td>6 boutique rooms with pool, cabanas, retail; scaled from 50 after LPA pushback; no variances; heading to Council</td>
+                <td>Fox 4, <em>"New boutique hotel plans filed for Fort Myers Beach Times Square lot"</em> (September 2025)</td>
+              </tr>
+              <tr id="override-6">
+                <td>6</td>
+                <td><strong>Silver Sands / TPI Hospitality</strong><br><small>(pipeline)</small></td>
+                <td>46 rooms, "Margaritaville expansion / silver sands resort rebuild"</td>
+                <td>60 rooms; 5-story hotel adjacent to Margaritaville; plans to Town June 2026; opening 2028–29</td>
+                <td>Beach Observer, <em>"TPI announces plans for new Silver Sands Resort"</em> (April 2026)</td>
+              </tr>
+              <tr id="override-7">
+                <td>7</td>
+                <td><strong>Myerside Resort</strong><br><small>(pipeline)</small></td>
+                <td>40 rooms, "approved by town council in Feb 2025"</td>
+                <td>45 rooms; Council approved June 17, 2024 (4-1, Allers opposed); corrects Chamber's date</td>
+                <td>Beach Observer, <em>"Fort Myers Beach Council moves CPD forward for Myerside Resort hotel"</em> (June 2024); Gulfshore Business</td>
+              </tr>
+              <tr id="override-8">
+                <td>8</td>
+                <td><strong>Pink Shell Bayside</strong><br><small>(pipeline; detail addition)</small></td>
+                <td>40 rooms, "approved by town council in Feb 2025"</td>
+                <td>40 rooms unchanged; added "Council February 3, 2025 (4-0 unanimous)"</td>
+                <td>Fox 4, <em>"Pink Shell Resort on Fort Myers Beach has been approved for a $40M expansion"</em> (February 2025); WINK News</td>
+              </tr>
+              <tr id="override-9">
+                <td>9</td>
+                <td><strong>Sea Gate / Red Coconut (Oceanside)</strong><br><small>(pipeline; status update)</small></td>
+                <td>137 rooms, "Project approved"</td>
+                <td>137 rooms unchanged; added "Council Dec 2024 (3-2); residents' lawsuit dismissed by Judge McHugh May 2026; cleared to proceed"</td>
+                <td>Beach Talk Radio, <em>"Complete Victory For Seagate"</em> (May 2026); B1039 (August 2025)</td>
+              </tr>
+              <tr id="override-10">
+                <td>10</td>
+                <td><strong>Estero Island Beach Club</strong><br><small>(pipeline; VR)</small></td>
+                <td>170 rooms, "timeshare, project approved"</td>
+                <td>75 timeshare units; Council unanimous May 2025; 5-story (reduced from 10); target summer 2027</td>
+                <td>Town of FMB Ordinance 25-13; Beach Observer, <em>"Fort Myers Beach LPA approves Estero Island Beach Club rebuild plans, rezoning"</em> (May 2025); Beach Talk Radio</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="metric-source" style="margin-top: 14px;">
+          Net effect of pipeline overrides: Chamber 1,303 rooms / 14 projects → 1,175 rooms / 14 projects.
+          Net effect of destroyed-hotels override: 19 properties / 590 rooms → 18 properties / 527 rooms.
+          Full narrative in <a href="recovery-summary.md">recovery-summary.md</a>.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PENDING CHAMBER CLARIFICATION ============ -->
+  <section class="recovery-section" id="pending-clarification">
+    <div class="section-header">
+      <h2>Pending Chamber Clarification</h2>
+      <p class="section-lead">
+        Items where Chamber-side uncertainty kept us from making a sourced override. Flagged for
+        follow-up with the FMB Chamber rather than guessed at.
+      </p>
+    </div>
+
+    <div class="metric-grid">
+      <div class="metric-card watchlist" style="grid-column: span 2;">
+        <div class="metric-label">Items we couldn't source</div>
+        <ul style="margin: 12px 0 0 18px; color: var(--text-secondary); font-size: 0.92rem; line-height: 1.7;">
+          <li>
+            <strong>Sandcastle Beach Club</strong> (905 Estero Blvd, 53 rooms in destroyed list) —
+            Chamber's own note reads <em>"closed. 20 or 53 rooms?"</em> Chamber itself is uncertain
+            about the count and the property's current status. Booking platforms (Kayak, TripAdvisor,
+            Trip.com) and the property's own website show the resort operational, but no single
+            source confirms post-Ian rebuild date or current room count. Kept at Chamber's 53 in the
+            destroyed list for now.
+          </li>
+          <li>
+            <strong>Compass Rose project</strong> (140 rooms in pipeline list) — Chamber lists
+            <em>"permanent holding pattern."</em> No corroborating public reporting confirms an
+            active hotel project at this name. Kept in pipeline at Chamber's 140 rooms.
+          </li>
+        </ul>
+        <div class="metric-source">
+          Flagged for follow-up with Jackie Lysak at FMB Chamber.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CHANGELOG ============ -->
+  <section class="recovery-section" id="changelog">
+    <div class="section-header">
+      <h2>Changelog</h2>
+      <p class="section-lead">
+        Dated entries showing what changed in each dashboard update. Newest first. Backed by the
+        <code>changelog</code> array in <code>data/metrics.json</code> and git history at
+        <a href="https://github.com/mb3700/fmb-ian-recovery" target="_blank">github.com/mb3700/fmb-ian-recovery</a>.
+      </p>
+    </div>
+
+    <div class="metric-grid">
+      <div class="metric-card" style="grid-column: span 2;">
+        <div class="changelog">
+
+          <div class="changelog-entry">
+            <div class="changelog-date">May 23, 2026</div>
+            <div class="changelog-title">Consistency audit + Sandpiper override cascade + May 2026 Update rebrand</div>
+            <ul>
+              <li>Sandpiper Gulf Resort: removed from destroyed list (verified reopened 2025; sources: Visit FMB, Yelp Feb 2026, Expedia/Hotels.com/Kayak).</li>
+              <li>Cascading effect through derived metrics: hotel rooms 1,306 → 1,369; capacity recovery 66% → 67%; permanent losses 17/590 → 18/527; capacity-vs-revenue gap 18 → 19 points.</li>
+              <li>Mix Shift card rewritten to use Chamber room counts consistently with Tourism section.</li>
+              <li>Hotel-rooms metric note: deleted unsupported "~97%" claim and replaced with correct math.</li>
+              <li>VR rooms note: added 3-bucket reconciliation (operating + permanently lost + rebuilding gap).</li>
+              <li>Rebrand: "Q1 2026 Baseline" → "May 2026 Update" across the dashboard.</li>
+            </ul>
+          </div>
+
+          <div class="changelog-entry">
+            <div class="changelog-date">May 23, 2026</div>
+            <div class="changelog-title">Pipeline override corrections — Chamber as baseline with sourced overrides</div>
+            <ul>
+              <li>Restored Chamber values for Compass Rose, Wyndham, and pipeline room counts.</li>
+              <li>Removed standalone "Housing pipeline" reclassification — Beach Baptist + Paradise Point returned to VR pipeline at Chamber counts.</li>
+              <li>Added per-override audit-trail table to recovery-summary.md.</li>
+            </ul>
+          </div>
+
+          <div class="changelog-entry">
+            <div class="changelog-date">May 23, 2026</div>
+            <div class="changelog-title">Pipeline status verification against current public reporting</div>
+            <ul>
+              <li>Verified all 14 pipeline projects against Town Council and LPA records plus post-March 2026 reporting.</li>
+              <li>Sourced updates: Arches 263, Lighthouse +55 (75→130), Times Square 6 (scaled from 50), Silver Sands 60 (TPI plan), Myerside 45 with June 2024 approval date, EIBC 75 timeshare units (Ordinance 25-13), Sea Gate lawsuit dismissed, plus one pipeline status update from the LPA May 12 record.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="recovery-section">
+    <div class="section-header" style="text-align: center;">
+      <p class="section-lead">
+        <a href="index.html" style="color: var(--seafoam-dark, var(--seafoam)); font-weight: 600;">← Back to the Dashboard</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="dashboard-footer">
+  <div class="footer-inner">
+    <div>
+      <h3>Fort Myers Beach Recovery Dashboard</h3>
+      <p>
+        Tracking measurable signals of Hurricane Ian recovery, with transparent methodology and
+        sourced pre-Ian baselines. Built in the framework first developed for the
+        Sanibel Solutions recovery dashboard.
+      </p>
+      <p style="margin-top: 12px;">
+        Prepared by Mark Bole &middot;
+        <strong>FGCU Ain Technology and Design Hub</strong>
+      </p>
+    </div>
+    <div>
+      <h3>Reference</h3>
+      <p>
+        <a href="index.html">← Dashboard home</a><br>
+        <a href="methodology.html">Methodology &amp; data sources</a><br>
+        May 2026 Update · Last updated May 23, 2026
+      </p>
+    </div>
+  </div>
+  <div class="footer-meta">
+    Recovery percentages are calculated by dividing current operational counts by pre-Ian baselines, capped at 100%.
+    Baselines marked "pending" are awaiting verification from Lee County or Town of FMB records.
+    Dashboard structure adapted from the Sanibel Solutions recovery methodology.
+  </div>
+</footer>
+
+</body>
+</html>
+</content>
