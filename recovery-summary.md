@@ -11,21 +11,21 @@
 
 Two strong indicators, telling different parts of the same story:
 
-- **Lodging capacity: 67% recovered** (4,222 of 6,263 pre-Ian rooms — FMB Chamber March 2026 + verified overrides)
+- **Lodging capacity: 66% recovered** (4,159 of 6,263 pre-Ian rooms — FMB Chamber, March 2026)
 - **Bed tax revenue: 48% recovered** (FY25 YTD through August vs FY22 YTD — Lee County Clerk)
 
-The 19-point gap means capacity has rebuilt faster than per-room revenue — each rebuilt unit is generating less revenue than its pre-Ian counterpart.
+The 18-point gap means capacity has rebuilt faster than per-room revenue — each rebuilt unit is generating less revenue than its pre-Ian counterpart.
 
 | Sector | Lead Metric | Recovery |
 |--------|-------------|----------|
-| **★ Lodging Capacity (the comprehensive figure)** | 4,222 of 6,263 pre-Ian rooms | **67%** |
+| **★ Lodging Capacity (the comprehensive figure)** | 4,159 of 6,263 pre-Ian rooms | **66%** |
 | **★ Bed Tax (the revenue indicator)** | $3.85M of $8.04M pre-Ian YTD | **48%** |
 | Lodging — Hotel Rooms | 1,306 of 1,724 pre-Ian rooms | **76%** |
 | Lodging — Hotel Properties | 20 of 40 pre-Ian properties | **50%** |
 | Lodging — Vacation Rental Rooms | 2,853 of 4,539 pre-Ian rooms | **63%** |
 | Tourism — Attractions | 32 of 33 operational | **97%** |
 | Economic — Restaurants | 47 of ~70 pre-Ian (estimate) | **~67%** |
-| **Watchlist — Rooms permanently lost** | 753 of 6,263 pre-Ian | **12% gone forever** |
+| **Watchlist — Rooms permanently lost** | 816 of 6,263 pre-Ian | **13% gone forever** |
 | Watchlist — Delinquent VR licenses | 160 of 2,142 total | 7.5% offline |
 | Watchlist — Café concentration | 3 of 7 closed | 43% closure rate |
 
@@ -37,9 +37,9 @@ The 19-point gap means capacity has rebuilt faster than per-room revenue — eac
 
 ---
 
-## Capacity vs Revenue — the 19-point gap
+## Capacity vs Revenue — the 18-point gap
 
-Lodging capacity 67% recovered, bed-tax revenue 48% recovered. The gap matters.
+Lodging capacity 66% recovered, bed-tax revenue 48% recovered. The gap matters.
 
 **What it means:** Each rebuilt room is generating less revenue than its pre-Ian counterpart. Possible drivers:
 
@@ -95,21 +95,6 @@ The table below documents every line where this dashboard differs from the Chamb
 | Beach Baptist (new homes) | 10 rms, "need update" | 10 rms (unchanged); status: "Possibly Phase 2 of sell-land project; awaiting Chamber confirmation" | Chamber's own "need update" flag |
 
 **Net effect:** Chamber's 1,303 rooms → 1,175 rooms. The 128-unit reduction is concentrated in three sourced overrides: EIBC (170 → 75 = −95), Times Square (50 → 6 = −44), Lighthouse (+70 → +55 = −15), partially offset by Arches (+7), Silver Sands (+14), and Myerside (+5).
-
-### How destroyed-hotels overrides are sourced
-
-The same audit-trail standard applies to the destroyed-hotels list. Chamber's published destroyed subtotal: 19 hotels / 590 rooms. Our published value: 18 hotels / 527 rooms. The override:
-
-| Property | Chamber March 2026 | Our value | Authorizing source |
-|---|---|---|---|
-| Sandpiper Gulf Resort (63 rooms) | "destroyed and sold" — in the 19-hotel destroyed list | Reopened 2025 — currently operating as renovated hotel | Visit Fort Myers Beach tourism website (current listing); Yelp updated February 2026 (84 photos, 34 current-operation reviews); Expedia, Hotels.com, Kayak active reservation listings |
-
-**Cascading effect:** removing Sandpiper from the destroyed list adds 63 rooms to the currently-operating hotel inventory and propagates through derived metrics:
-- Hotel rooms operating: 1,306 → 1,369 (recovery 76% → 79%)
-- Total accommodations operating: 4,159 → 4,222 (capacity recovery 66% → 67%)
-- Capacity-vs-revenue gap: 18 points → 19 points
-- Permanent hotel losses: 17 properties / 590 rooms → 18 properties / 527 rooms
-- Total rooms permanently lost: 816 → 753 (13% → 12% of pre-Ian capacity)
 
 ### Pending Chamber clarification
 
@@ -177,7 +162,7 @@ Several categories appear on the dashboard as **context** but are deliberately n
 
 ## Data Sources
 
-- **★ Lodging capacity (primary source):** Fort Myers Beach Chamber of Commerce, Accommodations file (March 18, 2026). Hotel data as of 7/30/2025; VR data refreshed March 2026. Source file: `Accommodations as ofMarch 18,, 2026.xlsx`. Includes 20 open hotels, 60+ VR properties, and 19 destroyed hotels (Chamber's published count) and a full pipeline of 14 development projects. Our published values use 21 open hotels and 18 destroyed hotels after one sourced override (Sandpiper Gulf Resort, verified reopened 2025 — see audit trail).
+- **★ Lodging capacity (primary source):** Fort Myers Beach Chamber of Commerce, Accommodations file (March 18, 2026). Hotel data as of 7/30/2025; VR data refreshed March 2026. Source file: `Accommodations as ofMarch 18,, 2026.xlsx`. Includes 20 open hotels, 60+ VR properties, 19 destroyed hotels (590 rooms), and a full pipeline of 14 development projects.
 - **Bed tax revenue:** Lee County Clerk of Court, Tourist Development Tax breakdown by municipality (FY22–FY25 YTD through August). Source file: `Tourist Tax Breakdown - Add'l needed - Data through August 2025.xlsx`.
 - **FMB business database (Q1 2026 vintage):** Google Places-verified businesses with Fort Myers Beach addresses — used for non-lodging categories and the delinquent VR license signal.
 - **Vacation rental licenses:** Lee County Tax Collector (current 1,982 active + 160 delinquent — historical baseline still needed for license-based comparison).
