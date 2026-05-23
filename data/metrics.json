@@ -1,0 +1,398 @@
+{
+  "$schema": "fmb-recovery-metrics-v1",
+  "updated": "2026-03-20",
+  "asOf": "2026-Q1",
+  "town": "Fort Myers Beach, Florida",
+  "hurricane": {
+    "name": "Hurricane Ian",
+    "landfall": "2022-09-28",
+    "category": "Category 4",
+    "monthsSinceLandfall": 42
+  },
+  "headline": {
+    "recoveryPercent": 48,
+    "label": "Bed Tax Recovery (FY25 YTD vs FY22 YTD)",
+    "value": 3846639,
+    "baseline": 8044612,
+    "fyShare": 0.0858,
+    "fyShareBaseline": 0.1249,
+    "note": "FMB collected $3.85M in bed tax through August of FY25, recovering to 48% of its FY22 pre-Ian YTD baseline ($8.04M). FMB's share of the Lee County total has rebuilt from 3.45% (FY23) to 8.58% (FY25) — pre-Ian share was 12.49%.",
+    "source": "Lee County Clerk of Court, Tourist Development Tax breakdown by municipality, FY22–FY25 YTD through August.",
+    "sourceFile": "Tourist Tax Breakdown - Add'l needed - Data through August 2025.xlsx"
+  },
+  "accommodationRecovery": {
+    "headline": "Lodging capacity rebuilt to 66% of pre-Ian inventory",
+    "totalCurrentUnits": 4159,
+    "totalPreIanUnits": 6263,
+    "capacityRecoveryPct": 66,
+    "breakdown": {
+      "hotelRooms": {"current": 1306, "preIan": 1724, "recoveryPct": 76},
+      "vacationRentalRooms": {"current": 2853, "preIan": 4539, "recoveryPct": 63}
+    },
+    "source": "Fort Myers Beach Chamber of Commerce, Accommodations file (March 18, 2026). Hotel data as of 7/30/2025; VR data refreshed March 2026.",
+    "sourceFile": "Accommodations as ofMarch 18,, 2026.xlsx"
+  },
+  "capacityVsRevenue": {
+    "capacityPct": 66,
+    "revenuePct": 48,
+    "gapPts": 18,
+    "interpretation": "Capacity has rebuilt faster than per-unit revenue. Each rebuilt room is generating less revenue than its pre-Ian counterpart — lower occupancy, lower rates, or both."
+  },
+  "permanentLosses": {
+    "hotelRoomsLost": 590,
+    "hotelPropertiesLost": 17,
+    "vrRoomsLost": 226,
+    "totalRoomsLost": 816,
+    "pctOfPreIan": 13,
+    "destroyedHotels": [
+      "Carousel Inn on the Beach (27 rooms)",
+      "Dolphin Inn (22)",
+      "Hideaway Village (23)",
+      "Island House (5)",
+      "LA Villa Resort (10)",
+      "Outrigger Beach Resort (144, sold to London Bay)",
+      "Periwinkle Motel (5)",
+      "Sandcastle Beach (53)",
+      "Sandpiper Gulf Resort (63)",
+      "Sandy Beach Hotel (11)",
+      "Sea Gypsy Inn (4)",
+      "Shipwreck Motel (29)",
+      "Silver Sands Villas (23)",
+      "Sun Deck Inn (11)",
+      "The Beacon (16, now paid parking)",
+      "The Holiday Court Bayfront (20)",
+      "Tiki on the Beach Hotel (11)",
+      "Wild Wave Resort (10)",
+      "Wyndham Garden Fort Myers Beach (103)"
+    ],
+    "source": "Fort Myers Beach Chamber of Commerce, Accommodations file (March 18, 2026)."
+  },
+  "pipeline": {
+    "headline": "1,303 rooms in development across 14 projects",
+    "totalRooms": 1303,
+    "hotelRooms": 942,
+    "vrRooms": 361,
+    "projects": {
+      "hotels": [
+        {"name": "Arches Bayfront", "rooms": 256, "status": "Project approved"},
+        {"name": "Compass Rose project", "rooms": 140, "status": "Permanent holding pattern"},
+        {"name": "Lighthouse Island Resort (addl rooms)", "rooms": 70, "status": "Project approved"},
+        {"name": "London Bay (Outrigger / Charley's site)", "rooms": 150, "status": "100 rooms + 50 condos + 46 residences; planning in process", "noteForMark": "On the site of the destroyed Outrigger Beach Resort — relevant to Ritz-Carlton Estero Bay work."},
+        {"name": "Margaritaville expansion (silver sands)", "rooms": 46, "status": "Resort rebuild"},
+        {"name": "Myerside (new rooms)", "rooms": 40, "status": "Approved Feb 2025"},
+        {"name": "Pink Shell Bayside", "rooms": 40, "status": "Approved Feb 2025"},
+        {"name": "Times Square project", "rooms": 50, "status": "Going to LPA"},
+        {"name": "Wyndham", "rooms": 150, "status": "Food truck park then resort"}
+      ],
+      "vacationRentals": [
+        {"name": "Beach Baptist property — new homes", "rooms": 10, "status": "Need update"},
+        {"name": "Cottages of Paradise Point", "rooms": 14, "status": "First cottage underway 3/2026"},
+        {"name": "Estero Island Beach Club", "rooms": 170, "status": "Timeshare; project approved"},
+        {"name": "Sea Gate Construction (Red Coconut)", "rooms": 137, "status": "Two condo buildings (9, 10, 14, 15 stories) + 4 homes; approved"},
+        {"name": "Beach Baptist (sell land plans)", "rooms": 30, "status": "Plans changed — selling some land"}
+      ]
+    },
+    "source": "Fort Myers Beach Chamber of Commerce, Accommodations file (March 18, 2026)."
+  },
+  "fmbBedTaxTrajectory": [
+    {"fy": "FY22", "label": "Pre-Ian", "value": 8044612, "share": 0.1249, "recoveryPct": 100},
+    {"fy": "FY23", "label": "Post-Ian", "value": 1193438, "share": 0.0345, "recoveryPct": 15},
+    {"fy": "FY24", "label": "Recovery", "value": 2970730, "share": 0.0702, "recoveryPct": 37},
+    {"fy": "FY25", "label": "Current", "value": 3846639, "share": 0.0858, "recoveryPct": 48}
+  ],
+  "sisterCityComparison": {
+    "title": "Lee County Bed Tax Recovery by Municipality",
+    "frame": "FY25 YTD through August vs FY22 YTD (pre-Ian baseline)",
+    "source": "Lee County Clerk of Court, Tourist Development Tax breakdown.",
+    "rows": [
+      {
+        "municipality": "Fort Myers Beach",
+        "fy22": 8044612,
+        "fy25": 3846639,
+        "recoveryPct": 48,
+        "note": "Hit hard by Ian; recovering",
+        "highlight": true
+      },
+      {
+        "municipality": "Sanibel",
+        "fy22": 7177273,
+        "fy25": 2252421,
+        "recoveryPct": 31,
+        "note": "Hit hard by Ian; recovery slower than FMB"
+      },
+      {
+        "municipality": "Fort Myers (mainland)",
+        "fy22": 4317947,
+        "fy25": 6181640,
+        "recoveryPct": 143,
+        "note": "Inland; exceeded pre-Ian baseline"
+      },
+      {
+        "municipality": "Estero",
+        "fy22": 1257386,
+        "fy25": 1281511,
+        "recoveryPct": 102,
+        "note": "Inland; fully recovered"
+      }
+    ]
+  },
+  "sectors": [
+    {
+      "id": "tourism",
+      "title": "Tourism & Lodging Capacity",
+      "lead": "Lodging is FMB's economic engine. Pre-Ian, the town was Lee County's #1 bed-tax generator at $8.2M/year. Recovery here drives recovery everywhere else.",
+      "metrics": [
+        {
+          "label": "Hotel Rooms Operating",
+          "current": 1306,
+          "baseline": 1724,
+          "unit": "rooms",
+          "recoveryPercent": 76,
+          "note": "1,306 hotel rooms operating across 20 properties (vs 1,724 pre-Ian). Includes the new 254-room Margaritaville Beach Resort, which opened post-Ian. At properties that existed pre-Ian, ~97% of room capacity is back online; the remaining gap is 590 rooms at destroyed properties.",
+          "source": "Fort Myers Beach Chamber of Commerce, Accommodations file (March 18, 2026). Hotel data as of 7/30/2025.",
+          "sourceUrl": null,
+          "sourceFile": "Accommodations as ofMarch 18,, 2026.xlsx",
+          "interpretation": "trueRecovery",
+          "trend": "up",
+          "trendLabel": "Stronger than the Google-Places business database alone suggests"
+        },
+        {
+          "label": "Hotel Properties Operating",
+          "current": 20,
+          "baseline": 40,
+          "unit": "properties",
+          "recoveryPercent": 50,
+          "note": "20 of 40 pre-Ian hotel properties are operating. 17 properties were permanently destroyed (590 rooms lost); 3 remain temporarily closed (Beach Shell Inn, Manatee Bay Inn, Tahitian Inn). Property-count recovery lags room-count recovery because surviving properties have larger room counts on average.",
+          "source": "Fort Myers Beach Chamber of Commerce, Accommodations file (March 18, 2026).",
+          "sourceUrl": null,
+          "sourceFile": "Accommodations as ofMarch 18,, 2026.xlsx",
+          "interpretation": "trueRecovery",
+          "trend": "up",
+          "trendLabel": "17 properties permanently lost; 3 still working toward reopening"
+        },
+        {
+          "label": "Vacation Rental Rooms Operating",
+          "current": 2853,
+          "baseline": 4539,
+          "unit": "rooms",
+          "recoveryPercent": 63,
+          "note": "2,853 vacation rental rooms operating across ~60 properties (vs 4,539 pre-Ian). The Chamber's room-based count is more comparable to hotel rooms than the license-based count from the FMB business database (1,982 active + 160 delinquent licenses). 624 VR rooms remain in temporarily-closed properties; 226 rooms permanently destroyed.",
+          "source": "Fort Myers Beach Chamber of Commerce, Accommodations file (March 18, 2026). VR numbers refreshed March 2026.",
+          "sourceUrl": null,
+          "sourceFile": "Accommodations as ofMarch 18,, 2026.xlsx",
+          "interpretation": "trueRecovery",
+          "trend": "up",
+          "trendLabel": "VR-led recovery is FMB's distinctive pattern"
+        },
+        {
+          "label": "Delinquent VR Licenses (Likely Offline)",
+          "current": 160,
+          "baseline": null,
+          "unit": "licenses",
+          "recoveryPercent": null,
+          "note": "160 vacation rental licenses are delinquent — properties unable to operate. 7.5% of 2,142 total licenses (1,982 active + 160 delinquent).",
+          "source": "fmb-baseline-report-march-2026.xlsx Executive Summary.",
+          "sourceUrl": null,
+          "interpretation": "watchlist",
+          "trend": "down",
+          "trendLabel": "Leading indicator — these properties have not returned to operation",
+          "featured": true
+        },
+        {
+          "label": "Tourist Attractions Operating",
+          "current": 32,
+          "baseline": 33,
+          "unit": "attractions",
+          "recoveryPercent": 97,
+          "note": "32 of 33 tracked tourist attractions operational. 1 temporarily closed.",
+          "source": "fmb-baseline-report-march-2026.xlsx Business Database.",
+          "sourceUrl": null,
+          "interpretation": "trueRecovery",
+          "trend": "up",
+          "trendLabel": "Strongest recovery in the dataset"
+        },
+        {
+          "label": "Bed Tax Recovery (YTD)",
+          "current": 3846639,
+          "baseline": 8044612,
+          "unit": "$ YTD through August",
+          "recoveryPercent": 48,
+          "trajectory": [
+            {"fy": "FY22", "value": 8044612, "pct": 100},
+            {"fy": "FY23", "value": 1193438, "pct": 15},
+            {"fy": "FY24", "value": 2970730, "pct": 37},
+            {"fy": "FY25", "value": 3846639, "pct": 48}
+          ],
+          "note": "FMB collected $3.85M through August of FY25 — 48% of its $8.04M pre-Ian baseline. Curve: 15% → 37% → 48%. FMB share of Lee County total: 8.58% (was 12.49% pre-Ian, #1 municipal contributor).",
+          "source": "Lee County Clerk of Court, Tourist Development Tax breakdown by municipality.",
+          "sourceUrl": null,
+          "sourceFile": "Tourist Tax Breakdown - Add'l needed - Data through August 2025.xlsx",
+          "interpretation": "trueRecovery",
+          "trend": "up",
+          "trendLabel": "Steady three-year recovery: 15% → 37% → 48%",
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "lodging-mix",
+      "title": "Lodging Mix Shift",
+      "lead": "FMB's recovery is structurally different from Sanibel's. Hotels were heavily destroyed; vacation rentals rebuilt faster. The result is a town economically more dependent on short-term rentals than ever before.",
+      "metrics": [
+        {
+          "label": "Hotel Rooms vs VR Licenses (Current)",
+          "current": 754,
+          "baseline": 1982,
+          "unit": "rooms / licenses",
+          "recoveryPercent": null,
+          "note": "754 hotel rooms vs 1,982 active VR licenses. VR-led ratio: 2.6× — far more skewed toward short-term rentals than pre-Ian mix.",
+          "source": "fmb-baseline-report-march-2026.xlsx.",
+          "sourceUrl": null,
+          "interpretation": "structural",
+          "trend": "neutral",
+          "trendLabel": "Structural shift away from hotel-led lodging",
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "economic",
+      "title": "Economic Activity",
+      "lead": "Beyond lodging, FMB's economy runs on restaurants, retail, and services tied to tourism volume. These metrics measure whether the daytime economy has returned.",
+      "metrics": [
+        {
+          "label": "Restaurants Operating",
+          "current": 47,
+          "baseline": 70,
+          "unit": "restaurants",
+          "recoveryPercent": 67,
+          "note": "47 of approximately 70 pre-Ian restaurants. Includes restaurants categorized as 'Restaurant' in the business database; bars and cafés counted separately.",
+          "source": "Baseline: pre-Ian TripAdvisor restaurant rankings (~70 listed). Current: fmb-baseline-report-march-2026.xlsx Restaurants & Dining sheet.",
+          "sourceUrl": null,
+          "interpretation": "trueRecovery",
+          "trend": "up",
+          "trendLabel": "Pre-Ian baseline approximate — Town of FMB business license records would refine"
+        },
+        {
+          "label": "Total Businesses Operational",
+          "current": 294,
+          "baseline": null,
+          "unit": "businesses",
+          "recoveryPercent": null,
+          "note": "294 currently operational of 299 tracked. Pre-Ian baseline pending — Town of FMB business tax receipts.",
+          "source": "Current: fmb-baseline-report-march-2026.xlsx (Google Places-verified businesses).",
+          "sourceUrl": null,
+          "interpretation": "trueRecovery",
+          "trend": "neutral",
+          "trendLabel": "Baseline needed for true recovery %"
+        },
+        {
+          "label": "Retail Stores",
+          "current": 54,
+          "baseline": null,
+          "unit": "stores",
+          "recoveryPercent": null,
+          "note": "54 currently operating. Baseline pending.",
+          "source": "fmb-baseline-report-march-2026.xlsx Category Analysis.",
+          "sourceUrl": null,
+          "interpretation": "trueRecovery",
+          "trend": "neutral",
+          "trendLabel": ""
+        },
+        {
+          "label": "Marinas",
+          "current": 22,
+          "baseline": null,
+          "unit": "marinas",
+          "recoveryPercent": null,
+          "note": "22 marinas operating. Critical to FMB's fishing, charter, and recreational tourism. Baseline pending.",
+          "source": "fmb-baseline-report-march-2026.xlsx Category Analysis.",
+          "sourceUrl": null,
+          "interpretation": "trueRecovery",
+          "trend": "neutral",
+          "trendLabel": ""
+        },
+        {
+          "label": "Real Estate Offices",
+          "current": 40,
+          "baseline": null,
+          "unit": "offices",
+          "recoveryPercent": null,
+          "note": "40 real estate offices — high count reflects active sales / rebuild market. Not a pure recovery indicator (compare Sanibel's exclusion of listings).",
+          "source": "fmb-baseline-report-march-2026.xlsx Category Analysis.",
+          "sourceUrl": null,
+          "interpretation": "context",
+          "trend": "neutral",
+          "trendLabel": "Activity level, not return-to-normal"
+        }
+      ]
+    },
+    {
+      "id": "watchlist",
+      "title": "Watchlist — Leading Indicators",
+      "lead": "Headline counts can mask trouble. These are the signals to watch quarter-over-quarter for early warning that recovery is stalling.",
+      "metrics": [
+        {
+          "label": "Café Closure Concentration",
+          "current": 3,
+          "baseline": 7,
+          "unit": "closed / total",
+          "recoveryPercent": null,
+          "note": "3 of 7 cafés temporarily closed — 43% closure rate. Cafés have marginal economics and reopen last when foot traffic is slow to return. Highest closure rate of any category.",
+          "source": "fmb-baseline-report-march-2026.xlsx Closed Businesses + Business Database.",
+          "sourceUrl": null,
+          "interpretation": "watchlist",
+          "trend": "down",
+          "trendLabel": "Concentrated risk — watch for further closures or reopenings",
+          "featured": true
+        },
+        {
+          "label": "Currently Closed Businesses",
+          "current": 5,
+          "baseline": null,
+          "unit": "temp closed",
+          "recoveryPercent": null,
+          "note": "5 businesses temporarily closed: 3 cafés, 1 tourist attraction, 1 service business. 0 permanently closed (any business that fully closed would not appear in this dataset).",
+          "source": "fmb-baseline-report-march-2026.xlsx Closed Businesses.",
+          "sourceUrl": null,
+          "interpretation": "watchlist",
+          "trend": "neutral",
+          "trendLabel": "Small denominator — the 160 delinquent VR licenses are a larger risk signal"
+        },
+        {
+          "label": "Population",
+          "current": 5513,
+          "baseline": 5582,
+          "unit": "residents",
+          "recoveryPercent": 99,
+          "note": "5,513 residents (2024 ACS estimate) vs 5,582 at 2020 Census. Surface number looks flat, but US Census Bureau ACS reports a -21.8% change 2019-2024, suggesting fluctuation around displacement and partial return.",
+          "source": "US Census Bureau Quick Facts; American Community Survey 2024 estimates.",
+          "sourceUrl": "https://www.census.gov/quickfacts/fact/table/fortmyersbeachtownflorida/",
+          "interpretation": "context",
+          "trend": "neutral",
+          "trendLabel": "Population is context, not a recovery metric per se"
+        }
+      ]
+    }
+  ],
+  "pendingBaselines": [
+    "Vacation rental licenses (pre-Ian) — Lee County Tax Collector records",
+    "Total business count (pre-Ian) — Town of FMB business tax receipt records",
+    "Restaurant count (pre-Ian) — refine ~70 estimate with Town of FMB or FMB Chamber data",
+    "Retail store count (pre-Ian)",
+    "Marina count (pre-Ian)",
+    "Bed tax FY2025 — Lee County Clerk of Court / TDC current period",
+    "Restaurants & Dining detail sheet baselines (per-restaurant pre-Ian status)"
+  ],
+  "methodology": {
+    "url": "recovery-summary.md",
+    "rules": [
+      "Compare current value to pre-Ian baseline where available",
+      "Cap recovery percentage at 100% (exceeding baseline counts as fully recovered)",
+      "Mark 'baseline pending' rather than fabricate when data is unverified",
+      "Exclude inverse indicators (e.g., real estate listings — high inventory signals distress)",
+      "Surface leading indicators (delinquent VR licenses, café closures) as watchlist, not headline"
+    ],
+    "appliedFrom": "Sanibel Solutions recovery methodology (recovery-calculation-analysis.md)"
+  }
+}
