@@ -253,7 +253,7 @@
           "sourceFile": "Accommodations as ofMarch 18,, 2026.xlsx",
           "interpretation": "trueRecovery",
           "trend": "up",
-          "trendLabel": "VR-led recovery is FMB's distinctive pattern"
+          "trendLabel": "63% of pre-Ian VR capacity operating; 226 rooms permanently lost"
         },
         {
           "label": "Delinquent VR Licenses (Likely Offline)",
@@ -316,7 +316,7 @@
           "baseline": 1982,
           "unit": "rooms / licenses",
           "recoveryPercent": null,
-          "note": "754 hotel rooms vs 1,982 active VR licenses. VR-led ratio: 2.6× — far more skewed toward short-term rentals than pre-Ian mix.",
+          "note": "Chamber March 2026 room counts: 1,306 hotel rooms vs 2,853 VR rooms (31% hotel / 69% VR of current lodging inventory; ratio 2.18 VR rooms per hotel room). Same numbers used in the Tourism section; shown side-by-side here so the proportion is visible at a glance.",
           "source": "fmb-baseline-report-march-2026.xlsx.",
           "sourceUrl": null,
           "interpretation": "structural",

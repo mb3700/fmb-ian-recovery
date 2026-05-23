@@ -45,7 +45,7 @@ Lodging capacity 66% recovered, bed-tax revenue 48% recovered. The gap matters.
 
 - **Lower occupancy** — visitor counts haven't fully returned; some rebuilt rooms sit empty more often
 - **Lower nightly rates** — properties may be discounting to rebuild bookings, or replacing premium beachfront with mid-tier rebuilds
-- **Mix shift** — vacation rentals carry lower per-room revenue than full-service resort hotels; FMB's recovery has been disproportionately VR-led
+- **Mix composition** — vacation rentals carry lower per-room revenue than full-service resort hotels industry-wide; FMB's lodging inventory is and has long been VR-dominant (69% VR, 31% hotel by current room count), so per-room revenue is structurally lower than at a hotel-dominant market
 
 **What to watch:** if the gap closes over the next 4–8 quarters, the story is "recovery isn't done." If it persists, the story becomes "FMB has fewer high-revenue rooms than it used to" — a structural change, not a temporary one.
 
@@ -116,7 +116,7 @@ Bed-tax recovery by municipality, all on the same Oct–Aug YTD frame:
 | Fort Myers (mainland, inland) | $4,317,947 | $6,181,640 | **143%** |
 | Estero (inland) | $1,257,386 | $1,281,511 | **102%** |
 
-The pattern is clear: barrier-island communities are still rebuilding; inland Lee County has not just recovered but exceeded pre-Ian revenue. FMB at 48% leads Sanibel at 31% — a function of FMB's faster vacation-rental rebuild relative to Sanibel's slower hotel reconstruction.
+The two inland comparators (Fort Myers mainland 143%, Estero 102%) have moved past their pre-Ian bed-tax revenue. The two barrier-island comparators (FMB 48%, Sanibel 31%) are still well below baseline. FMB is 17 points ahead of Sanibel; bed-tax revenue alone doesn't explain why.
 
 ---
 
