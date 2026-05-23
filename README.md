@@ -40,7 +40,7 @@ Pure static HTML/CSS — no build step, no JavaScript framework. Deploys cleanly
 
 ## Methodology
 
-Five rules, deliberately strict to keep the dashboard credible:
+Five rules:
 
 1. Compare each metric to its pre-Ian baseline where verifiable.
 2. Cap recovery at 100% — exceeding baseline counts as fully recovered.

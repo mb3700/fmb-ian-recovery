@@ -286,7 +286,7 @@
           "sourceUrl": null,
           "interpretation": "trueRecovery",
           "trend": "up",
-          "trendLabel": "Strongest recovery in the dataset"
+          "trendLabel": "1 of 33 still closed"
         },
         {
           "label": "Bed Tax Recovery (YTD)",
@@ -454,7 +454,7 @@
   ],
   "housingMarket": {
     "headline": "Pre-Ian vs current baselines pending — RPCRA data request in progress",
-    "framing": "The right analytical frame is pre-Ian (2022) vs current (2026), split by property type. Condo recovery typically lags single-family residential on barrier islands — HOA dynamics, structural-reinforcement requirements, and association-level rebuild decisions slow individual-unit return. FMB's heavy condo and timeshare inventory makes the split material. The four placeholder cards below show the target comparisons (Residential vs Condo × Active Listings vs Annual Sales), pending RPCRA data via the FMB Chamber. The two cards beneath are the direction indicators and Redfin context we have today.",
+    "framing": "Housing recovery is shown here as pre-Ian (2022) vs current (2026), split by property type. Condo recovery typically lags single-family residential on barrier islands — HOA dynamics, structural-reinforcement requirements, and association-level rebuild decisions slow individual-unit return. FMB's heavy condo and timeshare inventory makes the split material. The four placeholder cards below show those comparisons (Residential vs Condo × Active Listings vs Annual Sales), pending RPCRA data via the FMB Chamber. The two cards beneath are the direction indicators and Redfin context we have today.",
     "metrics": [
       {
         "label": "Residential — Active Listings (pre-Ian vs current)",
@@ -531,7 +531,7 @@
         "preIanDaysOnMarket": null,
         "currentDaysOnMarket": 134,
         "daysOnMarketPriorYear": 91,
-        "note": "Current values from Redfin (Feb 2026): median price $580K (−30.7% YoY); 134 days on market (up from 91). The Feb-over-Feb change is direction, not recovery. Pre-Ian (2022) baselines for median price + DOM pending from RPCRA — when received, will show the proper recovery-frame comparison. Median price + DOM are context indicators on this dashboard (excluded from any recovery %).",
+        "note": "Current values from Redfin (Feb 2026): median price $580K (−30.7% YoY); 134 days on market (up from 91). The Feb-over-Feb change is direction, not recovery. Pre-Ian (2022) baselines for median price + DOM pending from RPCRA — when received, will show the pre-Ian-vs-current comparison. Median price + DOM are shown here as context indicators (excluded from any recovery %).",
         "source": "Redfin Fort Myers Beach housing market data, February 2026 (current values only); pre-Ian baselines pending RPCRA.",
         "sourceUrl": "https://www.redfin.com/city/6212/FL/Fort-Myers-Beach/housing-market",
         "interpretation": "context",
@@ -548,7 +548,7 @@
         "current": 2464310,
         "baseline": 3500000,
         "changePct": -29.6,
-        "note": "Permit-fund revenue projected down 29.6% in FY26 — the cleanest signal that the post-Ian rebuilding surge is past peak.",
+        "note": "Permit-fund revenue projected down 29.6% in FY26 — an early signal that the post-Ian rebuilding surge is past peak.",
         "source": "Town of Fort Myers Beach FY26 Adopted Budget, All Fund Revenues.",
         "trend": "down",
         "interpretation": "expectedDecline"

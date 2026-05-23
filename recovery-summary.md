@@ -137,7 +137,7 @@ The pattern is clear: barrier-island communities are still rebuilding; inland Le
 
 ## Our Methodology
 
-The rules below are deliberately strict to keep the dashboard credible.
+The rules used on this dashboard:
 
 **Five rules:**
 
