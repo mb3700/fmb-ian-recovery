@@ -982,13 +982,15 @@
     flipBtn.setAttribute('type', 'button');
     flipBtn.setAttribute('aria-label', 'Show source and methodology');
     flipBtn.setAttribute('aria-expanded', 'false');
-    flipBtn.textContent = 'ⓘ';
+    flipBtn.setAttribute('title', 'Source & details');
+    flipBtn.textContent = 'i';
     var closeBtn = document.createElement('button');
-    closeBtn.className = 'card-flip-btn';
+    closeBtn.className = 'card-flip-btn back-btn';
     closeBtn.setAttribute('type', 'button');
     closeBtn.setAttribute('aria-label', 'Back to the number');
     closeBtn.setAttribute('aria-expanded', 'true');
-    closeBtn.textContent = '✕';
+    closeBtn.setAttribute('title', 'Back to the number');
+    closeBtn.textContent = '×';
 
     function toggle() {
       var flipped = card.classList.toggle('flipped');
