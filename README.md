@@ -7,12 +7,12 @@ Tracks the measurable signals of Fort Myers Beach's recovery from Hurricane Ian,
 
 > **Refresh in progress (requested May 23, 2026):** FMB-specific FY26 Q1 (Oct–Dec 2025) bed tax data has been requested from the Lee County Clerk of Court via the FMB Chamber of Commerce. Dashboard will be updated when figures are received. Current bed-tax data is FY25 YTD through August 2025.
 
-## Snapshot (Q1 2026)
+## Snapshot (May 2026 Update)
 
-- **Lodging capacity: 66% recovered** (4,159 of 6,263 pre-Ian rooms — FMB Chamber, March 2026)
+- **Lodging capacity: 67% recovered** (4,222 of 6,263 pre-Ian rooms — FMB Chamber March 2026 + verified overrides)
 - **Bed tax revenue: 48% recovered** (FY25 YTD vs FY22 YTD — Lee County Clerk of Court)
 - **1,175 lodging units in development** across 14 named projects (909 hotel + 266 VR); Chamber March 2026 baseline with sourced post-March overrides; per-override audit trail in recovery-summary.md (verified May 23, 2026)
-- **816 rooms permanently lost** (17 destroyed hotels + 226 VR rooms)
+- **753 rooms permanently lost** (18 destroyed hotels + 226 VR rooms; Chamber's published count was 19 hotels / 590 rooms, revised with Sandpiper Gulf Resort verified reopened — see audit trail)
 - **Watchlist:** 160 delinquent VR licenses, 3 of 7 cafés temporarily closed
 
 ## What's in the repo
@@ -34,7 +34,7 @@ Pure static HTML/CSS — no build step, no JavaScript framework. Deploys cleanly
 
 1. **Lodging capacity (primary):** Fort Myers Beach Chamber of Commerce, Accommodations file (March 18, 2026)
 2. **Bed tax revenue:** Lee County Clerk of Court, Tourist Development Tax breakdown by municipality (FY22–FY25 YTD)
-3. **Business inventory:** FMB Chamber Community Dashboard project Q1 2026 business database
+3. **Business inventory:** FMB Chamber Community Dashboard project FMB business database (Q1 2026 vintage)
 4. **Population:** US Census Bureau QuickFacts + 2024 American Community Survey
 
 ## Methodology

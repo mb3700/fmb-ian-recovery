@@ -1,7 +1,7 @@
 {
   "$schema": "fmb-recovery-metrics-v1",
-  "updated": "2026-03-20",
-  "asOf": "2026-Q1",
+  "updated": "2026-05-23",
+  "asOf": "May 2026 Update",
   "town": "Fort Myers Beach, Florida",
   "hurricane": {
     "name": "Hurricane Ian",
@@ -37,29 +37,29 @@
     "sourceFile": "Tourist Tax Breakdown - Add'l needed - Data through August 2025.xlsx"
   },
   "accommodationRecovery": {
-    "headline": "Lodging capacity rebuilt to 66% of pre-Ian inventory",
-    "totalCurrentUnits": 4159,
+    "headline": "Lodging capacity rebuilt to 67% of pre-Ian inventory",
+    "totalCurrentUnits": 4222,
     "totalPreIanUnits": 6263,
-    "capacityRecoveryPct": 66,
+    "capacityRecoveryPct": 67,
     "breakdown": {
-      "hotelRooms": {"current": 1306, "preIan": 1724, "recoveryPct": 76},
+      "hotelRooms": {"current": 1369, "preIan": 1724, "recoveryPct": 79},
       "vacationRentalRooms": {"current": 2853, "preIan": 4539, "recoveryPct": 63}
     },
-    "source": "Fort Myers Beach Chamber of Commerce, Accommodations file (March 18, 2026). Hotel data as of 7/30/2025; VR data refreshed March 2026.",
+    "source": "Fort Myers Beach Chamber of Commerce, Accommodations file (March 18, 2026), with sourced override for Sandpiper Gulf Resort (verified reopened 2025 — see dataVerificationOverrides). Hotel data as of 7/30/2025; VR data refreshed March 2026.",
     "sourceFile": "Accommodations as ofMarch 18,, 2026.xlsx"
   },
   "capacityVsRevenue": {
-    "capacityPct": 66,
+    "capacityPct": 67,
     "revenuePct": 48,
-    "gapPts": 18,
+    "gapPts": 19,
     "interpretation": "Capacity has rebuilt faster than per-unit revenue. Each rebuilt room is generating less revenue than its pre-Ian counterpart — lower occupancy, lower rates, or both."
   },
   "permanentLosses": {
-    "hotelRoomsLost": 590,
-    "hotelPropertiesLost": 17,
+    "hotelRoomsLost": 527,
+    "hotelPropertiesLost": 18,
     "vrRoomsLost": 226,
-    "totalRoomsLost": 816,
-    "pctOfPreIan": 13,
+    "totalRoomsLost": 753,
+    "pctOfPreIan": 12,
     "destroyedHotels": [
       "Carousel Inn on the Beach (27 rooms)",
       "Dolphin Inn (22)",
@@ -69,7 +69,6 @@
       "Outrigger Beach Resort (144, sold to London Bay)",
       "Periwinkle Motel (5)",
       "Sandcastle Beach (53)",
-      "Sandpiper Gulf Resort (63)",
       "Sandy Beach Hotel (11)",
       "Sea Gypsy Inn (4)",
       "Shipwreck Motel (29)",
@@ -81,7 +80,32 @@
       "Wild Wave Resort (10)",
       "Wyndham Garden Fort Myers Beach (103)"
     ],
-    "source": "Fort Myers Beach Chamber of Commerce, Accommodations file (March 18, 2026)."
+    "source": "Fort Myers Beach Chamber of Commerce, Accommodations file (March 18, 2026), with one sourced override: Sandpiper Gulf Resort (63 rooms) removed from destroyed list — verified reopened 2025 (see dataVerificationOverrides). Chamber's published destroyed-hotel subtotal: 19 properties / 590 rooms. Our value after override: 18 properties / 527 rooms."
+  },
+  "dataVerificationOverrides": {
+    "framing": "Where this dashboard differs from Chamber March 2026 baseline, the override is documented here with the authorizing source. Same standard as the pipeline override table in recovery-summary.md.",
+    "destroyedHotels": [
+      {
+        "property": "Sandpiper Gulf Resort",
+        "rooms": 63,
+        "chamberClassification": "destroyed and sold (in 19-hotel destroyed list)",
+        "ourClassification": "reopened 2025 — currently operating as renovated hotel",
+        "source": "Visit Fort Myers Beach tourism site (current listing); Yelp updated Feb 2026 (84 photos, 34 current-operation reviews); Expedia, Hotels.com, Kayak active reservation listings",
+        "effect": "Removed from destroyed list. Added 63 rooms to currently-operating hotel inventory. Cascading effect on hotel-rooms recovery % (76 → 79), capacity recovery % (66 → 67), and gap (18 → 19 pts)."
+      }
+    ],
+    "pendingChamberClarification": [
+      {
+        "item": "Sandcastle Beach Club (905 Estero Blvd, 53 rooms)",
+        "issue": "Chamber's own note reads 'closed. 20 or 53 rooms?' — Chamber itself is uncertain about the count. Booking platforms (Kayak, TripAdvisor, Trip.com) and the property's website show the resort operational, but no single source confirms post-Ian rebuild date or current room count.",
+        "decision": "Kept at Chamber's 53 in the destroyed list for now. Flagged for follow-up with Jackie at Chamber."
+      },
+      {
+        "item": "Compass Rose project (140 rooms)",
+        "issue": "Chamber lists 'permanent holding pattern.' No corroborating public reporting confirms an active project at this name.",
+        "decision": "Kept in pipeline at Chamber's 140 rooms. Flagged for follow-up with Jackie at Chamber."
+      }
+    ]
   },
   "pipeline": {
     "headline": "1,175 lodging units in development across 14 named projects",
@@ -163,12 +187,12 @@
       "metrics": [
         {
           "label": "Hotel Rooms Operating",
-          "current": 1306,
+          "current": 1369,
           "baseline": 1724,
           "unit": "rooms",
-          "recoveryPercent": 76,
-          "note": "1,306 hotel rooms operating across 20 properties (vs 1,724 pre-Ian). Includes the new 254-room Margaritaville Beach Resort, which opened post-Ian. At properties that existed pre-Ian, ~97% of room capacity is back online; the remaining gap is 590 rooms at destroyed properties.",
-          "source": "Fort Myers Beach Chamber of Commerce, Accommodations file (March 18, 2026). Hotel data as of 7/30/2025.",
+          "recoveryPercent": 79,
+          "note": "1,369 hotel rooms operating across 21 properties (vs 1,724 pre-Ian). Includes the new 254-room Margaritaville Beach Resort which opened post-Ian and the reopened 63-room Sandpiper Gulf Resort (verified reopened 2025 after Ian closure + renovation — see dataVerificationOverrides). At surviving pre-Ian properties, ~99% of room capacity is back online (1,115 of 1,134 surviving pre-Ian rooms); the remaining 527 rooms are at 18 properties permanently lost.",
+          "source": "Fort Myers Beach Chamber of Commerce, Accommodations file (March 18, 2026), with sourced override for Sandpiper Gulf Resort. Hotel data as of 7/30/2025.",
           "sourceUrl": null,
           "sourceFile": "Accommodations as ofMarch 18,, 2026.xlsx",
           "interpretation": "trueRecovery",
@@ -177,17 +201,17 @@
         },
         {
           "label": "Hotel Properties Operating",
-          "current": 20,
+          "current": 21,
           "baseline": 40,
           "unit": "properties",
-          "recoveryPercent": 50,
-          "note": "20 of 40 pre-Ian hotel properties are operating. 17 properties were permanently destroyed (590 rooms lost); 3 remain temporarily closed (Beach Shell Inn, Manatee Bay Inn, Tahitian Inn). Property-count recovery lags room-count recovery because surviving properties have larger room counts on average.",
-          "source": "Fort Myers Beach Chamber of Commerce, Accommodations file (March 18, 2026).",
+          "recoveryPercent": 53,
+          "note": "21 of 40 pre-Ian hotel properties are operating (includes Sandpiper Gulf Resort, verified reopened 2025). 18 properties were permanently destroyed (527 rooms lost); 1 remains temporarily closed. Property-count recovery lags room-count recovery because surviving properties have larger room counts on average.",
+          "source": "Fort Myers Beach Chamber of Commerce, Accommodations file (March 18, 2026), with sourced override for Sandpiper Gulf Resort.",
           "sourceUrl": null,
           "sourceFile": "Accommodations as ofMarch 18,, 2026.xlsx",
           "interpretation": "trueRecovery",
           "trend": "up",
-          "trendLabel": "17 properties permanently lost; 3 still working toward reopening"
+          "trendLabel": "18 properties permanently lost; verified Sandpiper Gulf Resort reopened 2025"
         },
         {
           "label": "Vacation Rental Rooms Operating",
@@ -195,7 +219,7 @@
           "baseline": 4539,
           "unit": "rooms",
           "recoveryPercent": 63,
-          "note": "2,853 vacation rental rooms operating across ~60 properties (vs 4,539 pre-Ian). The Chamber's room-based count is more comparable to hotel rooms than the license-based count from the FMB business database (1,982 active + 160 delinquent licenses). 624 VR rooms remain in temporarily-closed properties; 226 rooms permanently destroyed.",
+          "note": "Three-bucket reconciliation of the 4,539 pre-Ian VR inventory: (1) 2,853 rooms currently operating; (2) 226 rooms permanently destroyed (6 VR properties: Bahama Beach Club, Palm Terrace, Royal Beach Club, Signature Vacation Rentals, Windward Passage time shares, Villa Del Mar); (3) the remaining 1,460-room gap is in rebuilding/partial-operation properties — 624 rooms across 12 explicitly-closed VR properties (per Chamber) plus ~836 rooms at properties operating with reduced inventory (e.g., Caribbean Beach Club currently 24/44; Cresciente 85/172; Coastal Breeze 38/125). VR Chamber-tracked inventory uses room counts; the FMB business database tracks licenses (1,982 active + 160 delinquent = 2,142) — different lens, see Watchlist.",
           "source": "Fort Myers Beach Chamber of Commerce, Accommodations file (March 18, 2026). VR numbers refreshed March 2026.",
           "sourceUrl": null,
           "sourceFile": "Accommodations as ofMarch 18,, 2026.xlsx",
