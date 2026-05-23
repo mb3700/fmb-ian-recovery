@@ -1,6 +1,6 @@
 # Fort Myers Beach Hurricane Ian Recovery Dashboard
 
-Tracks the measurable signals of Fort Myers Beach's recovery from Hurricane Ian, with transparent methodology and sourced pre-Ian baselines. Built in the framework first developed for the Sanibel Solutions recovery dashboard.
+Tracks the measurable signals of Fort Myers Beach's recovery from Hurricane Ian, with transparent methodology and sourced pre-Ian baselines.
 
 **Live site:** https://fmb-ian-recovery.vercel.app
 **Methodology:** [methodology.html](methodology.html)
@@ -40,7 +40,7 @@ Pure static HTML/CSS — no build step, no JavaScript framework. Deploys cleanly
 
 ## Methodology
 
-Adapted from the Sanibel Solutions recovery framework. Five rules:
+Five rules, deliberately strict to keep the dashboard credible:
 
 1. Compare each metric to its pre-Ian baseline where verifiable.
 2. Cap recovery at 100% — exceeding baseline counts as fully recovered.
@@ -56,7 +56,7 @@ Quarterly. Each update refreshes current values and revises pre-Ian baselines as
 
 ## License
 
-Data is sourced from public records and reproduced under fair-use for civic transparency. Visual framework and methodology adapted from Sanibel Solutions with attribution.
+Data is sourced from public records and reproduced under fair-use for civic transparency.
 
 ## Contact
 

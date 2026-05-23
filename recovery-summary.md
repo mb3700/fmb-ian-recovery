@@ -137,7 +137,7 @@ The pattern is clear: barrier-island communities are still rebuilding; inland Le
 
 ## Our Methodology
 
-Adapted from the [Sanibel Solutions recovery framework](https://sanibel-solutions.com). The rules are deliberately strict to keep the dashboard credible.
+The rules below are deliberately strict to keep the dashboard credible.
 
 **Five rules:**
 
@@ -162,12 +162,12 @@ Adapted from the [Sanibel Solutions recovery framework](https://sanibel-solution
 
 ## What's Excluded from Composite Recovery Percentages (still shown where useful)
 
-Following Sanibel's methodology, several categories appear on the dashboard as **context** but are deliberately not included in any composite recovery percentage. These signals are useful for understanding trajectory; they don't measure return to normalcy directly.
+Several categories appear on the dashboard as **context** but are deliberately not included in any composite recovery percentage. These signals are useful for understanding trajectory; they don't measure return to normalcy directly.
 
 | Excluded from recovery % | Reason |
 |----------|--------|
 | Real estate **listings** (not sales) | High inventory signals distress, not recovery (inverse indicator). Sales counts are different — those will be included in housing recovery once pre-Ian baseline is verified. |
-| All permit activity (issued / closed / fund revenue) | Shown as "Rebuilding Activity" context. Measures reconstruction surge, not return to normalcy (Sanibel's pattern: rebuilding activity ≠ recovery). |
+| All permit activity (issued / closed / fund revenue) | Shown as "Rebuilding Activity" context. Measures reconstruction surge, not return to normalcy — rebuilding activity is not the same as recovery. |
 | Open permits / backlog | Inverse indicator — high backlog is bad, not good. |
 | Half-Cent Sales Tax / Emergency Fund / FDEM disaster reimbursements | Shown as fiscal-pressure context. Declining recovery-funding flows are expected as the post-Ian eligibility window closes; not a recovery metric. |
 | Population (as a recovery metric) | Flat YoY ACS numbers can hide displacement and re-arrival; shown as context only. |
@@ -189,7 +189,7 @@ Following Sanibel's methodology, several categories appear on the dashboard as *
 
 ## Baselines Still Needed
 
-These pre-Ian numbers would meaningfully tighten this dashboard. Most can be sourced through the same channels Sanibel used:
+These pre-Ian numbers would meaningfully tighten this dashboard. The expected channels:
 
 - **Vacation rental license count (pre-Ian)** — Lee County Tax Collector records
 - **Total business count (pre-Ian)** — Town of FMB business tax receipt records
@@ -222,10 +222,10 @@ This dashboard is updated quarterly. Each update refreshes current values from t
 >
 > **1. Bed tax FY26 Q1.** FMB-specific FY26 Q1 (Oct–Dec 2025) bed tax data requested from the Lee County Clerk of Court via the FMB Chamber. Public Lee County reports contain aggregate county totals only — Tourist Development Tax data is exempt from public records by Florida statute, so FMB-specific figures require a direct request.
 >
-> **2. Pre-Ian housing baseline.** Pre-Ian (2022) monthly residential closing counts requested from RPCRA / Lee County Property Appraiser via the FMB Chamber. With the baseline verified, the Housing Market section will gain a Sanibel-style recovery %. Today, that section shows YoY direction only (Feb 2026 +69%, Dec 2025 +68%).
+> **2. Pre-Ian housing baseline.** Pre-Ian (2022) FMB-specific residential and condo data — listings, monthly closings, median price, days on market — requested from RPCRA / Lee County Property Appraiser via the FMB Chamber. With the baselines verified, the Housing Market section will populate the four placeholder cards and compute recovery percentages by property type. Today, that section shows YoY direction only (Feb 2026 +69%, Dec 2025 +68%) plus current Redfin context.
 
 ---
 
 *May 2026 Update · Last updated May 23, 2026 · Next refresh when new data lands*
 *Prepared by Mark Bole · FGCU Ain Technology and Design Hub*
-*Methodology adapted from the Sanibel Solutions recovery framework*
+*Recovery percentages compare current operational counts to pre-Ian baselines, capped at 100%.*

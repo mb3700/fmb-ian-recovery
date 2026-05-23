@@ -22,7 +22,7 @@
       "channel": "RPCRA (Royal Palm Coast Realtor Association) / Lee County Property Appraiser via FMB Chamber",
       "requestedAt": "2026-05-23",
       "status": "pending",
-      "note": "Following Sanibel's analytical framework, the dashboard needs pre-Ian vs current FMB-specific comparisons split by property type (single-family residential and condo/timeshare track separately — Sanibel showed residential at 52% vs condos at 41%). Required data: (1) active listings pre-Ian + current, by type; (2) annual sales volume 2022 full-year + trailing-12-month, by type; (3) median price + days on market 2022 vs current, by type if separable. Current dashboard shows only YoY direction (Feb 2026 +69%, Dec 2025 +68%) plus aggregate Feb 2026 median + DOM from Redfin."
+      "note": "The dashboard needs pre-Ian vs current FMB-specific comparisons split by property type (single-family residential and condo/timeshare track separately — condo recovery typically lags residential because of HOA dynamics, structural-reinforcement requirements, and association-level rebuild decisions). Required data: (1) active listings pre-Ian + current, by type; (2) annual sales volume 2022 full-year + trailing-12-month, by type; (3) median price + days on market 2022 vs current, by type if separable. Current dashboard shows only YoY direction (Feb 2026 +69%, Dec 2025 +68%) plus aggregate Feb 2026 median + DOM from Redfin."
     }
   ],
   "headline": {
@@ -314,7 +314,7 @@
     {
       "id": "lodging-mix",
       "title": "Lodging Mix Shift",
-      "lead": "FMB's recovery is structurally different from Sanibel's. Hotels were heavily destroyed; vacation rentals rebuilt faster. The result is a town economically more dependent on short-term rentals than ever before.",
+      "lead": "FMB's recovery is structurally tilted toward vacation rentals. Hotels were heavily destroyed; vacation rentals rebuilt faster. The result is a town economically more dependent on short-term rentals than ever before.",
       "metrics": [
         {
           "label": "Hotel Rooms vs VR Licenses (Current)",
@@ -395,7 +395,7 @@
           "baseline": null,
           "unit": "offices",
           "recoveryPercent": null,
-          "note": "40 real estate offices — high count reflects active sales / rebuild market. Not a pure recovery indicator (compare Sanibel's exclusion of listings).",
+          "note": "40 real estate offices — high count reflects active sales / rebuild market. Not a pure recovery indicator (high inventory or transaction volume can signal distress as easily as health).",
           "source": "fmb-baseline-report-march-2026.xlsx Category Analysis.",
           "sourceUrl": null,
           "interpretation": "context",
@@ -454,7 +454,7 @@
   ],
   "housingMarket": {
     "headline": "Pre-Ian vs current baselines pending — RPCRA data request in progress",
-    "framing": "Following Sanibel's methodology, the right analytical frame is pre-Ian (2022) vs current (2026), split by property type. Sanibel showed residential at 52% recovery while condos lagged at 41% — same disaster, two different stories driven by HOA dynamics, structural-reinforcement requirements, and association-level rebuild decisions. FMB's condo and timeshare share of inventory makes the split even more important here. The four placeholder cards below show the target Sanibel-style comparisons (Residential vs Condo × Active Listings vs Annual Sales), pending RPCRA data via the FMB Chamber. The two cards beneath are the direction indicators and Redfin context we have today.",
+    "framing": "The right analytical frame is pre-Ian (2022) vs current (2026), split by property type. Condo recovery typically lags single-family residential on barrier islands — HOA dynamics, structural-reinforcement requirements, and association-level rebuild decisions slow individual-unit return. FMB's heavy condo and timeshare inventory makes the split material. The four placeholder cards below show the target comparisons (Residential vs Condo × Active Listings vs Annual Sales), pending RPCRA data via the FMB Chamber. The two cards beneath are the direction indicators and Redfin context we have today.",
     "metrics": [
       {
         "label": "Residential — Active Listings (pre-Ian vs current)",
@@ -515,7 +515,7 @@
         "yoyChangePct": 69,
         "period": "February 2026 vs February 2025",
         "confirmingDataPoint": "December 2025 (37 closings) vs December 2024 (22) = +68% — same direction",
-        "note": "44 homes sold in February 2026 vs 26 in February 2025 — +69% YoY. December 2025 confirms (+68% over Dec 2024). This is a YoY direction indicator, not a recovery % — see the placeholder cards above for the Sanibel-style pre-Ian-vs-current comparison once RPCRA data arrives.",
+        "note": "44 homes sold in February 2026 vs 26 in February 2025 — +69% YoY. December 2025 confirms (+68% over Dec 2024). This is a YoY direction indicator, not a recovery % — see the placeholder cards above for the pre-Ian-vs-current comparison once RPCRA data arrives.",
         "sources": [
           {"period": "Feb 2026 / Feb 2025", "source": "Redfin Fort Myers Beach housing market data", "url": "https://www.redfin.com/city/6212/FL/Fort-Myers-Beach/housing-market"},
           {"period": "Dec 2025 / Dec 2024", "source": "MLS reporting via agentsgather.com", "url": "https://agentsgather.com/fort-myers-beach-rebuild-where-things-stand-in-september-2025/"}
@@ -531,7 +531,7 @@
         "preIanDaysOnMarket": null,
         "currentDaysOnMarket": 134,
         "daysOnMarketPriorYear": 91,
-        "note": "Current values from Redfin (Feb 2026): median price $580K (−30.7% YoY); 134 days on market (up from 91). The Feb-over-Feb change is direction, not recovery. Pre-Ian (2022) baselines for median price + DOM pending from RPCRA — when received, will show the proper recovery-frame comparison. Per Sanibel methodology, median price + DOM are context indicators (excluded from any recovery %).",
+        "note": "Current values from Redfin (Feb 2026): median price $580K (−30.7% YoY); 134 days on market (up from 91). The Feb-over-Feb change is direction, not recovery. Pre-Ian (2022) baselines for median price + DOM pending from RPCRA — when received, will show the proper recovery-frame comparison. Median price + DOM are context indicators on this dashboard (excluded from any recovery %).",
         "source": "Redfin Fort Myers Beach housing market data, February 2026 (current values only); pre-Ian baselines pending RPCRA.",
         "sourceUrl": "https://www.redfin.com/city/6212/FL/Fort-Myers-Beach/housing-market",
         "interpretation": "context",
@@ -541,7 +541,7 @@
   },
   "rebuildingActivity": {
     "headline": "Rebuild surge winding down; recovery funding tapering",
-    "framing": "Context only — not included in any composite recovery percentage. Per Sanibel methodology, permit and disaster-fund activity measures reconstruction surge, not return to normalcy. Both signal sets here are expected to decline as recovery progresses.",
+    "framing": "Context only — not included in any composite recovery percentage. Permit and disaster-fund activity measures reconstruction surge, not return to normalcy. Both signal sets here are expected to decline as recovery progresses.",
     "rebuildSignals": [
       {
         "label": "Building Fund Revenue (FY25 → FY26 Budget)",
@@ -626,6 +626,6 @@
       "Exclude inverse indicators (e.g., real estate listings — high inventory signals distress)",
       "Surface leading indicators (delinquent VR licenses, café closures) as watchlist, not headline"
     ],
-    "appliedFrom": "Sanibel Solutions recovery methodology (recovery-calculation-analysis.md)"
+    "appliedFrom": "FMB Recovery Dashboard methodology — see methodology.html"
   }
 }
