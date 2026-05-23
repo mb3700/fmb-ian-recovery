@@ -412,7 +412,15 @@ main {
   grid-template-columns: 140px 1fr 90px;
   align-items: center;
   gap: 16px;
-  margin-bottom: 12px;
+  margin-bottom: 4px;
+}
+.mix-bar-caption {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  margin: 0 0 18px 156px; /* 140px label column + 16px gap */
+  font-style: italic;
+  letter-spacing: 0.2px;
 }
 .mix-bar-label {
   font-weight: 500;
