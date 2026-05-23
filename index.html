@@ -397,18 +397,54 @@
     <div class="section-header">
       <h2>Housing Market Activity</h2>
       <p class="section-lead">
-        Home sales volume on Fort Myers Beach is rising strongly in 2025–2026 as rebuilt inventory
-        returns to market. The pre-Ian (2022) monthly closing baseline needed to compute a
-        Sanibel-style "Housing Recovery %" is being requested from RPCRA. Cards below show direction
-        and YoY change; recovery percentage will be computed when the baseline is verified.
+        Following Sanibel's methodology, the analytically correct comparison for housing recovery
+        is pre-Ian (2022) vs current (2026) — for both listings and sales. Those FMB-specific
+        baselines are being requested from RPCRA via the FMB Chamber. The placeholder cards below
+        show where the Sanibel-style comparison will appear once received; the cards beneath show
+        the YoY direction indicators and Redfin context we have today.
       </p>
     </div>
 
     <div class="metric-grid">
 
-      <!-- Home sales (most recent month) -->
+      <!-- Active Listings — pre-Ian vs current (placeholder) -->
       <div class="metric-card">
-        <div class="metric-label">Home Sales — most recent month (YoY)</div>
+        <div class="metric-label">Active Listings — pre-Ian vs current</div>
+        <div class="metric-value">—<span class="baseline"> / —</span></div>
+        <div class="metric-recovery pending">Baseline + current pending — RPCRA request</div>
+        <div class="metric-note">
+          Sanibel-style pre-Ian (2022) vs current (2026) active-listing comparison — the inventory
+          side of housing recovery. Both numbers pending from RPCRA / Lee County Property Appraiser
+          via FMB Chamber. Will populate when received.
+        </div>
+        <div class="metric-trend neutral">— Awaiting RPCRA data</div>
+        <div class="refresh-status">
+          <strong>Refresh in progress:</strong> Pre-Ian (2022) and current (2026) FMB-specific
+          active-listing counts requested from RPCRA / Lee County Property Appraiser via FMB Chamber.
+        </div>
+      </div>
+
+      <!-- Annual Sales Volume — pre-Ian vs current (placeholder) -->
+      <div class="metric-card">
+        <div class="metric-label">Annual Sales Volume — pre-Ian vs current</div>
+        <div class="metric-value">—<span class="baseline"> / —</span></div>
+        <div class="metric-recovery pending">Baseline + current pending — RPCRA request</div>
+        <div class="metric-note">
+          Sanibel-style pre-Ian (2022 full-year) closings vs trailing-12-month closings on Fort
+          Myers Beach. This is the housing-market analog of bed-tax recovery — actual transaction
+          volume rather than inventory. Both numbers pending from RPCRA via FMB Chamber.
+        </div>
+        <div class="metric-trend neutral">— Awaiting RPCRA data</div>
+        <div class="refresh-status">
+          <strong>Refresh in progress:</strong> 2022 monthly closings (pre-Ian baseline) and
+          trailing-12-month total requested from RPCRA / Lee County Property Appraiser via FMB
+          Chamber.
+        </div>
+      </div>
+
+      <!-- Home sales (most recent month, YoY direction) -->
+      <div class="metric-card">
+        <div class="metric-label">Home Sales — recent month (YoY direction)</div>
         <div class="metric-value">44<span class="baseline"> / 26</span></div>
         <div class="metric-recovery" style="color: var(--good);">+69% year-over-year (February 2026)</div>
         <div class="progress-bar"><div class="progress-fill" style="width: 100%; background: var(--good);"></div></div>
@@ -416,31 +452,29 @@
           44 homes sold in February 2026 versus 26 in February 2025 — a 69% YoY increase. The trend
           is sustained: December 2025 (37 closings) was also up 68% over December 2024 (22). Sales
           volume is rising as rebuilt homes and condos come online and inventory normalizes.
+          <strong>This is a YoY direction indicator, not a recovery %.</strong> See the placeholder
+          cards above for the Sanibel-style pre-Ian-vs-current comparison once RPCRA data arrives.
         </div>
         <div class="metric-trend up">↑ Strong YoY growth across multiple months — buyer activity returning</div>
         <div class="metric-source">
           Sources: <a href="https://www.redfin.com/city/6212/FL/Fort-Myers-Beach/housing-market" target="_blank">Redfin Fort Myers Beach housing market</a> (Feb 2026, accessed May 2026); MLS reporting via <a href="https://agentsgather.com/fort-myers-beach-rebuild-where-things-stand-in-september-2025/" target="_blank">agentsgather.com</a> (Dec 2024 vs Dec 2025).
         </div>
-        <div class="refresh-status">
-          <strong>Refresh in progress:</strong> Pre-Ian (2022) monthly closing baselines requested
-          from RPCRA / Lee County Property Appraiser via FMB Chamber. Will compute Sanibel-style
-          Housing Recovery % when received.
-        </div>
       </div>
 
-      <!-- Median price + DOM context -->
+      <!-- Median price + DOM (pre-Ian vs current, current known, pre-Ian pending) -->
       <div class="metric-card">
-        <div class="metric-label">Median Price + Days on Market (context)</div>
+        <div class="metric-label">Median Price + Days on Market — pre-Ian vs current</div>
         <div class="metric-value">$580K<span class="baseline"> · 134 DOM</span></div>
-        <div class="metric-recovery" style="color: var(--text-secondary);">Price −30.7% YoY · DOM up from 91</div>
+        <div class="metric-recovery pending">Pre-Ian baseline pending; current from Redfin</div>
         <div class="metric-note">
-          Median price $580K reflects a mix shift toward smaller rebuilt properties, not a market
-          collapse. 134 days on market (up from 91) indicates a buyer's market. Following Sanibel's
-          methodology, neither median price nor inventory months is included in any recovery percentage.
+          Current values from Redfin (Feb 2026): median price $580K (−30.7% YoY); 134 days on
+          market (up from 91). Pre-Ian (2022) baselines for median price + DOM pending from RPCRA
+          — when received, will show the proper pre-Ian-vs-current comparison. Per Sanibel
+          methodology, median price + DOM are context indicators (excluded from any recovery %).
         </div>
         <div class="metric-trend neutral">— Context only; price decline is mix-driven, not health-driven</div>
         <div class="metric-source">
-          Source: <a href="https://www.redfin.com/city/6212/FL/Fort-Myers-Beach/housing-market" target="_blank">Redfin</a>, February 2026.
+          Current: <a href="https://www.redfin.com/city/6212/FL/Fort-Myers-Beach/housing-market" target="_blank">Redfin</a>, February 2026. Pre-Ian baseline: pending RPCRA.
         </div>
       </div>
 

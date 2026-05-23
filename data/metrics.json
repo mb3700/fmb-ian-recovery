@@ -18,11 +18,11 @@
       "note": "Publicly-published Lee County reports contain aggregate county totals only; Tourist Development Tax data is exempt from public records under Florida statute. FMB-specific figures require direct request through the appropriate channel."
     },
     {
-      "metric": "Residential home sales — pre-Ian (2022) monthly baselines",
+      "metric": "Residential housing — pre-Ian (2022) vs current FMB-specific baselines: active listings + annual closings + median price + DOM",
       "channel": "RPCRA (Royal Palm Coast Realtor Association) / Lee County Property Appraiser via FMB Chamber",
       "requestedAt": "2026-05-23",
       "status": "pending",
-      "note": "FMB-specific 2022 (pre-Ian) monthly closing counts are needed to compute a Sanibel-style housing recovery %. Current dashboard shows YoY direction only (Feb 2026 +69%, Dec 2025 +68%) until pre-Ian baseline is verified."
+      "note": "Following Sanibel's analytical framework, the dashboard needs pre-Ian vs current FMB-specific comparisons for (1) active listings, (2) annual sales volume, and (3) median price + days on market. Current dashboard shows YoY direction only (Feb 2026 +69%, Dec 2025 +68%) plus Feb 2026 median + DOM from Redfin. RPCRA / Lee County Property Appraiser holds the FMB-specific MLS cut needed to populate the pre-Ian vs current comparisons."
     }
   ],
   "headline": {
@@ -453,32 +453,56 @@
     }
   ],
   "housingMarket": {
-    "headline": "Home sales recovering — pre-Ian baseline pending",
-    "framing": "Activity / direction indicator. Sanibel-style recovery % requires pre-Ian (2022) monthly closings baseline, currently being requested from RPCRA / Lee County Property Appraiser.",
+    "headline": "Pre-Ian vs current baselines pending — RPCRA data request in progress",
+    "framing": "Following Sanibel's methodology, the right analytical frame for housing recovery is pre-Ian (2022) vs current (2026) for both listings and sales. Those FMB-specific baselines are being requested from RPCRA / Lee County Property Appraiser via the FMB Chamber. Until they arrive, this section shows placeholder cards for the target comparisons plus the YoY direction indicators and Redfin context that we do have today.",
     "metrics": [
       {
-        "label": "Home Sales — most recent month (YoY)",
+        "label": "Active Listings — pre-Ian vs current",
+        "preIan": null,
+        "current": null,
+        "recoveryPercent": null,
+        "note": "Sanibel-style pre-Ian (2022) vs current (2026) active-listing comparison — the inventory side of housing recovery. Both numbers pending from RPCRA / Lee County Property Appraiser.",
+        "source": "Pending — RPCRA via FMB Chamber",
+        "interpretation": "trueRecovery",
+        "trend": "neutral",
+        "refreshStatus": "Pre-Ian (2022) and current (2026) FMB-specific active-listing counts requested from RPCRA / Lee County Property Appraiser via FMB Chamber."
+      },
+      {
+        "label": "Annual Sales Volume — pre-Ian vs current",
+        "preIan": null,
+        "current": null,
+        "recoveryPercent": null,
+        "note": "Sanibel-style pre-Ian (2022 full-year) closings vs trailing-12-month closings on FMB. The transaction-volume analog of bed-tax recovery — actual market activity rather than inventory.",
+        "source": "Pending — RPCRA via FMB Chamber",
+        "interpretation": "trueRecovery",
+        "trend": "neutral",
+        "refreshStatus": "2022 monthly closings (pre-Ian baseline) and trailing-12-month total requested from RPCRA / Lee County Property Appraiser via FMB Chamber."
+      },
+      {
+        "label": "Home Sales — recent month (YoY direction)",
         "current": 44,
         "priorYear": 26,
         "yoyChangePct": 69,
         "period": "February 2026 vs February 2025",
         "confirmingDataPoint": "December 2025 (37 closings) vs December 2024 (22) = +68% — same direction",
-        "note": "44 homes sold in February 2026 vs 26 in February 2025 — +69% YoY. December 2025 confirms (+68% over Dec 2024). Sales volume is rising as rebuilt homes and condos come online.",
+        "note": "44 homes sold in February 2026 vs 26 in February 2025 — +69% YoY. December 2025 confirms (+68% over Dec 2024). This is a YoY direction indicator, not a recovery % — see the placeholder cards above for the Sanibel-style pre-Ian-vs-current comparison once RPCRA data arrives.",
         "sources": [
           {"period": "Feb 2026 / Feb 2025", "source": "Redfin Fort Myers Beach housing market data", "url": "https://www.redfin.com/city/6212/FL/Fort-Myers-Beach/housing-market"},
           {"period": "Dec 2025 / Dec 2024", "source": "MLS reporting via agentsgather.com", "url": "https://agentsgather.com/fort-myers-beach-rebuild-where-things-stand-in-september-2025/"}
         ],
-        "interpretation": "trueRecoveryDirection",
+        "interpretation": "directionIndicator",
         "trend": "up"
       },
       {
-        "label": "Median Price + Days on Market (context)",
-        "medianPrice": 580000,
-        "medianPriceChangePct": -30.7,
-        "daysOnMarket": 134,
-        "daysOnMarketPrior": 91,
-        "note": "Median price $580K (−30.7% YoY) reflects a mix shift toward smaller rebuilt properties, not a market collapse. Days-on-market 134 (up from 91) indicates a buyer's market.",
-        "source": "Redfin Fort Myers Beach housing market data, February 2026.",
+        "label": "Median Price + Days on Market — pre-Ian vs current",
+        "preIanMedianPrice": null,
+        "currentMedianPrice": 580000,
+        "medianPriceChangeYoYPct": -30.7,
+        "preIanDaysOnMarket": null,
+        "currentDaysOnMarket": 134,
+        "daysOnMarketPriorYear": 91,
+        "note": "Current values from Redfin (Feb 2026): median price $580K (−30.7% YoY); 134 days on market (up from 91). The Feb-over-Feb change is direction, not recovery. Pre-Ian (2022) baselines for median price + DOM pending from RPCRA — when received, will show the proper recovery-frame comparison. Per Sanibel methodology, median price + DOM are context indicators (excluded from any recovery %).",
+        "source": "Redfin Fort Myers Beach housing market data, February 2026 (current values only); pre-Ian baselines pending RPCRA.",
         "sourceUrl": "https://www.redfin.com/city/6212/FL/Fort-Myers-Beach/housing-market",
         "interpretation": "context",
         "trend": "neutral"
@@ -559,7 +583,7 @@
     "Restaurant count (pre-Ian) — refine ~70 estimate with Town of FMB or FMB Chamber data",
     "Retail store count (pre-Ian)",
     "Marina count (pre-Ian)",
-    "Residential home sales (pre-Ian, monthly 2022) — RPCRA / Lee County Property Appraiser",
+    "Residential housing — pre-Ian vs current FMB-specific: active listings, 2022 annual closings + TTM closings, median price, days on market — RPCRA / Lee County Property Appraiser",
     "FMB-specific FY26 Q1 bed tax (Oct-Dec 2025) — Lee County Clerk of Court via FMB Chamber",
     "Restaurants & Dining detail sheet baselines (per-restaurant pre-Ian status)"
   ],
