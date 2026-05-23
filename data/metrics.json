@@ -50,9 +50,12 @@
   },
   "capacityVsRevenue": {
     "capacityPct": 66,
+    "capacityAsOf": "Chamber March 2026",
     "revenuePct": 48,
+    "revenueAsOf": "FY25 YTD through Aug 2025",
     "gapPts": 18,
-    "interpretation": "Capacity has rebuilt faster than per-unit revenue. Each rebuilt room is generating less revenue than its pre-Ian counterpart — lower occupancy, lower rates, or both."
+    "gapPending": "FY26 Q1 bed tax requested from Lee County Clerk of Court via FMB Chamber; the specific point-gap will be revised when received and as the tourist season completes",
+    "interpretation": "Capacity has rebuilt faster than per-unit revenue. Each rebuilt room is generating less revenue than its pre-Ian counterpart — lower occupancy, lower rates, or both. The directional finding (capacity ahead of revenue) is durable; the specific 18-point figure is a snapshot bounded by the dates of the two underlying numbers and will move as bed tax data refreshes."
   },
   "permanentLosses": {
     "hotelRoomsLost": 590,
