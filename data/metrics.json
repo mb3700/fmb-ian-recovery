@@ -396,24 +396,17 @@
     "framing": "Activity / direction indicator. Sanibel-style recovery % requires pre-Ian (2022) monthly closings baseline, currently being requested from RPCRA / Lee County Property Appraiser.",
     "metrics": [
       {
-        "label": "Home Sales — February 2026 vs February 2025",
+        "label": "Home Sales — most recent month (YoY)",
         "current": 44,
         "priorYear": 26,
         "yoyChangePct": 69,
-        "note": "44 homes sold in February 2026 vs 26 in February 2025 — +69% YoY. Sales volume is rising as rebuilt homes and condos come online.",
-        "source": "Redfin Fort Myers Beach housing market data, accessed May 2026.",
-        "sourceUrl": "https://www.redfin.com/city/6212/FL/Fort-Myers-Beach/housing-market",
-        "interpretation": "trueRecoveryDirection",
-        "trend": "up"
-      },
-      {
-        "label": "Home Sales — December 2025 vs December 2024",
-        "current": 37,
-        "priorYear": 22,
-        "yoyChangePct": 68,
-        "note": "37 closings in December 2025 vs 22 in December 2024 — +68% YoY. Confirms the upward trend; reflects rebuilt inventory returning to market.",
-        "source": "MLS reporting via agentsgather.com (Maria Lewis, FMB Rebuild Sept 2025).",
-        "sourceUrl": "https://agentsgather.com/fort-myers-beach-rebuild-where-things-stand-in-september-2025/",
+        "period": "February 2026 vs February 2025",
+        "confirmingDataPoint": "December 2025 (37 closings) vs December 2024 (22) = +68% — same direction",
+        "note": "44 homes sold in February 2026 vs 26 in February 2025 — +69% YoY. December 2025 confirms (+68% over Dec 2024). Sales volume is rising as rebuilt homes and condos come online.",
+        "sources": [
+          {"period": "Feb 2026 / Feb 2025", "source": "Redfin Fort Myers Beach housing market data", "url": "https://www.redfin.com/city/6212/FL/Fort-Myers-Beach/housing-market"},
+          {"period": "Dec 2025 / Dec 2024", "source": "MLS reporting via agentsgather.com", "url": "https://agentsgather.com/fort-myers-beach-rebuild-where-things-stand-in-september-2025/"}
+        ],
         "interpretation": "trueRecoveryDirection",
         "trend": "up"
       },
