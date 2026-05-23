@@ -664,15 +664,15 @@ main {
 }
 .card-flip-btn {
   position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 28px;
-  height: 28px;
+  top: 10px;
+  right: 10px;
+  width: 22px;
+  height: 22px;
   border: none;
   background: var(--ocean-navy);
   cursor: pointer;
   opacity: 1;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 1;
   color: white;
   font-weight: 700;
@@ -681,7 +681,7 @@ main {
   letter-spacing: 0;
   transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
   border-radius: 50%;
-  box-shadow: 0 1px 4px hsl(215 32% 17% / 0.18);
+  box-shadow: 0 1px 3px hsl(215 32% 17% / 0.18);
   z-index: 2;
   display: flex;
   align-items: center;
@@ -707,7 +707,7 @@ main {
   font-family: var(--font-body);
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
 }
 /* Source/refresh-status on the back lose their top margins (background is white card anyway) */
 .metric-card-back .metric-note,
