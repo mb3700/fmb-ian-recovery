@@ -307,8 +307,8 @@
     },
     {
       "id": "lodging-mix",
-      "title": "Lodging Mix Shift",
-      "lead": "FMB's recovery is structurally tilted toward vacation rentals. Hotels were heavily destroyed; vacation rentals rebuilt faster. The result is a town economically more dependent on short-term rentals than ever before.",
+      "title": "Lodging Mix",
+      "lead": "Hotel rooms and vacation rental rooms in FMB's current lodging inventory. Same Chamber March 2026 room counts used in the Tourism section above, shown side-by-side so the proportion is visible at a glance.",
       "metrics": [
         {
           "label": "Hotel Rooms vs VR Licenses (Current)",
