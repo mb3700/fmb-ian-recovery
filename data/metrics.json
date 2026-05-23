@@ -82,6 +82,40 @@
     ],
     "source": "Fort Myers Beach Chamber of Commerce, Accommodations file (March 18, 2026), with one sourced override: Sandpiper Gulf Resort (63 rooms) removed from destroyed list — verified reopened 2025 (see dataVerificationOverrides). Chamber's published destroyed-hotel subtotal: 19 properties / 590 rooms. Our value after override: 18 properties / 527 rooms."
   },
+  "changelog": [
+    {
+      "date": "2026-05-23",
+      "summary": "Consistency audit + Sandpiper override cascade + May 2026 Update rebrand",
+      "commit": "24fc7de",
+      "changes": [
+        "Sandpiper Gulf Resort: removed from destroyed list (verified reopened 2025; sources: Visit FMB, Yelp Feb 2026, Expedia/Hotels.com/Kayak)",
+        "Cascading effect: hotel rooms 1,306 → 1,369; capacity 66% → 67%; permanent losses 17/590 → 18/527; gap 18 → 19 pts",
+        "Mix Shift card rewritten to use Chamber room counts consistently",
+        "Hotel-rooms note: deleted unsupported '~97%' claim and replaced with correct math",
+        "VR rooms note: added 3-bucket reconciliation (operating + permanently lost + rebuilding)",
+        "Rebrand 'Q1 2026 Baseline' → 'May 2026 Update' across the dashboard"
+      ]
+    },
+    {
+      "date": "2026-05-23",
+      "summary": "Pipeline override corrections — Chamber as baseline with sourced overrides",
+      "commit": "835c236",
+      "changes": [
+        "Restored Chamber values for Compass Rose, Wyndham, London Bay (room counts)",
+        "Removed standalone 'Housing pipeline' reclassification (Beach Baptist + Paradise Point returned to VR pipeline at Chamber counts)",
+        "Added per-override audit-trail table to recovery-summary.md"
+      ]
+    },
+    {
+      "date": "2026-05-23",
+      "summary": "Pipeline status verification against current public reporting",
+      "commit": "919167f",
+      "changes": [
+        "Verified all 14 pipeline projects against Town Council and LPA records plus post-March 2026 reporting",
+        "Sourced updates: Arches 263, Lighthouse +55 (75→130), Times Square 6 (scaled from 50), Silver Sands 60 (TPI plan), Myerside 45 with June 2024 approval date, EIBC 75 timeshare units (Ordinance 25-13), Sea Gate lawsuit dismissed, London Bay LPA recommended denial"
+      ]
+    }
+  ],
   "dataVerificationOverrides": {
     "framing": "Where this dashboard differs from Chamber March 2026 baseline, the override is documented here with the authorizing source. Same standard as the pipeline override table in recovery-summary.md.",
     "destroyedHotels": [

@@ -1,5 +1,8 @@
 # Fort Myers Beach Recovery: May 2026 Update
 
+> The live dashboard at [fmb-ian-recovery.vercel.app](https://fmb-ian-recovery.vercel.app) now surfaces this audit trail as a first-class "Data Decisions" section in the sticky nav. This markdown file remains the durable source-of-truth record; the live section is rendered from the same data.
+
+
 ### How We Track Hurricane Ian Recovery on Fort Myers Beach
 
 ---
