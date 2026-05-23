@@ -11,7 +11,7 @@ Tracks the measurable signals of Fort Myers Beach's recovery from Hurricane Ian,
 
 - **Lodging capacity: 66% recovered** (4,159 of 6,263 pre-Ian rooms — FMB Chamber, March 2026)
 - **Bed tax revenue: 48% recovered** (FY25 YTD vs FY22 YTD — Lee County Clerk of Court)
-- **1,303 rooms in development** across 14 named projects
+- **877 lodging units in development** across 9 confirmed projects (665 hotel + 212 VR); 2 projects pending plans; 15 residential units tracked in a separate housing pipeline (verified May 23, 2026)
 - **816 rooms permanently lost** (17 destroyed hotels + 226 VR rooms)
 - **Watchlist:** 160 delinquent VR licenses, 3 of 7 cafés temporarily closed
 

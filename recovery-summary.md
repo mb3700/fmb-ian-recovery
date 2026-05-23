@@ -28,7 +28,7 @@ The 18-point gap means capacity has rebuilt faster than per-room revenue — eac
 
 **Three-year bed-tax trajectory (YTD through August):** 15% (FY23) → 37% (FY24) → 48% (FY25). Rising steadily.
 
-**Pipeline:** 1,303 lodging rooms in development across 14 named projects (942 hotel + 361 VR). Recovery is still in progress.
+**Pipeline:** 877 lodging units confirmed in development across 9 named projects (665 hotel + 212 VR). 2 additional projects pending plans (Wyndham, Compass Rose). 15 residential units in a separate housing pipeline (Beach Baptist 12 SF homes + Paradise Point 3 cottages). Recovery is still in progress. Pipeline verified May 23, 2026.
 
 **FMB's distinctive recovery pattern:** vacation rentals (2,853 rooms) make up the majority of rebuilt capacity. The post-Ian lodging mix is more VR-tilted than the pre-Ian mix — a structural shift, not a temporary lag. This is why FMB is outpacing Sanibel on bed-tax recovery despite Sanibel having a stronger overall economic-recovery profile.
 
@@ -50,25 +50,28 @@ Lodging capacity 66% recovered, bed-tax revenue 48% recovered. The gap matters.
 
 ## Pipeline — what's coming
 
-1,303 lodging rooms in 14 named projects, per FMB Chamber March 2026:
+877 lodging units confirmed in 9 named projects, plus 2 projects pending plans. Status verified May 23, 2026 against Town Council and LPA records and current local reporting.
 
-**Hotels (9 projects · 942 rooms):**
-- Arches Bayfront (256 · approved)
-- Wyndham (150 · food truck park then resort)
-- London Bay / Outrigger site (150 rooms + 50 condos + 46 residences · planning in process)
-- Compass Rose (140 · permanent holding pattern)
-- Lighthouse addl (70 · approved)
-- Times Square (50 · going to LPA)
-- Margaritaville expansion / silver sands (46)
-- Myerside (40 · approved Feb 2025)
-- Pink Shell Bayside (40 · approved Feb 2025)
+**Hotels (9 projects · 665 rooms confirmed + pending):**
+- Arches Bayfront — 263 rooms · Council approved June 2025 (4-1, Allers opposed); pre-construction
+- London Bay (former Outrigger site) — 196 units (100 hotel + 50 condo-hotel + 46 residences) · LPA recommended denial May 2026; Town Council hearing June 2026
+- Silver Sands / TPI Hospitality — 60 rooms · 5-story hotel adjacent to Margaritaville; plans to go before Town June 2026; opening 2028–29
+- Lighthouse Island Resort expansion — +55 rooms · Council approved June 2025 with 11 zoning deviations (75 → 130)
+- Myerside Resort — 45 rooms · Council approved June 2024 (4-1, Allers opposed); construction late 2026
+- Pink Shell Bayside — 40 rooms · Council approved Feb 2025 (4-0 unanimous)
+- Times Square (Persaud) — 6 boutique rooms · scaled down from 50 after LPA pushback; no variances needed; heading to Council
+- Wyndham — TBD · pending plans · old 103-room hotel demolished; no rebuild plan filed; concept stage
+- Compass Rose — status unverified · listed by Chamber but no public reporting confirms an active hotel project at this name
 
-**Vacation Rentals (5 projects · 361 rooms):**
-- Estero Island Beach Club (170 timeshare · approved)
-- Sea Gate / Red Coconut (137 · two condo buildings + 4 homes · approved)
-- Beach Baptist sell-land (30)
-- Cottages of Paradise Point (14 · first cottage underway)
-- Beach Baptist new homes (10)
+**Vacation Rentals (2 projects · 212 units):**
+- Sea Gate / Red Coconut (Oceanside) — 137 units · Council approved Dec 2024 (3-2); residents' lawsuit dismissed by Judge McHugh May 2026; cleared to proceed
+- Estero Island Beach Club — 75 timeshare units · LPA + Council unanimously approved May 2025; 5-story (reduced from 10); target summer 2027
+
+**Housing pipeline (2 projects · 15 residential units — tracked separately):**
+- Beach Baptist Church property — 12 single-family homes · Council approved Oct/Nov 2025; church sold 2 acres to S.J. Collins for $4M
+- Cottages of Paradise Point — 3 Gulf-front cottages · broke ground Jan 14, 2026; starting at $2.6M; engineered for 160 mph winds
+
+**Chamber Accommodations file reconciliation:** The March 2026 Chamber file lists 1,303 rooms across 14 projects. Verification reduced that to 877 confirmed lodging units because (a) several Chamber room counts were stale or pre-revision (e.g., Times Square 50→6, EIBC 170→75, Lighthouse 70→55), (b) Wyndham and Compass Rose lack filed plans or public confirmation, and (c) three "VR" projects (Beach Baptist x2, Paradise Point) are residential housing-for-sale, not lodging, and were moved to a separate housing pipeline.
 
 ---
 
