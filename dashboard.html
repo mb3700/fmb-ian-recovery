@@ -75,11 +75,13 @@
   <div class="section-nav-inner">
     <a href="#tourism">Tourism & Lodging</a>
     <a href="#capacity-vs-revenue">Capacity vs Revenue</a>
-    <a href="#lodging-mix">Lodging Mix Shift</a>
-    <a href="#sister-cities">Sister-City Comparison</a>
+    <a href="#lodging-mix">Lodging Mix</a>
+    <a href="#sister-cities">Sister-City</a>
+    <a href="#housing-market">Housing Market</a>
     <a href="#economic">Economic Activity</a>
-    <a href="#pipeline">In Development</a>
     <a href="#watchlist">Watchlist</a>
+    <a href="#pipeline">In Development</a>
+    <a href="#rebuilding-activity">Rebuilding Activity</a>
     <a href="#about-data">About the Data</a>
   </div>
 </nav>
@@ -377,6 +379,76 @@
     </div>
   </section>
 
+  <!-- ============ HOUSING MARKET ACTIVITY ============ -->
+  <section class="recovery-section" id="housing-market">
+    <div class="section-header">
+      <h2>Housing Market Activity</h2>
+      <p class="section-lead">
+        Home sales volume on Fort Myers Beach is rising strongly in 2025–2026 as rebuilt inventory
+        returns to market. The pre-Ian (2022) monthly closing baseline needed to compute a
+        Sanibel-style "Housing Recovery %" is being requested from RPCRA. Cards below show direction
+        and YoY change; recovery percentage will be computed when the baseline is verified.
+      </p>
+    </div>
+
+    <div class="metric-grid">
+
+      <!-- Feb 2026 YoY -->
+      <div class="metric-card">
+        <div class="metric-label">Home Sales — February 2026 vs Feb 2025</div>
+        <div class="metric-value">44<span class="baseline"> / 26</span></div>
+        <div class="metric-recovery" style="color: var(--good);">+69% year-over-year</div>
+        <div class="progress-bar"><div class="progress-fill" style="width: 100%; background: var(--good);"></div></div>
+        <div class="metric-note">
+          44 homes sold in February 2026 versus 26 in February 2025. Sales volume is rising as
+          rebuilt homes and condos come online and inventory normalizes.
+        </div>
+        <div class="metric-trend up">↑ Strong YoY growth — buyer activity returning</div>
+        <div class="metric-source">
+          Source: <a href="https://www.redfin.com/city/6212/FL/Fort-Myers-Beach/housing-market" target="_blank">Redfin Fort Myers Beach housing market</a>, accessed May 2026.
+        </div>
+        <div class="refresh-status">
+          <strong>Refresh in progress:</strong> Pre-Ian (2022) monthly closing baselines requested
+          from RPCRA / Lee County Property Appraiser via FMB Chamber. Will compute Sanibel-style
+          Housing Recovery % when received.
+        </div>
+      </div>
+
+      <!-- Dec 2025 YoY -->
+      <div class="metric-card">
+        <div class="metric-label">Home Sales — December 2025 vs Dec 2024</div>
+        <div class="metric-value">37<span class="baseline"> / 22</span></div>
+        <div class="metric-recovery" style="color: var(--good);">+68% year-over-year</div>
+        <div class="progress-bar"><div class="progress-fill" style="width: 100%; background: var(--good);"></div></div>
+        <div class="metric-note">
+          37 closings in December 2025 versus 22 in December 2024. Confirms the upward trend;
+          reflects rebuilt inventory returning to market a year after the worst of the post-Ian gap.
+        </div>
+        <div class="metric-trend up">↑ Sustained recovery direction across two reporting windows</div>
+        <div class="metric-source">
+          Source: MLS reporting via <a href="https://agentsgather.com/fort-myers-beach-rebuild-where-things-stand-in-september-2025/" target="_blank">agentsgather.com (Maria Lewis, FMB Rebuild Sept 2025)</a>.
+        </div>
+      </div>
+
+      <!-- Median price + DOM context -->
+      <div class="metric-card">
+        <div class="metric-label">Median Price + Days on Market (context)</div>
+        <div class="metric-value">$580K<span class="baseline"> · 134 DOM</span></div>
+        <div class="metric-recovery" style="color: var(--text-secondary);">Price −30.7% YoY · DOM up from 91</div>
+        <div class="metric-note">
+          Median price $580K reflects a mix shift toward smaller rebuilt properties, not a market
+          collapse. 134 days on market (up from 91) indicates a buyer's market. Following Sanibel's
+          methodology, neither median price nor inventory months is included in any recovery percentage.
+        </div>
+        <div class="metric-trend neutral">— Context only; price decline is mix-driven, not health-driven</div>
+        <div class="metric-source">
+          Source: <a href="https://www.redfin.com/city/6212/FL/Fort-Myers-Beach/housing-market" target="_blank">Redfin</a>, February 2026.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- ============ ECONOMIC ACTIVITY ============ -->
   <section class="recovery-section" id="economic">
     <div class="section-header">
@@ -601,6 +673,127 @@
     </div>
   </section>
 
+  <!-- ============ REBUILDING ACTIVITY + FISCAL CONTEXT ============ -->
+  <section class="recovery-section" id="rebuilding-activity">
+    <div class="section-header">
+      <h2>Rebuilding Activity &amp; Fiscal Context</h2>
+      <p class="section-lead">
+        Two related context signals shown here as the post-Ian wind-down picture. Permit and
+        code-enforcement activity are declining — the expected pattern as the rebuilding surge
+        winds down. Sales tax and disaster reimbursements are also declining — the parallel
+        fiscal-pressure side: the recovery funding that supported the rebuild is tapering.
+        Neither set is included in any recovery percentage. Following Sanibel's methodology:
+        rebuilding activity ≠ return to normalcy.
+      </p>
+    </div>
+
+    <h3 style="font-family: var(--font-body); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-secondary); margin: 16px 0 12px 19px; font-weight: 600;">
+      Rebuilding wind-down
+    </h3>
+    <div class="metric-grid">
+
+      <div class="metric-card">
+        <div class="metric-label">Building Fund Revenue (FY25 → FY26 Budget)</div>
+        <div class="metric-value">$2.46M<span class="baseline"> / $3.5M</span></div>
+        <div class="metric-recovery" style="color: var(--text-secondary);">−29.6% (expected decline)</div>
+        <div class="metric-note">
+          Permit-fund revenue projected down 29.6% in FY26 — the cleanest single signal that the
+          post-Ian rebuilding surge is past peak. Declining permit revenue is what return-to-normal
+          looks like for a coastal town three-plus years past landfall.
+        </div>
+        <div class="metric-trend down" style="color: var(--text-secondary);">↓ Expected — rebuild wave winding down</div>
+        <div class="metric-source">
+          Source: Town of Fort Myers Beach FY26 Adopted Budget, All Fund Revenues.
+        </div>
+      </div>
+
+      <div class="metric-card">
+        <div class="metric-label">Summer Permit Volume (Jun–Aug YoY)</div>
+        <div class="metric-value">289<span class="baseline"> / 405</span></div>
+        <div class="metric-recovery" style="color: var(--text-secondary);">−29% YoY (Jun–Aug)</div>
+        <div class="metric-note">
+          Monthly summer permit counts dropped from 109/151/145 (Jun-Aug 2024) to 89/99/101
+          (Jun-Aug 2025). The 29% YoY decline in physical permit volume mirrors the Building Fund
+          revenue drop from an entirely different source — two independent signals pointing the
+          same direction.
+        </div>
+        <div class="metric-trend down" style="color: var(--text-secondary);">↓ Mirrors Building Fund decline</div>
+        <div class="metric-source">
+          Source: FMB Chamber of Commerce, Permits sheet (Accommodations file, March 2026).
+        </div>
+      </div>
+
+      <div class="metric-card">
+        <div class="metric-label">Code Enforcement Fees (FY25 → FY26 Budget)</div>
+        <div class="metric-value">$100K<span class="baseline"> / $200K</span></div>
+        <div class="metric-recovery" style="color: var(--text-secondary);">−50%</div>
+        <div class="metric-note">
+          Code enforcement fee revenue projected down 50% — fewer post-Ian compliance issues as
+          properties return to standard operating condition. A third independent indicator that
+          the post-storm churn is winding down.
+        </div>
+        <div class="metric-trend down" style="color: var(--text-secondary);">↓ Fewer post-storm compliance issues</div>
+        <div class="metric-source">
+          Source: Town of Fort Myers Beach FY26 Adopted Budget, Revenues Line Item Detail.
+        </div>
+      </div>
+
+    </div>
+
+    <h3 style="font-family: var(--font-body); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-secondary); margin: 32px 0 12px 19px; font-weight: 600;">
+      Fiscal pressure context — recovery funding tapering
+    </h3>
+    <div class="metric-grid">
+
+      <div class="metric-card">
+        <div class="metric-label">Half-Cent Sales Tax (FY25 → FY26 Budget)</div>
+        <div class="metric-value">$380K<span class="baseline"> / $600K</span></div>
+        <div class="metric-recovery" style="color: var(--bad);">−37%</div>
+        <div class="metric-note">
+          Half-cent sales tax projected down 37% — population displacement and slower commercial
+          activity flowing through to the general fund. This is the fiscal-pressure side of the
+          recovery story: even as bed tax climbs back, broader town revenues are still squeezed.
+        </div>
+        <div class="metric-trend down">↓ Population + commercial activity still recovering</div>
+        <div class="metric-source">
+          Source: Town of Fort Myers Beach FY26 Adopted Budget.
+        </div>
+      </div>
+
+      <div class="metric-card">
+        <div class="metric-label">Emergency Fund — Disaster Reimbursements</div>
+        <div class="metric-value">$589K<span class="baseline"> / $3.52M</span></div>
+        <div class="metric-recovery" style="color: var(--bad);">−83%</div>
+        <div class="metric-note">
+          Federal disaster reimbursements projected down 83% in FY26 — the recovery funding tap is
+          closing as Ian's eligible reimbursement window expires. Town will fund ongoing recovery
+          from operating revenue rather than disaster grants going forward.
+        </div>
+        <div class="metric-trend down">↓ Federal recovery funding winding down</div>
+        <div class="metric-source">
+          Source: Town of Fort Myers Beach FY26 Adopted Budget, All Fund Revenues.
+        </div>
+      </div>
+
+      <div class="metric-card">
+        <div class="metric-label">FDEM Hurricane Recovery Funds</div>
+        <div class="metric-value">$4.70M<span class="baseline"> / $4.69M</span></div>
+        <div class="metric-recovery" style="color: var(--neutral);">~ flat (+0.2%)</div>
+        <div class="metric-note">
+          State recovery funds essentially flat at $4.7M — still flowing, but no longer growing.
+          The next budget cycle will likely see this number drop substantially as project-specific
+          allocations close out. Worth watching as a leading indicator of state-level support
+          ending.
+        </div>
+        <div class="metric-trend neutral">— Plateau ahead of likely decline next cycle</div>
+        <div class="metric-source">
+          Source: Town of Fort Myers Beach FY26 Adopted Budget, All Fund Revenues.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- ============ ABOUT THE DATA ============ -->
   <section class="recovery-section" id="about-data">
     <div class="section-header">
@@ -680,7 +873,7 @@
       <p>
         Quarterly. Each update refreshes current values from the Q-end business database and revises any pre-Ian baselines
         as Lee County and Town of FMB data becomes available. Methodology revisions are logged in
-        <a href="recovery-summary.md" style="color: var(--seafoam-dark);">recovery-summary.md</a>.
+        <a href="methodology.html" style="color: var(--seafoam-dark);">the methodology page</a>.
       </p>
     </div>
   </section>
@@ -705,7 +898,7 @@
     <div>
       <h3>Reference</h3>
       <p>
-        <a href="recovery-summary.md">Methodology &amp; data sources</a><br>
+        <a href="methodology.html">Methodology &amp; data sources</a><br>
         <a href="#about-data">Baselines still needed</a><br>
         Q1 2026 baseline · March 20, 2026
       </p>

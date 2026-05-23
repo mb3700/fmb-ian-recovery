@@ -114,14 +114,18 @@ Adapted from the [Sanibel Solutions recovery framework](https://sanibel-solution
 
 ---
 
-## What's Excluded (and Why)
+## What's Excluded from Composite Recovery Percentages (still shown where useful)
 
-| Excluded | Reason |
+Following Sanibel's methodology, several categories appear on the dashboard as **context** but are deliberately not included in any composite recovery percentage. These signals are useful for understanding trajectory; they don't measure return to normalcy directly.
+
+| Excluded from recovery % | Reason |
 |----------|--------|
-| Real estate sales / listings | Active market volume can indicate distress as easily as health (Sanibel's exclusion). |
-| Building permits (issued / closed) | Measures reconstruction activity, not return to normalcy. |
-| Population (as a recovery metric) | Flat year-over-year ACS numbers can hide significant displacement and re-arrival; shown as context only. |
+| Real estate **listings** (not sales) | High inventory signals distress, not recovery (inverse indicator). Sales counts are different — those will be included in housing recovery once pre-Ian baseline is verified. |
+| All permit activity (issued / closed / fund revenue) | Shown as "Rebuilding Activity" context. Measures reconstruction surge, not return to normalcy (Sanibel's pattern: rebuilding activity ≠ recovery). |
 | Open permits / backlog | Inverse indicator — high backlog is bad, not good. |
+| Half-Cent Sales Tax / Emergency Fund / FDEM disaster reimbursements | Shown as fiscal-pressure context. Declining recovery-funding flows are expected as the post-Ian eligibility window closes; not a recovery metric. |
+| Population (as a recovery metric) | Flat YoY ACS numbers can hide displacement and re-arrival; shown as context only. |
+| Median home price (as a recovery metric) | Mix-driven post-storm — smaller rebuilt properties dragging the median down isn't market collapse. Shown as context. |
 
 ---
 
@@ -168,7 +172,11 @@ Once the remaining baselines arrive, additional sector averages can be computed 
 
 This dashboard is updated quarterly. Each update refreshes current values from the Q-end FMB business database and revises any pre-Ian baselines as new Lee County and Town of FMB data becomes available.
 
-> **Refresh in progress — requested May 23, 2026.** FMB-specific FY26 Q1 (Oct–Dec 2025) bed tax data has been requested from the Lee County Clerk of Court via the FMB Chamber of Commerce. Publicly-published Lee County reports contain aggregate county totals only (Tourist Development Tax data is exempt from public records by Florida statute); FMB-specific figures require a direct request through the appropriate channel. This dashboard will be updated when the new figures are received.
+> **Refresh in progress — requested May 23, 2026.**
+>
+> **1. Bed tax FY26 Q1.** FMB-specific FY26 Q1 (Oct–Dec 2025) bed tax data requested from the Lee County Clerk of Court via the FMB Chamber. Public Lee County reports contain aggregate county totals only — Tourist Development Tax data is exempt from public records by Florida statute, so FMB-specific figures require a direct request.
+>
+> **2. Pre-Ian housing baseline.** Pre-Ian (2022) monthly residential closing counts requested from RPCRA / Lee County Property Appraiser via the FMB Chamber. With the baseline verified, the Housing Market section will gain a Sanibel-style recovery %. Today, that section shows YoY direction only (Feb 2026 +69%, Dec 2025 +68%).
 
 ---
 
