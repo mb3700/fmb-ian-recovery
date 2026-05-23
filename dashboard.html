@@ -73,17 +73,6 @@
   </div>
 </header>
 
-<!-- Hero photo strip (placeholder — replace src with a real FMB image) -->
-<div class="hero-photo">
-  <div class="hero-photo-inner">
-    <!-- Replace this with an <img src="images/fmb-pier.jpg" alt="..."> when an image is added -->
-    <div class="hero-photo-placeholder">Hero image · Fort Myers Beach · drop in an image at images/hero.jpg to replace this placeholder</div>
-    <div class="hero-photo-caption">
-      <strong>Fort Myers Beach</strong> &middot; <em>three and a half years after Hurricane Ian</em>
-    </div>
-  </div>
-</div>
-
 <!-- Sticky section navigation -->
 <nav class="section-nav">
   <div class="section-nav-inner">
@@ -1057,6 +1046,56 @@
     <p style="margin: 0;">Recovery percentages are calculated by dividing current operational counts by pre-Ian baselines, capped at 100%. Baselines marked "pending" are awaiting verification from Lee County or Town of FMB records.</p>
   </div>
 </footer>
+
+<!-- Card flip: front shows numbers, back shows prose (source + methodology) -->
+<script>
+(function() {
+  var proseSelectors = '.metric-note, .metric-source, .refresh-status';
+  document.querySelectorAll('main .metric-card').forEach(function(card) {
+    var proseEls = card.querySelectorAll(proseSelectors);
+    if (proseEls.length === 0) return; // skip cards with no back content
+
+    var inner = document.createElement('div');
+    inner.className = 'metric-card-inner';
+    var front = document.createElement('div');
+    front.className = 'metric-card-front';
+    var back = document.createElement('div');
+    back.className = 'metric-card-back';
+
+    Array.from(card.children).forEach(function(child) {
+      if (child.matches && child.matches(proseSelectors)) back.appendChild(child);
+      else front.appendChild(child);
+    });
+
+    var flipBtn = document.createElement('button');
+    flipBtn.className = 'card-flip-btn';
+    flipBtn.setAttribute('type', 'button');
+    flipBtn.setAttribute('aria-label', 'Show source and methodology');
+    flipBtn.setAttribute('aria-expanded', 'false');
+    flipBtn.textContent = 'ⓘ';
+    var closeBtn = document.createElement('button');
+    closeBtn.className = 'card-flip-btn';
+    closeBtn.setAttribute('type', 'button');
+    closeBtn.setAttribute('aria-label', 'Back to the number');
+    closeBtn.setAttribute('aria-expanded', 'true');
+    closeBtn.textContent = '✕';
+
+    function toggle() {
+      var flipped = card.classList.toggle('flipped');
+      flipBtn.setAttribute('aria-expanded', flipped ? 'true' : 'false');
+      closeBtn.setAttribute('aria-expanded', flipped ? 'true' : 'false');
+    }
+    flipBtn.addEventListener('click', toggle);
+    closeBtn.addEventListener('click', toggle);
+
+    front.insertBefore(flipBtn, front.firstChild);
+    back.insertBefore(closeBtn, back.firstChild);
+    inner.appendChild(front);
+    inner.appendChild(back);
+    card.appendChild(inner);
+  });
+})();
+</script>
 
 <!-- Scroll-spy: highlight the sticky-nav link for the section currently in view -->
 <script>
