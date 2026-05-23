@@ -84,42 +84,34 @@
     "source": "Fort Myers Beach Chamber of Commerce, Accommodations file (March 18, 2026)."
   },
   "pipeline": {
-    "headline": "877 lodging units confirmed in development across 9 projects; 2 additional projects pending plans",
-    "totalRooms": 877,
-    "hotelRooms": 665,
-    "vrRooms": 212,
-    "confirmedProjectCount": 9,
-    "pendingProjectCount": 2,
+    "headline": "1,175 lodging units in development across 14 named projects",
+    "totalRooms": 1175,
+    "hotelRooms": 909,
+    "vrRooms": 266,
+    "projectCount": 14,
     "verificationDate": "2026-05-23",
-    "verificationNote": "Chamber Accommodations file dated March 18, 2026 reflects status as of mid-2025 for several projects. Status verified May 23, 2026 against Town Council/LPA records and current local reporting; nine projects updated, two reclassified to a separate Housing pipeline (residential units, not lodging), and one project (Compass Rose) marked unverified.",
+    "verificationNote": "Chamber March 2026 Accommodations file is the baseline (1,303 rooms / 14 projects). Status verified May 23, 2026 against Town Council and LPA records and post-March 2026 reporting. Sourced overrides reduce the total to 1,175 — primarily Town of FMB Ordinance 25-13 (EIBC 170 → 75 units), Persaud's Sept 2025 refile (Times Square 50 → 6 rooms), and the Lighthouse ordinance (+55 vs Chamber's +70). Per-project source citations are in recovery-summary.md.",
     "projects": {
       "hotels": [
         {"name": "Arches Bayfront", "rooms": 263, "status": "Approved by Town Council June 2025 (4-1, Mayor Allers opposed); pre-construction, several years out"},
-        {"name": "London Bay (former Outrigger / Charley's site)", "rooms": 196, "status": "100 hotel rooms + 50 condo-hotel + 46 residences; LPA recommended denial May 2026; Town Council hearing June 2026"},
+        {"name": "London Bay (former Outrigger / Charley's site)", "rooms": 150, "status": "100 hotel rooms + 50 condo-hotel (plus 46 residences in same project). LPA recommended denial May 2026; Town Council hearing June 2026"},
+        {"name": "Wyndham", "rooms": 150, "status": "Old 103-room hotel demolished April 2025 (Ian damage). New plans being prepared with The Neighborhood Company; no LPA filing yet"},
+        {"name": "Compass Rose", "rooms": 140, "status": "Permanent holding pattern (per Chamber)"},
         {"name": "Lighthouse Island Resort expansion", "rooms": 55, "status": "Approved by Town Council June 2025 with 11 zoning deviations; expansion from 75 to 130 rooms"},
-        {"name": "Silver Sands / TPI Hospitality", "rooms": 60, "status": "5-story, 60-room hotel adjacent to Margaritaville (separate property); plans to go before Town June 2026; opening late 2028 / early 2029"},
-        {"name": "Myerside Resort", "rooms": 45, "status": "Approved by Town Council June 2024 (4-1, Allers opposed); 45 hotel rooms + 4 live/work + 9,000 sf retail + 2,250 sf restaurant; construction late 2026"},
-        {"name": "Pink Shell Bayside", "rooms": 40, "status": "Approved by Town Council Feb 2025 (4-0 unanimous); 6 stories, ~80 ft, bayfront"},
-        {"name": "Times Square (Persaud)", "rooms": 6, "status": "Scaled from 50 to 6 boutique rooms with pool, cabanas, retail after LPA pushback; no variances needed; heading to Council"},
-        {"name": "Wyndham", "rooms": null, "status": "Pending plans — old 103-room hotel demolished after Ian damage; no rebuild plan filed; concept stage with Neighborhood Company"},
-        {"name": "Compass Rose", "rooms": 140, "status": "Status unverified — Chamber file lists 'permanent holding pattern' but no public reporting confirms an active hotel project at this name"}
+        {"name": "Silver Sands / TPI Hospitality", "rooms": 60, "status": "5-story, 60-room hotel adjacent to Margaritaville; plans to go before Town June 2026; opening late 2028 / early 2029"},
+        {"name": "Myerside Resort", "rooms": 45, "status": "Approved by Town Council June 17, 2024 (4-1, Allers opposed); 45 hotel rooms + 4 live/work + 9,000 sf retail + 2,250 sf restaurant; construction late 2026"},
+        {"name": "Pink Shell Bayside", "rooms": 40, "status": "Approved by Town Council February 3, 2025 (4-0 unanimous); 6 stories, ~80 ft, bayfront"},
+        {"name": "Times Square (Persaud)", "rooms": 6, "status": "Scaled from 50 to 6 boutique rooms with pool, cabanas, retail after LPA pushback (Persaud refiled September 2025); no variances needed; heading to Council"}
       ],
       "vacationRentals": [
         {"name": "Sea Gate / Red Coconut (Oceanside)", "rooms": 137, "status": "Approved by Town Council Dec 2024 (3-2); residents' lawsuit dismissed by Judge McHugh May 2026; cleared to proceed. 17-story tower, 250+ ft, $52M land"},
-        {"name": "Estero Island Beach Club", "rooms": 75, "status": "Approved May 2025 (LPA + Council unanimous); 75 multi-family timeshare units in 5-story building (reduced from 10 stories); target completion summer 2027"}
+        {"name": "Estero Island Beach Club", "rooms": 75, "status": "Approved May 2025 (LPA + Council unanimous, Ordinance 25-13); 75 multi-family timeshare units in 5-story building (reduced from 10 stories); target completion summer 2027"},
+        {"name": "Beach Baptist (sell-land plans)", "rooms": 30, "status": "Council approved phased development Oct/Nov 2025; church sold 2 acres to S.J. Collins for $4M; 12 single-family homes on Connecticut Street"},
+        {"name": "Cottages of Paradise Point", "rooms": 14, "status": "Phase 1 (3 Gulf-front cottages, $2.6M+) broke ground January 14, 2026; marketed as Gulf-front vacation rentals"},
+        {"name": "Beach Baptist property — new homes", "rooms": 10, "status": "Need update per Chamber — possibly Phase 2 of sell-land project; awaiting confirmation"}
       ]
     },
-    "source": "Verified May 23, 2026 against Town Council/LPA records (fortmyersbeachfl.gov), Beach Observer, Fox 4, WINK News, Beach Talk Radio, B1039, and Gulfshore Business. Underlying inventory from Fort Myers Beach Chamber of Commerce Accommodations file (March 18, 2026)."
-  },
-  "housingPipeline": {
-    "headline": "15 residential units in development across 2 projects",
-    "framing": "Residential housing-for-sale projects (single-family homes and cottages), not lodging pipeline. Reclassified May 2026 from the Chamber's vacation-rental pipeline because these units are being sold as residences, not operated as short-term rentals.",
-    "totalUnits": 15,
-    "projects": [
-      {"name": "Beach Baptist Church property redevelopment", "units": 12, "status": "Town Council approved phased development Oct/Nov 2025; church sold 2 acres to S.J. Collins for $4M; 12 single-family homes on Connecticut Street; church rebuild groundbreaking 6-8 months out"},
-      {"name": "Cottages of Paradise Point", "units": 3, "status": "Broke ground Jan 14, 2026; 3 Gulf-front cottages (2,143 sf + 3,607 sf + 2,053 sf) starting at $2.6M; built on 15 ft concrete pilings, engineered for 160 mph winds"}
-    ],
-    "source": "Beach Observer, Fox 4, Gulfshore Business, Business Observer (Oct 2025 – Apr 2026 reporting)."
+    "source": "Baseline: Fort Myers Beach Chamber of Commerce Accommodations file (March 18, 2026). Sourced overrides verified May 23, 2026 against Town of FMB ordinances and Council/LPA records (fortmyersbeachfl.gov), Beach Observer, Fox 4, WINK News, Beach Talk Radio, B1039, and Gulfshore Business. Per-override audit trail in recovery-summary.md."
   },
   "fmbBedTaxTrajectory": [
     {"fy": "FY22", "label": "Pre-Ian", "value": 8044612, "share": 0.1249, "recoveryPct": 100},

@@ -28,7 +28,7 @@ The 18-point gap means capacity has rebuilt faster than per-room revenue — eac
 
 **Three-year bed-tax trajectory (YTD through August):** 15% (FY23) → 37% (FY24) → 48% (FY25). Rising steadily.
 
-**Pipeline:** 877 lodging units confirmed in development across 9 named projects (665 hotel + 212 VR). 2 additional projects pending plans (Wyndham, Compass Rose). 15 residential units in a separate housing pipeline (Beach Baptist 12 SF homes + Paradise Point 3 cottages). Recovery is still in progress. Pipeline verified May 23, 2026.
+**Pipeline:** 1,175 lodging units in development across 14 named projects (909 hotel + 266 VR). Chamber March 2026 file is the baseline; sourced overrides from post-March 2026 reporting and Town Council / LPA records reduce the Chamber's 1,303 figure to 1,175. Per-override audit trail below. Verified May 23, 2026.
 
 **FMB's distinctive recovery pattern:** vacation rentals (2,853 rooms) make up the majority of rebuilt capacity. The post-Ian lodging mix is more VR-tilted than the pre-Ian mix — a structural shift, not a temporary lag. This is why FMB is outpacing Sanibel on bed-tax recovery despite Sanibel having a stronger overall economic-recovery profile.
 
@@ -50,28 +50,48 @@ Lodging capacity 66% recovered, bed-tax revenue 48% recovered. The gap matters.
 
 ## Pipeline — what's coming
 
-877 lodging units confirmed in 9 named projects, plus 2 projects pending plans. Status verified May 23, 2026 against Town Council and LPA records and current local reporting.
+1,175 lodging units in 14 named projects. The Chamber March 2026 Accommodations file is the baseline; sourced overrides from post-March 2026 reporting and Town Council / LPA records bring the Chamber's 1,303 figure to 1,175. Per-override audit trail follows the project lists below.
 
-**Hotels (9 projects · 665 rooms confirmed + pending):**
+**Hotels (9 projects · 909 rooms):**
 - Arches Bayfront — 263 rooms · Council approved June 2025 (4-1, Allers opposed); pre-construction
-- London Bay (former Outrigger site) — 196 units (100 hotel + 50 condo-hotel + 46 residences) · LPA recommended denial May 2026; Town Council hearing June 2026
+- London Bay (former Outrigger site) — 150 rooms (100 hotel + 50 condo-hotel, plus 46 residences in same project) · LPA recommended denial May 2026; Town Council hearing June 2026
+- Wyndham — 150 rooms · old 103-room hotel demolished April 2025 (Ian damage); new plans being prepared with The Neighborhood Company; no LPA filing yet
+- Compass Rose — 140 rooms · permanent holding pattern (per Chamber)
 - Silver Sands / TPI Hospitality — 60 rooms · 5-story hotel adjacent to Margaritaville; plans to go before Town June 2026; opening 2028–29
 - Lighthouse Island Resort expansion — +55 rooms · Council approved June 2025 with 11 zoning deviations (75 → 130)
-- Myerside Resort — 45 rooms · Council approved June 2024 (4-1, Allers opposed); construction late 2026
-- Pink Shell Bayside — 40 rooms · Council approved Feb 2025 (4-0 unanimous)
-- Times Square (Persaud) — 6 boutique rooms · scaled down from 50 after LPA pushback; no variances needed; heading to Council
-- Wyndham — TBD · pending plans · old 103-room hotel demolished; no rebuild plan filed; concept stage
-- Compass Rose — status unverified · listed by Chamber but no public reporting confirms an active hotel project at this name
+- Myerside Resort — 45 rooms · Council approved June 17, 2024 (4-1, Allers opposed); 45 hotel rooms + 4 live/work + 9,000 sf retail; construction late 2026
+- Pink Shell Bayside — 40 rooms · Council approved February 3, 2025 (4-0 unanimous)
+- Times Square (Persaud) — 6 boutique rooms · scaled from 50 after LPA pushback (Persaud refiled September 2025); no variances needed; heading to Council
 
-**Vacation Rentals (2 projects · 212 units):**
+**Vacation Rentals (5 projects · 266 units):**
 - Sea Gate / Red Coconut (Oceanside) — 137 units · Council approved Dec 2024 (3-2); residents' lawsuit dismissed by Judge McHugh May 2026; cleared to proceed
-- Estero Island Beach Club — 75 timeshare units · LPA + Council unanimously approved May 2025; 5-story (reduced from 10); target summer 2027
+- Estero Island Beach Club — 75 timeshare units · LPA + Council unanimously approved May 2025 (Ordinance 25-13); 5-story (reduced from 10); target summer 2027
+- Beach Baptist (sell-land plans) — 30 rooms · Council approved phased development Oct/Nov 2025; church sold 2 acres to S.J. Collins for $4M; 12 single-family homes on Connecticut Street
+- Cottages of Paradise Point — 14 rooms · Phase 1 (3 Gulf-front cottages, $2.6M+) broke ground January 14, 2026; marketed as Gulf-front vacation rentals
+- Beach Baptist property — new homes — 10 rooms · need update per Chamber; possibly Phase 2 of sell-land project; awaiting confirmation
 
-**Housing pipeline (2 projects · 15 residential units — tracked separately):**
-- Beach Baptist Church property — 12 single-family homes · Council approved Oct/Nov 2025; church sold 2 acres to S.J. Collins for $4M
-- Cottages of Paradise Point — 3 Gulf-front cottages · broke ground Jan 14, 2026; starting at $2.6M; engineered for 160 mph winds
+### How pipeline overrides are sourced
 
-**Chamber Accommodations file reconciliation:** The March 2026 Chamber file lists 1,303 rooms across 14 projects. Verification reduced that to 877 confirmed lodging units because (a) several Chamber room counts were stale or pre-revision (e.g., Times Square 50→6, EIBC 170→75, Lighthouse 70→55), (b) Wyndham and Compass Rose lack filed plans or public confirmation, and (c) three "VR" projects (Beach Baptist x2, Paradise Point) are residential housing-for-sale, not lodging, and were moved to a separate housing pipeline.
+The table below documents every line where this dashboard differs from the Chamber's March 2026 Accommodations baseline. Each override cites the specific dated source (Town ordinance, Council/LPA action, or news article) that authorizes the change. Lines without an override retain the Chamber's value unchanged.
+
+| Project | Chamber March 2026 | Our value | Authorizing source |
+|---|---|---|---|
+| Arches Bayfront | 256 rms, approved | 263 rms, Council approved June 2025 (4-1, Allers opposed) | Beach Observer, *"Fort Myers Beach Council approves Arches Bayfront hotel and commercial center by 4-1 vote"* (June 2025); WINK News; Gulfshore Business |
+| London Bay (Outrigger) | 150 rms, planning | 150 rms (unchanged); status: "LPA recommended denial May 2026; Council hearing June 2026" | Town of FMB LPA agenda and meeting record, May 12, 2026 |
+| Wyndham | 150 rms, "food truck park then resort" | 150 rms (unchanged); status updated to factual: "Old 103-room hotel demolished April 2025; plans being prepared with The Neighborhood Company; no LPA filing yet" | Beach Observer, *"Wyndham Garden Hotel on Fort Myers Beach demolished due to damage from Hurricane Ian"* (April 2025); Beach Talk Radio, *"Demo Work on The Wyndham Has Begun"* + *"What's Going on at The Wyndham Property?"* |
+| Compass Rose | 140 rms, "permanent holding pattern" | No override — Chamber baseline retained | n/a |
+| Lighthouse Island Resort | +70 rms, approved | +55 rms (75 → 130), Council June 2025 with 11 deviations | B1039, *"Fort Myers Beach Council Gives Green Light to 130-Room Lighthouse Resort Expansion"* (May 22, 2025); Beach Observer, *"Lighthouse Resort gets approval from town council to expand"* (June 2025) |
+| Silver Sands / TPI | 46 rms, "resort rebuild" | 60 rms, plans before Town June 2026, opening 2028–29 | Beach Observer, *"TPI announces plans for new Silver Sands Resort"* (April 2026) |
+| Myerside Resort | 40 rms, "approved Feb 2025" | 45 rms, Council approved June 17, 2024 (4-1, Allers opposed) — corrects Chamber's date | Beach Observer, *"Fort Myers Beach Council moves CPD forward for Myerside Resort hotel"* (June 2024); Gulfshore Business |
+| Pink Shell Bayside | 40 rms, approved | 40 rms (unchanged); added "Council February 3, 2025 (4-0 unanimous)" | Fox 4, *"Pink Shell Resort on Fort Myers Beach has been approved for a $40M expansion"* (Feb 2025); WINK News |
+| Times Square (Persaud) | 50 rms, going to LPA | 6 boutique rms, heading to Council | Fox 4, *"New boutique hotel plans filed for Fort Myers Beach Times Square lot"* (Sept 2025) |
+| Sea Gate / Red Coconut | 137 rms, approved | 137 rms (unchanged); added "Lawsuit dismissed by Judge McHugh May 2026; cleared to proceed" | Beach Talk Radio, *"Complete Victory For Seagate"* (May 2026); B1039 (Aug 2025) |
+| Estero Island Beach Club | 170 rms, approved | 75 timeshare units, Council unanimous May 2025; 5-story (was 10) | Town of FMB Ordinance 25-13; Beach Observer, *"Fort Myers Beach LPA approves Estero Island Beach Club rebuild plans, rezoning"* (May 2025); Beach Talk Radio |
+| Beach Baptist (sell-land) | 30 rms, "plans changing" | 30 rms (unchanged); status updated: "Council approved phased development Oct/Nov 2025; church sold 2 acres to S.J. Collins for $4M; 12 single-family homes on Connecticut Street" | Beach Observer, *"Council moves forward Beach Baptist rebuild and residential home development plans"* (October 2025); Gulfshore Business |
+| Cottages of Paradise Point | 14 rms, "first cottage 3/2026" | 14 rms (unchanged); status updated: "Phase 1 (3 Gulf-front cottages, $2.6M+) broke ground January 14, 2026; marketed as vacation rentals" | Beach Observer, *"Cottages of Paradise Point breaks ground"* (January 2026); Business Observer; cottagesofparadisepoint.com |
+| Beach Baptist (new homes) | 10 rms, "need update" | 10 rms (unchanged); status: "Possibly Phase 2 of sell-land project; awaiting Chamber confirmation" | Chamber's own "need update" flag |
+
+**Net effect:** Chamber's 1,303 rooms → 1,175 rooms. The 128-unit reduction is concentrated in three sourced overrides: EIBC (170 → 75 = −95), Times Square (50 → 6 = −44), Lighthouse (+70 → +55 = −15), partially offset by Arches (+7), Silver Sands (+14), and Myerside (+5).
 
 ---
 
