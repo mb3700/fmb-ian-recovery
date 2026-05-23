@@ -20,12 +20,7 @@
 </head>
 <body>
 
-<!-- Beta banner — sets expectations -->
-<div class="beta-banner">
-  <strong>Beta:</strong> Update through May 2026. Recovery percentages will be refreshed as new data lands; baselines sourced from FMB Chamber, Lee County, and Town of FMB records.
-</div>
-
-<!-- Data Freshness banner — extends the transparency layer -->
+<!-- Data Freshness banner — single strip at top -->
 <div class="freshness-banner">
   <strong>Data current as of May 23, 2026</strong>
   · 10 sourced overrides documented in <a href="data-decisions.html">Data Decisions</a>
@@ -83,15 +78,11 @@
   <div class="section-nav-inner">
     <a href="#tourism">Tourism & Lodging</a>
     <a href="#capacity-vs-revenue">Capacity vs Revenue</a>
-    <a href="#lodging-mix">Lodging Mix</a>
     <a href="#sister-cities">Sister-City</a>
-    <a href="#housing-market">Housing Market</a>
-    <a href="#economic">Economic Activity</a>
-    <a href="#watchlist">Watchlist</a>
+    <a href="#housing-market">Housing</a>
+    <a href="#economic">Economy</a>
     <a href="#pipeline">In Development</a>
-    <a href="#rebuilding-activity">Rebuilding Activity</a>
     <a href="data-decisions.html">Data Decisions</a>
-    <a href="#about-data">About the Data</a>
   </div>
 </nav>
 
@@ -371,7 +362,7 @@
         <div class="mix-bar-track">
           <div class="mix-bar-fill" style="width: 100%; background: var(--good);">143% — $6.18M of $4.32M</div>
         </div>
-        <div class="mix-bar-value" style="color: var(--good);">143%</div>
+        <div class="mix-bar-value good">143%</div>
       </div>
 
       <!-- Estero — fully recovered -->
@@ -380,7 +371,7 @@
         <div class="mix-bar-track">
           <div class="mix-bar-fill" style="width: 100%; background: var(--good);">102% — $1.28M of $1.26M</div>
         </div>
-        <div class="mix-bar-value" style="color: var(--good);">102%</div>
+        <div class="mix-bar-value good">102%</div>
       </div>
 
       <p style="margin-top: 20px; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
@@ -407,7 +398,7 @@
       </p>
     </div>
 
-    <h3 style="font-family: var(--font-body); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-secondary); margin: 16px 0 12px 19px; font-weight: 600;">
+    <h3 class="section-subheading">
       Residential (single-family)
     </h3>
     <div class="metric-grid">
@@ -447,7 +438,7 @@
 
     </div>
 
-    <h3 style="font-family: var(--font-body); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-secondary); margin: 28px 0 12px 19px; font-weight: 600;">
+    <h3 class="section-subheading">
       Condo &amp; Timeshare
     </h3>
     <div class="metric-grid">
@@ -487,7 +478,7 @@
 
     </div>
 
-    <h3 style="font-family: var(--font-body); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-secondary); margin: 28px 0 12px 19px; font-weight: 600;">
+    <h3 class="section-subheading">
       Direction &amp; Context (what we have today)
     </h3>
     <div class="metric-grid">
@@ -496,7 +487,7 @@
       <div class="metric-card">
         <div class="metric-label">Home Sales — recent month (YoY direction)</div>
         <div class="metric-value">44<span class="baseline"> / 26</span></div>
-        <div class="metric-recovery" style="color: var(--good);">+69% year-over-year (February 2026)</div>
+        <div class="metric-recovery good">+69% year-over-year (February 2026)</div>
         <div class="progress-bar"><div class="progress-fill" style="width: 100%; background: var(--good);"></div></div>
         <div class="metric-note">
           44 homes sold in February 2026 versus 26 in February 2025 — a 69% YoY increase. The trend
@@ -624,7 +615,7 @@
       <div class="metric-card featured">
         <div class="metric-label">★ Permanently Lost — Rooms Gone Forever <a href="data-decisions.html#override-1" class="override-chip" title="See Data Decisions">ⓘ override #1</a></div>
         <div class="metric-value">753<span class="baseline"> rooms</span></div>
-        <div class="metric-recovery" style="color: var(--bad);">12% of pre-Ian capacity will not return</div>
+        <div class="metric-recovery bad">12% of pre-Ian capacity will not return</div>
         <div class="metric-note">
           18 hotel properties permanently destroyed (527 rooms) plus 226 VR rooms permanently lost
           in destroyed properties. Notable losses include Outrigger Beach Resort (144 rooms),
@@ -659,7 +650,7 @@
       <div class="metric-card featured">
         <div class="metric-label">★ Café Closure Concentration</div>
         <div class="metric-value">3<span class="baseline"> / 7</span></div>
-        <div class="metric-recovery" style="color: var(--bad);">43% of cafés temporarily closed</div>
+        <div class="metric-recovery bad">43% of cafés temporarily closed</div>
         <div class="progress-bar"><div class="progress-fill watchlist" style="width: 43%"></div></div>
         <div class="metric-note">
           3 of 7 cafés temporarily closed. Cafés have marginal economics and reopen last when
@@ -717,35 +708,49 @@
 
     <div class="metric-grid">
 
-      <!-- Hotel pipeline -->
+      <!-- Hotel pipeline (compact table) -->
       <div class="metric-card" style="grid-column: span 2;">
         <div class="metric-label">Hotel Projects in Development (9 projects · 909 rooms)</div>
-        <ul style="margin: 12px 0 0 18px; color: var(--text-secondary); font-size: 0.92rem; line-height: 1.7;">
-          <li><strong>Arches Bayfront</strong> — 263 rooms · Council approved June 2025 (4-1, Allers opposed); pre-construction, several years out <a href="data-decisions.html#override-2" class="override-chip">ⓘ override #2</a></li>
-          <li><strong>London Bay project</strong> — 150 rooms (100 hotel + 50 condo-hotel, plus 46 residences in same project) · LPA recommended denial May 2026; Town Council hearing June 2026 <a href="data-decisions.html#override-3" class="override-chip">ⓘ override #3</a></li>
-          <li><strong>Wyndham</strong> — 150 rooms · old 103-room hotel demolished April 2025 (Ian damage); new plans being prepared with The Neighborhood Company; no LPA filing yet</li>
-          <li><strong>Compass Rose</strong> — 140 rooms · permanent holding pattern (per Chamber)</li>
-          <li><strong>Silver Sands / TPI Hospitality</strong> — 60 rooms · 5-story hotel adjacent to Margaritaville; plans to go before Town June 2026; opening 2028–29 <a href="data-decisions.html#override-6" class="override-chip">ⓘ override #6</a></li>
-          <li><strong>Lighthouse Island Resort expansion</strong> — +55 rooms · Council approved June 2025 with 11 zoning deviations; 75 → 130 rooms total <a href="data-decisions.html#override-4" class="override-chip">ⓘ override #4</a></li>
-          <li><strong>Myerside Resort</strong> — 45 rooms · Council approved June 17, 2024 (4-1, Allers opposed); 45 hotel rooms + 4 live/work + 9,000 sf retail + 2,250 sf restaurant; construction late 2026 <a href="data-decisions.html#override-7" class="override-chip">ⓘ override #7</a></li>
-          <li><strong>Pink Shell Bayside</strong> — 40 rooms · Council approved February 3, 2025 (4-0 unanimous); 6 stories, ~80 ft, bayfront <a href="data-decisions.html#override-8" class="override-chip">ⓘ override #8</a></li>
-          <li><strong>Times Square (Persaud)</strong> — 6 boutique rooms · scaled from 50 after LPA pushback (Persaud refiled September 2025); no variances needed; heading to Council <a href="data-decisions.html#override-5" class="override-chip">ⓘ override #5</a></li>
-        </ul>
+        <div class="audit-table-wrap">
+          <table class="audit-table pipeline-table">
+            <thead>
+              <tr><th>Project</th><th>Rooms</th><th>Status</th><th>Override</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Arches Bayfront</strong></td><td>263</td><td>Council approved June 2025 (4-1); pre-construction, several years out</td><td><a href="data-decisions.html#override-2" class="override-chip">#2</a></td></tr>
+              <tr><td><strong>London Bay project</strong></td><td>150</td><td>100 hotel + 50 condo-hotel (+ 46 residences). LPA recommended denial May 2026; Council hearing June 2026</td><td><a href="data-decisions.html#override-3" class="override-chip">#3</a></td></tr>
+              <tr><td><strong>Wyndham</strong></td><td>150</td><td>Old 103-room hotel demolished April 2025; plans being prepared with The Neighborhood Company; no LPA filing yet</td><td>—</td></tr>
+              <tr><td><strong>Compass Rose</strong></td><td>140</td><td>Permanent holding pattern (per Chamber)</td><td>—</td></tr>
+              <tr><td><strong>Silver Sands / TPI Hospitality</strong></td><td>60</td><td>5-story hotel adjacent to Margaritaville; plans to Town June 2026; opening 2028–29</td><td><a href="data-decisions.html#override-6" class="override-chip">#6</a></td></tr>
+              <tr><td><strong>Lighthouse Island Resort expansion</strong></td><td>+55</td><td>Council approved June 2025 with 11 zoning deviations; 75 → 130 rooms total</td><td><a href="data-decisions.html#override-4" class="override-chip">#4</a></td></tr>
+              <tr><td><strong>Myerside Resort</strong></td><td>45</td><td>Council approved June 17, 2024 (4-1); 45 rooms + 4 live/work + 9,000 sf retail; construction late 2026</td><td><a href="data-decisions.html#override-7" class="override-chip">#7</a></td></tr>
+              <tr><td><strong>Pink Shell Bayside</strong></td><td>40</td><td>Council approved February 3, 2025 (4-0 unanimous); 6 stories, bayfront</td><td><a href="data-decisions.html#override-8" class="override-chip">#8</a></td></tr>
+              <tr><td><strong>Times Square (Persaud)</strong></td><td>6</td><td>Scaled from 50 after LPA pushback (refiled Sept 2025); no variances; heading to Council</td><td><a href="data-decisions.html#override-5" class="override-chip">#5</a></td></tr>
+            </tbody>
+          </table>
+        </div>
         <div class="metric-source">
-          <strong>Source:</strong> Chamber March 2026 baseline; sourced overrides verified May 23, 2026 against Town Council and LPA records, Beach Observer, Fox 4, WINK News, Beach Talk Radio, B1039, Gulfshore Business. Per-override audit trail in <a href="recovery-summary.md">recovery-summary.md</a>.
+          <strong>Source:</strong> Chamber March 2026 baseline; sourced overrides verified May 23, 2026 against Town Council and LPA records, Beach Observer, Fox 4, WINK News, Beach Talk Radio, B1039, Gulfshore Business.
         </div>
       </div>
 
-      <!-- VR pipeline -->
+      <!-- VR pipeline (compact table) -->
       <div class="metric-card" style="grid-column: span 2;">
         <div class="metric-label">Vacation Rental Projects in Development (5 projects · 266 units)</div>
-        <ul style="margin: 12px 0 0 18px; color: var(--text-secondary); font-size: 0.92rem; line-height: 1.7;">
-          <li><strong>Sea Gate / Red Coconut (Oceanside)</strong> — 137 units · Council approved Dec 2024 (3-2); residents' lawsuit dismissed by Judge McHugh May 2026; cleared to proceed. 17-story tower, 250+ ft, $52M land <a href="data-decisions.html#override-9" class="override-chip">ⓘ override #9</a></li>
-          <li><strong>Estero Island Beach Club</strong> — 75 timeshare units · LPA + Council unanimously approved May 2025 (Ordinance 25-13); 5-story building (reduced from 10); target completion summer 2027 <a href="data-decisions.html#override-10" class="override-chip">ⓘ override #10</a></li>
-          <li><strong>Beach Baptist (sell-land plans)</strong> — 30 rooms · Council approved phased development Oct/Nov 2025; church sold 2 acres to S.J. Collins for $4M; 12 single-family homes on Connecticut Street</li>
-          <li><strong>Cottages of Paradise Point</strong> — 14 rooms · Phase 1 (3 Gulf-front cottages, $2.6M+) broke ground January 14, 2026; marketed as Gulf-front vacation rentals</li>
-          <li><strong>Beach Baptist property — new homes</strong> — 10 rooms · need update per Chamber; possibly Phase 2 of sell-land project; awaiting confirmation</li>
-        </ul>
+        <div class="audit-table-wrap">
+          <table class="audit-table pipeline-table">
+            <thead>
+              <tr><th>Project</th><th>Units</th><th>Status</th><th>Override</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Sea Gate / Red Coconut (Oceanside)</strong></td><td>137</td><td>Council approved Dec 2024 (3-2); residents' lawsuit dismissed by Judge McHugh May 2026; cleared to proceed. 17-story tower, 250+ ft</td><td><a href="data-decisions.html#override-9" class="override-chip">#9</a></td></tr>
+              <tr><td><strong>Estero Island Beach Club</strong></td><td>75</td><td>LPA + Council unanimously approved May 2025 (Ordinance 25-13); 5-story (reduced from 10); target summer 2027</td><td><a href="data-decisions.html#override-10" class="override-chip">#10</a></td></tr>
+              <tr><td><strong>Beach Baptist (sell-land plans)</strong></td><td>30</td><td>Council approved phased development Oct/Nov 2025; church sold 2 acres to S.J. Collins for $4M; 12 single-family homes on Connecticut Street</td><td>—</td></tr>
+              <tr><td><strong>Cottages of Paradise Point</strong></td><td>14</td><td>Phase 1 (3 Gulf-front cottages, $2.6M+) broke ground January 14, 2026; marketed as Gulf-front vacation rentals</td><td>—</td></tr>
+              <tr><td><strong>Beach Baptist property — new homes</strong></td><td>10</td><td>Need update per Chamber; possibly Phase 2 of sell-land project; awaiting confirmation</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
         <div class="metric-source">
           <strong>Source:</strong> Chamber March 2026 baseline; sourced overrides verified May 23, 2026 against Town of FMB Ordinance 25-13, Beach Observer, Fox 4, Gulfshore Business, Business Observer, Beach Talk Radio, B1039.
         </div>
@@ -768,7 +773,7 @@
       </p>
     </div>
 
-    <h3 style="font-family: var(--font-body); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-secondary); margin: 16px 0 12px 19px; font-weight: 600;">
+    <h3 class="section-subheading">
       Rebuilding wind-down
     </h3>
     <div class="metric-grid">
@@ -776,13 +781,13 @@
       <div class="metric-card">
         <div class="metric-label">Building Fund Revenue (FY25 → FY26 Budget)</div>
         <div class="metric-value">$2.46M<span class="baseline"> / $3.5M</span></div>
-        <div class="metric-recovery" style="color: var(--text-secondary);">−29.6% (expected decline)</div>
+        <div class="metric-recovery context">−29.6% (expected decline)</div>
         <div class="metric-note">
           Permit-fund revenue projected down 29.6% in FY26 — the cleanest single signal that the
           post-Ian rebuilding surge is past peak. Declining permit revenue is what return-to-normal
           looks like for a coastal town three-plus years past landfall.
         </div>
-        <div class="metric-trend down" style="color: var(--text-secondary);">↓ Expected — rebuild wave winding down</div>
+        <div class="metric-trend down context">↓ Expected — rebuild wave winding down</div>
         <div class="metric-source">
           Source: Town of Fort Myers Beach FY26 Adopted Budget, All Fund Revenues.
         </div>
@@ -791,14 +796,14 @@
       <div class="metric-card">
         <div class="metric-label">Summer Permit Volume (Jun–Aug YoY)</div>
         <div class="metric-value">289<span class="baseline"> / 405</span></div>
-        <div class="metric-recovery" style="color: var(--text-secondary);">−29% YoY (Jun–Aug)</div>
+        <div class="metric-recovery context">−29% YoY (Jun–Aug)</div>
         <div class="metric-note">
           Monthly summer permit counts dropped from 109/151/145 (Jun-Aug 2024) to 89/99/101
           (Jun-Aug 2025). The 29% YoY decline in physical permit volume mirrors the Building Fund
           revenue drop from an entirely different source — two independent signals pointing the
           same direction.
         </div>
-        <div class="metric-trend down" style="color: var(--text-secondary);">↓ Mirrors Building Fund decline</div>
+        <div class="metric-trend down context">↓ Mirrors Building Fund decline</div>
         <div class="metric-source">
           Source: FMB Chamber of Commerce, Permits sheet (Accommodations file, March 2026).
         </div>
@@ -807,13 +812,13 @@
       <div class="metric-card">
         <div class="metric-label">Code Enforcement Fees (FY25 → FY26 Budget)</div>
         <div class="metric-value">$100K<span class="baseline"> / $200K</span></div>
-        <div class="metric-recovery" style="color: var(--text-secondary);">−50%</div>
+        <div class="metric-recovery context">−50%</div>
         <div class="metric-note">
           Code enforcement fee revenue projected down 50% — fewer post-Ian compliance issues as
           properties return to standard operating condition. A third independent indicator that
           the post-storm churn is winding down.
         </div>
-        <div class="metric-trend down" style="color: var(--text-secondary);">↓ Fewer post-storm compliance issues</div>
+        <div class="metric-trend down context">↓ Fewer post-storm compliance issues</div>
         <div class="metric-source">
           Source: Town of Fort Myers Beach FY26 Adopted Budget, Revenues Line Item Detail.
         </div>
@@ -821,7 +826,7 @@
 
     </div>
 
-    <h3 style="font-family: var(--font-body); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-secondary); margin: 32px 0 12px 19px; font-weight: 600;">
+    <h3 class="section-subheading">
       Fiscal pressure context — recovery funding tapering
     </h3>
     <div class="metric-grid">
@@ -829,7 +834,7 @@
       <div class="metric-card">
         <div class="metric-label">Half-Cent Sales Tax (FY25 → FY26 Budget)</div>
         <div class="metric-value">$380K<span class="baseline"> / $600K</span></div>
-        <div class="metric-recovery" style="color: var(--bad);">−37%</div>
+        <div class="metric-recovery bad">−37%</div>
         <div class="metric-note">
           Half-cent sales tax projected down 37% — population displacement and slower commercial
           activity flowing through to the general fund. This is the fiscal-pressure side of the
@@ -844,7 +849,7 @@
       <div class="metric-card">
         <div class="metric-label">Emergency Fund — Disaster Reimbursements</div>
         <div class="metric-value">$589K<span class="baseline"> / $3.52M</span></div>
-        <div class="metric-recovery" style="color: var(--bad);">−83%</div>
+        <div class="metric-recovery bad">−83%</div>
         <div class="metric-note">
           Federal disaster reimbursements projected down 83% in FY26 — the recovery funding tap is
           closing as Ian's eligible reimbursement window expires. Town will fund ongoing recovery
@@ -994,17 +999,40 @@
     <div>
       <h3>Reference</h3>
       <p>
+        <a href="#about-data">About the data</a><br>
         <a href="methodology.html">Methodology &amp; data sources</a><br>
-        <a href="#about-data">Baselines still needed</a><br>
+        <a href="data-decisions.html">Data Decisions (audit trail)</a><br>
         May 2026 Update · Last updated May 23, 2026
       </p>
     </div>
   </div>
   <div class="footer-meta">
-    Recovery percentages are calculated by dividing current operational counts by pre-Ian baselines, capped at 100%.
-    Baselines marked "pending" are awaiting verification from Lee County or Town of FMB records.
+    <p style="margin: 0 0 8px;"><strong>Beta:</strong> Update through May 2026. Recovery percentages will be refreshed as new data lands; baselines sourced from FMB Chamber, Lee County, and Town of FMB records.</p>
+    <p style="margin: 0;">Recovery percentages are calculated by dividing current operational counts by pre-Ian baselines, capped at 100%. Baselines marked "pending" are awaiting verification from Lee County or Town of FMB records.</p>
   </div>
 </footer>
+
+<!-- Scroll-spy: highlight the sticky-nav link for the section currently in view -->
+<script>
+(function() {
+  var sections = document.querySelectorAll('main section.recovery-section[id]');
+  var links = {};
+  document.querySelectorAll('.section-nav a[href^="#"]').forEach(function(a) {
+    links[a.getAttribute('href').slice(1)] = a;
+  });
+  if (!('IntersectionObserver' in window) || sections.length === 0) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var id = entry.target.id;
+        Object.keys(links).forEach(function(k) { links[k].classList.remove('active'); });
+        if (links[id]) links[id].classList.add('active');
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px', threshold: 0 });
+  sections.forEach(function(s) { observer.observe(s); });
+})();
+</script>
 
 </body>
 </html>

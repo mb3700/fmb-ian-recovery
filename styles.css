@@ -556,6 +556,62 @@ main {
   .audit-table th, .audit-table td { padding: 8px 6px; }
 }
 
+/* ============ SECTION BOUNDARIES — alternating bg for wayfinding ============ */
+main {
+  background: var(--warm-sand-light);
+}
+.recovery-section {
+  background: transparent;
+}
+.recovery-section:nth-of-type(even) {
+  background: #ffffff;
+}
+.recovery-section:nth-of-type(odd) {
+  background: rgba(255, 248, 230, 0.45);
+}
+.recovery-section .section-header h2 {
+  margin-top: 0;
+}
+
+/* Subheading inside a section (e.g., Residential vs Condo, Rebuilding wind-down) */
+.section-subheading {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+  margin: 16px 0 12px 19px;
+  font-weight: 600;
+}
+.section-subheading + .metric-grid { margin-top: 0; }
+/* second + subsequent subheadings get a top margin to separate groups */
+.metric-grid + .section-subheading { margin-top: 28px; }
+
+/* ============ FEATURED METRIC CARD — section headline emphasis ============ */
+.metric-card.featured {
+  border-left: 4px solid var(--seafoam);
+  background: #ffffff;
+  box-shadow: var(--shadow-md);
+  position: relative;
+}
+.metric-card.featured .metric-label::before {
+  content: '';
+}
+
+/* ============ METRIC-RECOVERY COLOR CLASSES (replaces inline overrides) ============ */
+.metric-recovery.good { color: var(--good); }
+.metric-recovery.bad { color: var(--bad); }
+.metric-recovery.context { color: var(--text-secondary); }
+.metric-trend.context { color: var(--text-secondary); }
+.mix-bar-value.good { color: var(--good); }
+
+/* ============ SCROLL-SPY ACTIVE NAV STATE ============ */
+.section-nav a.active {
+  color: var(--ocean-navy);
+  background: var(--warm-sand);
+  font-weight: 600;
+}
+
 /* ============ EXECUTIVE TL;DR — editorial pull-summary ============ */
 .executive-tldr {
   max-width: 820px;
