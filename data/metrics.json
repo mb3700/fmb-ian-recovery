@@ -18,11 +18,11 @@
       "note": "Publicly-published Lee County reports contain aggregate county totals only; Tourist Development Tax data is exempt from public records under Florida statute. FMB-specific figures require direct request through the appropriate channel."
     },
     {
-      "metric": "Residential housing — pre-Ian (2022) vs current FMB-specific baselines: active listings + annual closings + median price + DOM",
+      "metric": "Residential housing — pre-Ian (2022) vs current FMB-specific baselines, SPLIT by property type (residential vs condo): active listings + annual closings + median price + DOM",
       "channel": "RPCRA (Royal Palm Coast Realtor Association) / Lee County Property Appraiser via FMB Chamber",
       "requestedAt": "2026-05-23",
       "status": "pending",
-      "note": "Following Sanibel's analytical framework, the dashboard needs pre-Ian vs current FMB-specific comparisons for (1) active listings, (2) annual sales volume, and (3) median price + days on market. Current dashboard shows YoY direction only (Feb 2026 +69%, Dec 2025 +68%) plus Feb 2026 median + DOM from Redfin. RPCRA / Lee County Property Appraiser holds the FMB-specific MLS cut needed to populate the pre-Ian vs current comparisons."
+      "note": "Following Sanibel's analytical framework, the dashboard needs pre-Ian vs current FMB-specific comparisons split by property type (single-family residential and condo/timeshare track separately — Sanibel showed residential at 52% vs condos at 41%). Required data: (1) active listings pre-Ian + current, by type; (2) annual sales volume 2022 full-year + trailing-12-month, by type; (3) median price + days on market 2022 vs current, by type if separable. Current dashboard shows only YoY direction (Feb 2026 +69%, Dec 2025 +68%) plus aggregate Feb 2026 median + DOM from Redfin."
     }
   ],
   "headline": {
@@ -454,29 +454,59 @@
   ],
   "housingMarket": {
     "headline": "Pre-Ian vs current baselines pending — RPCRA data request in progress",
-    "framing": "Following Sanibel's methodology, the right analytical frame for housing recovery is pre-Ian (2022) vs current (2026) for both listings and sales. Those FMB-specific baselines are being requested from RPCRA / Lee County Property Appraiser via the FMB Chamber. Until they arrive, this section shows placeholder cards for the target comparisons plus the YoY direction indicators and Redfin context that we do have today.",
+    "framing": "Following Sanibel's methodology, the right analytical frame is pre-Ian (2022) vs current (2026), split by property type. Sanibel showed residential at 52% recovery while condos lagged at 41% — same disaster, two different stories driven by HOA dynamics, structural-reinforcement requirements, and association-level rebuild decisions. FMB's condo and timeshare share of inventory makes the split even more important here. The four placeholder cards below show the target Sanibel-style comparisons (Residential vs Condo × Active Listings vs Annual Sales), pending RPCRA data via the FMB Chamber. The two cards beneath are the direction indicators and Redfin context we have today.",
     "metrics": [
       {
-        "label": "Active Listings — pre-Ian vs current",
+        "label": "Residential — Active Listings (pre-Ian vs current)",
+        "propertyType": "residential",
+        "metricType": "listings",
         "preIan": null,
         "current": null,
         "recoveryPercent": null,
-        "note": "Sanibel-style pre-Ian (2022) vs current (2026) active-listing comparison — the inventory side of housing recovery. Both numbers pending from RPCRA / Lee County Property Appraiser.",
+        "note": "Active single-family residential listings on Fort Myers Beach: pre-Ian (2022) baseline vs current (2026). Both pending RPCRA / Lee County Property Appraiser.",
         "source": "Pending — RPCRA via FMB Chamber",
         "interpretation": "trueRecovery",
         "trend": "neutral",
-        "refreshStatus": "Pre-Ian (2022) and current (2026) FMB-specific active-listing counts requested from RPCRA / Lee County Property Appraiser via FMB Chamber."
+        "refreshStatus": "Pre-Ian and current FMB-specific active-listing counts for single-family residential requested from RPCRA via FMB Chamber."
       },
       {
-        "label": "Annual Sales Volume — pre-Ian vs current",
+        "label": "Residential — Annual Sales Volume (pre-Ian vs current)",
+        "propertyType": "residential",
+        "metricType": "sales",
         "preIan": null,
         "current": null,
         "recoveryPercent": null,
-        "note": "Sanibel-style pre-Ian (2022 full-year) closings vs trailing-12-month closings on FMB. The transaction-volume analog of bed-tax recovery — actual market activity rather than inventory.",
+        "note": "Single-family residential closings on FMB: 2022 full-year (pre-Ian baseline) vs trailing-12-month (current). The transaction-volume side of residential recovery.",
         "source": "Pending — RPCRA via FMB Chamber",
         "interpretation": "trueRecovery",
         "trend": "neutral",
-        "refreshStatus": "2022 monthly closings (pre-Ian baseline) and trailing-12-month total requested from RPCRA / Lee County Property Appraiser via FMB Chamber."
+        "refreshStatus": "2022 monthly closings + trailing-12-month total for single-family residential requested from RPCRA via FMB Chamber."
+      },
+      {
+        "label": "Condo — Active Listings (pre-Ian vs current)",
+        "propertyType": "condo",
+        "metricType": "listings",
+        "preIan": null,
+        "current": null,
+        "recoveryPercent": null,
+        "note": "Active condo and timeshare listings on FMB: pre-Ian vs current. The condo story typically lags residential because HOA decisions, structural reinforcement, and association-level rebuild votes slow individual-unit return.",
+        "source": "Pending — RPCRA via FMB Chamber",
+        "interpretation": "trueRecovery",
+        "trend": "neutral",
+        "refreshStatus": "Pre-Ian and current FMB-specific active-listing counts for condos and timeshares requested from RPCRA via FMB Chamber."
+      },
+      {
+        "label": "Condo — Annual Sales Volume (pre-Ian vs current)",
+        "propertyType": "condo",
+        "metricType": "sales",
+        "preIan": null,
+        "current": null,
+        "recoveryPercent": null,
+        "note": "Condo closings on FMB: 2022 full-year (pre-Ian) vs trailing-12-month (current). Condo sales typically recover more slowly than residential because of association-level constraints.",
+        "source": "Pending — RPCRA via FMB Chamber",
+        "interpretation": "trueRecovery",
+        "trend": "neutral",
+        "refreshStatus": "2022 monthly closings + trailing-12-month total for condo properties requested from RPCRA via FMB Chamber."
       },
       {
         "label": "Home Sales — recent month (YoY direction)",
@@ -583,7 +613,7 @@
     "Restaurant count (pre-Ian) — refine ~70 estimate with Town of FMB or FMB Chamber data",
     "Retail store count (pre-Ian)",
     "Marina count (pre-Ian)",
-    "Residential housing — pre-Ian vs current FMB-specific: active listings, 2022 annual closings + TTM closings, median price, days on market — RPCRA / Lee County Property Appraiser",
+    "Residential housing — pre-Ian vs current FMB-specific, SPLIT by type (single-family residential and condo/timeshare): active listings, 2022 annual closings + TTM closings, median price, days on market — RPCRA / Lee County Property Appraiser",
     "FMB-specific FY26 Q1 bed tax (Oct-Dec 2025) — Lee County Clerk of Court via FMB Chamber",
     "Restaurants & Dining detail sheet baselines (per-restaurant pre-Ian status)"
   ],

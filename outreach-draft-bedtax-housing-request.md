@@ -19,14 +19,18 @@
 > **1. Bed tax — FMB-specific FY26 Q1 (October–December 2025).**
 > The dashboard currently shows FY25 YTD-through-August data from the file you provided. The Lee County Clerk's publicly-published TDC reports contain only county aggregates (which makes sense given the statutory confidentiality of TDT returns). To extend the 4-year recovery trajectory — 15% → 37% → 48% — into FY26, we'd need the FMB-specific Oct, Nov, Dec 2025 collections in the same format as the spreadsheet you sent through August. The format I'm working from is *Tourist Tax Breakdown - Add'l needed - Data through August 2025.xlsx.*
 >
-> **2. Pre-Ian vs current housing data (RPCRA / Lee County Property Appraiser).**
-> The dashboard's Housing Market section currently shows year-over-year growth from Redfin — Feb 2026 closings (44) were up 69% over Feb 2025 (26); December 2025 (37) was up 68% over December 2024 (22). YoY change tells direction, not recovery. To follow the Sanibel framework properly — pre-Ian (2022) vs current (2026) on both listings and sales — we'd need an FMB-specific MLS pull from RPCRA (or whoever your contact is at Lee County Property Appraiser). Specifically:
+> **2. Pre-Ian vs current housing data (RPCRA / Lee County Property Appraiser), split by property type.**
+> The dashboard's Housing Market section currently shows YoY growth from Redfin — Feb 2026 closings (44) were up 69% over Feb 2025 (26); December 2025 (37) was up 68% over December 2024 (22). YoY change tells direction, not recovery. To follow the Sanibel framework properly, the comparison is pre-Ian (2022) vs current (2026), **and importantly split between residential and condo** — Sanibel showed residential recovering to 52% while condos lagged at 41% because of HOA dynamics, structural reinforcement, and association-level rebuild decisions. FMB's heavy condo and timeshare inventory makes the split even more important here.
 >
->   - **Active listings:** total active FMB residential listings on a representative pre-Ian date (e.g., June 2022) and on a current date (e.g., end of Q1 2026).
->   - **Annual sales:** 2022 monthly closing counts for FMB (pre-Ian full-year baseline), and a trailing-12-month total for the current period.
->   - **Median price + days on market:** 2022 annual averages on FMB to compare to the Feb 2026 Redfin values ($580K median, 134 DOM).
+> An FMB-specific MLS pull from RPCRA would let us populate four placeholder cards already on the dashboard:
 >
-> Even a partial pull (e.g., just the 2022 monthly closings) would let us populate the most important card. The dashboard's "Data Decisions" page documents every override and pending request, so anything received is properly sourced.
+>   - **Residential — Active Listings:** single-family active listings on a pre-Ian date (e.g., June 2022) and a current date (e.g., end of Q1 2026).
+>   - **Residential — Annual Sales:** 2022 monthly closing counts for single-family (pre-Ian full-year baseline), plus a trailing-12-month total.
+>   - **Condo — Active Listings:** same as above for condos and timeshares.
+>   - **Condo — Annual Sales:** same as above for condos and timeshares.
+>   - **Median price + days on market:** 2022 annual averages on FMB (residential + condo if separable) to compare to Feb 2026 Redfin values ($580K median, 134 DOM).
+>
+> Even a partial pull (e.g., just the 2022 monthly closings split by type) would let us populate the most important cards. The dashboard's "Data Decisions" page documents every override and pending request, so anything received is properly sourced.
 >
 > No rush on either — the dashboard is explicitly flagged "refresh in progress" until the data arrives. Sharing now so the request is queued.
 >
