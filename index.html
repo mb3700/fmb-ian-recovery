@@ -848,12 +848,14 @@
     <div class="section-header">
       <h2>Rebuilding Activity &amp; Fiscal Context</h2>
       <p class="section-lead">
-        Two related context signals shown here as the post-Ian wind-down picture. Permit and
-        code-enforcement activity are declining — the expected pattern as the rebuilding surge
-        winds down. Sales tax and disaster reimbursements are also declining — the parallel
-        fiscal-pressure side: the recovery funding that supported the rebuild is tapering.
-        Neither set is included in any recovery percentage on this dashboard — rebuilding
-        activity is not the same as return to normalcy.
+        Two related context groups: post-Ian rebuilding activity (permits, code enforcement)
+        and Town fiscal context (sales tax + the mix of state/federal recovery funding flowing
+        through the FY26 budget). The recovery funding picture is mixed — some federal programs
+        are ending, others are growing, and a $11.9M state bridge loan is transitioning from
+        drawdown to repayment. None of these are included in any recovery percentage on this
+        dashboard. <em>Closed-out programs not shown:</em> American Rescue Act ($877K in FY25 →
+        $0 in FY26, fully drawn down); FDEM State-Funded LAP Grant for Water Utility ($6.55M
+        in FY25 → $0 in FY26, capital project window closed).
       </p>
     </div>
 
@@ -923,7 +925,7 @@
     </div>
 
     <h3 class="section-subheading">
-      Fiscal pressure context — recovery funding tapering
+      Town fiscal context — sales tax + recovery funding sources
     </h3>
     <div class="metric-grid">
 
@@ -947,41 +949,85 @@
       </div>
 
       <div class="metric-card">
-        <div class="metric-label"><span class="metric-icon dollar"></span>Emergency Fund — Disaster Reimbursements</div>
+        <div class="metric-label"><span class="metric-icon dollar"></span>Emergency Fund (federal reimbursements ending)</div>
         <div class="metric-value">$589K<span class="baseline"> / $3.52M</span></div>
         <div class="metric-recovery bad">−83%</div>
         <div class="metric-note">
-          Federal disaster reimbursements projected down 83% in FY26 — the recovery funding tap is
-          closing as Ian's eligible reimbursement window expires. Town will fund ongoing recovery
-          from operating revenue rather than disaster grants going forward.
+          Town's internal Emergency accounting fund. FY25 composition was mostly federal reimbursements
+          (FEMA $948,602; FDEM $62,692; insurance $74,700) plus prior-year carryover ($1,989,062),
+          ARPA transfer ($28,842), and General Fund transfer ($435,000). FY26 composition is just
+          the $500,000 General Fund transfer — federal reimbursements have ended and carryover is
+          spent down.
         </div>
-        <div class="metric-trend down">↓ Federal recovery funding winding down</div>
+        <div class="metric-trend down">↓ Federal reimbursements going to zero; only Town transfer remains</div>
         <div class="metric-source">
-          Source: Town of Fort Myers Beach FY26 Adopted Budget, All Fund Revenues.
+          Source: Town of Fort Myers Beach FY26 Adopted Budget, line item 13 (Emergency).
         </div>
         <details class="kpi-method-toggle">
           <summary><span class="i-icon" aria-hidden="true">i</span> How it's measured</summary>
-          <p class="kpi-method-body">Federal disaster-reimbursement revenue. Baseline = FY25 actual; current = FY26 adopted budget projection. Source: Town of FMB FY26 Adopted Budget, All Fund Revenues. The FY26 figure is a Town projection.</p>
+          <p class="kpi-method-body">Town's internal Emergency accounting fund. FY25 composition ($3.52M): FEMA $948,602 + FDEM $62,692 + insurance $74,700 + prior-year carryover $1,989,062 + ARPA transfer $28,842 + General Fund transfer $435,000. FY26 composition ($589K): only $500,000 General Fund transfer; federal reimbursements ended, carryover spent down. Source: FY26 Adopted Budget, line 13.</p>
         </details>
       </div>
 
       <div class="metric-card">
-        <div class="metric-label"><span class="metric-icon dollar"></span>FDEM Hurricane Recovery Funds</div>
+        <div class="metric-label"><span class="metric-icon dollar"></span>FDEM Hurricane Recovery Funds (state carryover)</div>
         <div class="metric-value">$4.70M<span class="baseline"> / $4.69M</span></div>
         <div class="metric-recovery" style="color: var(--neutral);">~ flat (+0.2%)</div>
         <div class="metric-note">
-          State recovery funds essentially flat at $4.7M — still flowing, but no longer growing.
-          The next budget cycle will likely see this number drop substantially as project-specific
-          allocations close out. Worth watching as a leading indicator of state-level support
-          ending.
+          All prior-year state allocation, sitting as Town carryover and being drawn down on
+          project-specific work. No new state hurricane money inbound. The flat year-over-year
+          figure reflects the unchanged carryover balance, not new state funding.
         </div>
-        <div class="metric-trend neutral">— Plateau ahead of likely decline next cycle</div>
+        <div class="metric-trend neutral">— Prior-year state allocation being drawn down; nothing new inbound</div>
         <div class="metric-source">
-          Source: Town of Fort Myers Beach FY26 Adopted Budget, All Fund Revenues.
+          Source: Town of Fort Myers Beach FY26 Adopted Budget, line item 36 (FDEM Hurricane Recovery Funds).
         </div>
         <details class="kpi-method-toggle">
           <summary><span class="i-icon" aria-hidden="true">i</span> How it's measured</summary>
-          <p class="kpi-method-body">State-level Florida Division of Emergency Management hurricane recovery funds. Baseline = FY25 actual; current = FY26 adopted budget projection. Source: Town of FMB FY26 Adopted Budget. The FY26 figure is a Town projection.</p>
+          <p class="kpi-method-body">State funds allocated in prior years by the Florida Division of Emergency Management, sitting as Town carryover and being drawn down on project work. No new state hurricane money inbound. Source: Town of FMB FY26 Adopted Budget, line 36.</p>
+        </details>
+      </div>
+
+      <div class="metric-card">
+        <div class="metric-label"><span class="metric-icon dollar"></span>CDBG-DR (federal community development grant)</div>
+        <div class="metric-value">$1.73M<span class="baseline"> / $1.11M</span></div>
+        <div class="metric-recovery good">+56%</div>
+        <div class="metric-note">
+          HUD Community Development Block Grant — Disaster Recovery. FY26 budget projects $1,730,000
+          vs FY25 actual $1,113,300 — an increase of $616,700. One of the few federal recovery
+          funding sources growing in FY26 rather than ending.
+        </div>
+        <div class="metric-trend up">↑ Federal HUD recovery funding growing</div>
+        <div class="metric-source">
+          Source: Town of Fort Myers Beach FY26 Adopted Budget, line item 65 (CDBG-DR).
+        </div>
+        <details class="kpi-method-toggle">
+          <summary><span class="i-icon" aria-hidden="true">i</span> How it's measured</summary>
+          <p class="kpi-method-body">HUD Community Development Block Grant — Disaster Recovery. FY26 budget projects $1,730,000 vs FY25 actual $1,113,300 (+$616,700). One of the few federal recovery funding sources increasing in FY26. Source: Town of FMB FY26 Adopted Budget, line 65.</p>
+        </details>
+      </div>
+
+      <div class="metric-card">
+        <div class="metric-label"><span class="metric-icon dollar"></span>DEO Bridge Loan (state — repayment beginning)</div>
+        <div class="metric-value">$1.72M<span class="baseline"> / $2.89M</span></div>
+        <div class="metric-recovery context">−$1.18M less drawdown YoY</div>
+        <div class="metric-note">
+          $11.9M state interest-free loan via FloridaCommerce (formerly DEO) under Fla. Stat.
+          288.066. FMB received April 2023 — the first local government awarded under the program.
+          Town used as prior-year carryover to fund operations while tax revenues recover. Town
+          officials lobbied the Florida legislature for loan forgiveness; the 2025 session declined,
+          and Mayor Allers stated publicly that the Town must plan for repayment. The FY26 Adopted
+          Budget includes repayment funds. 10% interest becomes due in 2033 if unpaid.
+        </div>
+        <div class="metric-trend context">↓ Drawdown declining; repayment scheduled</div>
+        <div class="metric-source">
+          Source: Town of Fort Myers Beach FY26 Adopted Budget, line item 35 (Bridge Loan);
+          <a href="https://www.flsenate.gov/laws/statutes/2023/288.066" target="_blank">Fla. Stat. 288.066</a>;
+          <a href="https://www.fortmyersbeachtalk.com/news/community-news/2025/09/town-of-fort-myers-beach-council-approves-budget-with-4-millage-hike/" target="_blank">Beach Observer reporting (2025)</a>.
+        </div>
+        <details class="kpi-method-toggle">
+          <summary><span class="i-icon" aria-hidden="true">i</span> How it's measured</summary>
+          <p class="kpi-method-body">$11.9M state interest-free loan via FloridaCommerce (formerly DEO) under Fla. Stat. 288.066. FMB received April 2023, first local government awarded. Used as prior-year carryover; FY26 draws down $1.72M. Town lobbied for forgiveness; 2025 legislative session declined and Mayor Allers said the Town must plan for repayment. FY26 budget includes repayment funds. 10% interest due 2033 if unpaid. Source: FY26 Budget line 35; Fla. Stat. 288.066; Beach Observer (2025).</p>
         </details>
       </div>
 
