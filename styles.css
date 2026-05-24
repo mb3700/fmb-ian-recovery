@@ -383,30 +383,48 @@ body {
   color: rgba(255, 255, 255, 0.82);
 }
 
-/* Metric-card (dark-on-light) variant */
-.metric-card .kpi-method-toggle {
+/* Metric-card + mix-shift (dark-on-light) variant */
+.metric-card .kpi-method-toggle,
+.mix-shift .kpi-method-toggle {
   margin-top: 12px;
 }
-.metric-card .kpi-method-toggle summary {
+.metric-card .kpi-method-toggle summary,
+.mix-shift .kpi-method-toggle summary {
   color: var(--text-tertiary);
   background: rgba(217, 119, 87, 0.04);
   border: 1px solid rgba(217, 119, 87, 0.18);
 }
 .metric-card .kpi-method-toggle summary:hover,
-.metric-card .kpi-method-toggle summary:focus-visible {
+.metric-card .kpi-method-toggle summary:focus-visible,
+.mix-shift .kpi-method-toggle summary:hover,
+.mix-shift .kpi-method-toggle summary:focus-visible {
   color: var(--shrimp-pink-deep);
   border-color: rgba(217, 119, 87, 0.55);
   background: rgba(217, 119, 87, 0.08);
   outline: none;
 }
-.metric-card .kpi-method-toggle[open] summary {
+.metric-card .kpi-method-toggle[open] summary,
+.mix-shift .kpi-method-toggle[open] summary {
   color: var(--shrimp-pink-deep);
   border-color: var(--shrimp-pink);
   background: rgba(217, 119, 87, 0.12);
 }
-.metric-card .kpi-method-body {
+.metric-card .kpi-method-body,
+.mix-shift .kpi-method-body {
   background: var(--sand-white-light);
   color: var(--text-secondary);
+}
+
+/* In the .mix-shift comparison block, align the toggle pill with the start
+   of the bar track so it visually belongs to its row (label col is 140px
+   wide + 16px gap = 156px offset on desktop, 110px on mobile). */
+.mix-shift .kpi-method-toggle {
+  margin-left: 156px;
+}
+@media (max-width: 768px) {
+  .mix-shift .kpi-method-toggle {
+    margin-left: 110px;
+  }
 }
 @media (max-width: 768px) {
   .recovery-rings { gap: 24px; }
