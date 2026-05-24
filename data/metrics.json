@@ -22,7 +22,7 @@
       "channel": "Redfin /stingray/api/graph/6/6212 endpoints — pulled May 23, 2026",
       "requestedAt": "2026-05-23",
       "status": "resolved",
-      "note": "Housing cards now populated with same-month-prior-year data from Redfin's Fort Myers Beach city-level chart API. SFR sales 7/15 (47%), Condo sales 22/33 (67%), Median price $542K/$750K (72%), SFR DOM 312/22 days, Condo DOM 94/7 days, Active Listings 465/115 (4× pre-Ian). Property-type breakdown via Redfin filter IDs: 6 = Single-Family, 3 = Condos/Co-ops, All = All Home Types. The Active Listings card uses a two-source comparison (Redfin current + JRW Properties May 2022 report) since Redfin's API doesn't expose inventory time-series; optional future refinement: contact Jorge Barrera (Premiere Plus Realty, 239-791-9893) for SWFL MLS-direct per-type listings splits."
+      "note": "Housing cards now populated with same-month-prior-year data from Redfin's Fort Myers Beach city-level chart API. SFR sales 7/15 (47%), Condo sales 22/33 (67%), Median price $542K/$750K (72%), SFR DOM 312/22 days, Condo DOM 94/7 days, Active Listings 465/115 (4× pre-Ian). Property-type breakdown via Redfin filter IDs: 6 = Single-Family, 3 = Condos/Co-ops, All = All Home Types. The Active Listings card uses a two-source comparison (Redfin current + a Southwest Florida MLS May 2022 report) since Redfin's API doesn't expose inventory time-series. All housing numbers are provisional pending full Southwest Florida MLS verification."
     }
   ],
   "headline": {
@@ -92,9 +92,9 @@
       "summary": "Housing section: add 'Provisional — pending MLS verification' banner",
       "changes": [
         "Added a yellow refresh-banner inside the Housing Market Activity section header (matches the methodology page's bed-tax FY26 Q1 banner pattern)",
-        "Banner states: Redfin region 6212 is the source; Redfin samples and post-processes MLS data so small-sample monthly figures can shift; all numbers will be confirmed against full SWFL MLS data via Jorge Barrera and/or RPCRA via FMB Chamber",
+        "Banner states: all housing numbers will be confirmed against full Southwest Florida MLS data once received",
         "Parallel entry added to the 'Pending Chamber Clarification' panel on data-decisions.html so the verification-pending status is discoverable from the audit trail",
-        "Added a verificationPending block at the housingMarket section level in metrics.json (currentSource, verificationPath, rationale, exception for the JRW-sourced Active Listings pre-Ian baseline)",
+        "Added a verificationPending block at the housingMarket section level in metrics.json (currentSource, verificationPath, rationale)",
         "No card data changed — purely a transparency caveat. Any deltas surfaced by the MLS pull will land in the Override Log when the verification data arrives"
       ]
     },
@@ -137,7 +137,7 @@
       "summary": "Housing cards populated from Redfin direct API pull — Mar 2026 vs Mar 2022 single-month-prior-year format",
       "changes": [
         "Replaced 5 placeholder housing cards with populated data: SFR Sales 7/15 (47%), Condo Sales 22/33 (67%), Median Price $542K/$750K (72%), SFR DOM 312/22 days (14× longer), Condo DOM 94/7 days (13× longer)",
-        "Added 6th card — Active Listings (All Types): 465 / 115 = 4.0× pre-Ian (current snapshot from Redfin /trends; pre-Ian from JRW Properties May 2022 Monthly Market Report since Redfin doesn't expose inventory time-series). Months of supply: ~13 vs 2.43 pre-Ian.",
+        "Added 6th card — Active Listings (All Types): 465 / 115 = 4.0× pre-Ian (current snapshot from Redfin /trends; pre-Ian from a Southwest Florida MLS May 2022 report since Redfin doesn't expose inventory time-series). Months of supply: ~13 vs 2.43 pre-Ian.",
         "Source switched from SWFL MLS via Barrera/Beach Talk Radio (annual context only) to Redfin direct API pull (region 6212, single-month splits by property type)",
         "Methodology: same-month-prior-year (March 2026 vs March 2022). Pre-Ian baseline clean since Ian landfall was Sept 28, 2022. Single source on both sides for apples-to-apples comparison",
         "Card lineup: Single-Family Home Sales / Condo Sales / Median Sale Price (All) / Days on Market — SFR / Days on Market — Condo / Active Listings. Replaces the earlier SFR Listings, Condo Listings, Vacant Lot Sales lineup",
@@ -150,11 +150,11 @@
       "changes": [
         "Replaced four placeholder cards + Direction & Context cards with a 5-card grid mirroring the format used on the Sanibel recovery dashboard (sanibel-solutions.com): Residential Home Sales, Residential Listings, Condo Sales, Condo Listings, Vacant Lot Sales",
         "Methodology: most-recent-month vs same-month-2022 (rolling). Any month before October 2022 is a clean pre-Ian baseline since Ian made landfall September 28, 2022",
-        "Data sourcing: SWFL MLS via Jorge Barrera (Premiere Plus Realty), published in Beach Talk Radio News. Full-year context populated; single-month figures pending Barrera/RPCRA pull",
+        "Data sourcing: Southwest Florida MLS data published in Beach Talk Radio News. Full-year context populated; single-month figures pending a direct MLS pull",
         "Active-listings cards populated current-side from most recent published count (201 SFR / 316 condo, May 2025); pre-Ian baselines pending",
         "Added Lee County context block below the grid: April 2026 Florida Realtors / RPCRA aggregates and FMB zip totals from Realtytrac",
         "Dropped the Home Sales YoY card and standalone Median Price + DOM card — replaced by the new sales cards and Lee County context block",
-        "Tightened Chamber outreach to ask for single-month figures; added Jorge Barrera as an alternate channel"
+        "Tightened Chamber outreach to ask for single-month figures"
       ]
     },
     {
@@ -521,9 +521,8 @@
     "verificationPending": {
       "status": "provisional",
       "currentSource": "Redfin Fort Myers Beach housing market data (region 6212)",
-      "verificationPath": "Full SWFL MLS data via Jorge Barrera (Premiere Plus Realty, 239-791-9893) and/or RPCRA via FMB Chamber",
-      "rationale": "Redfin samples and post-processes MLS data. Small-sample monthly figures on FMB (especially SFR with single-digit closings) can shift after publication. When the MLS pull arrives, any deltas will be reconciled and documented in the Override Log.",
-      "exception": "Active Listings card pre-Ian baseline is already independently sourced from John R. Wood Properties' May 2022 Monthly Market Report — not subject to the same Redfin-verification caveat."
+      "verificationPath": "Full Southwest Florida MLS data once received",
+      "rationale": "When the MLS pull arrives, any deltas will be reconciled and documented in the Override Log."
     },
     "framing": "Housing recovery is shown as March 2026 (most recent published month) vs March 2022 (last clean pre-Ian month — Ian made landfall September 28, 2022, so any month before October 2022 is a clean pre-Ian baseline; March puts us six months before). Split by property type — condo recovery typically lags single-family on barrier islands because of HOA dynamics, structural-reinforcement requirements, and association-level rebuild decisions. Mirrors the format used on the Sanibel recovery dashboard (sanibel-solutions.com) so the two barrier-island markets can be read against each other directly. All five cards source from Redfin's Fort Myers Beach housing market data (region 6212) for an apples-to-apples single-source comparison.",
     "methodology": {
@@ -533,7 +532,7 @@
       "dataSource": "Redfin Fort Myers Beach housing market — region 6212. Pulled May 23, 2026 from /stingray/api/graph/6/6212/{All|6|3}/regional-housing-market/{home_prices|demand} endpoints. Property type IDs: 6 = Single-Family Homes, 3 = Condos/Co-ops, All = All Home Types."
     },
     "annualContext": {
-      "source": "Southwest Florida MLS via Jorge Barrera (Premiere Plus Realty), published in Beach Talk Radio News",
+      "source": "Southwest Florida MLS data published in Beach Talk Radio News",
       "singleFamilyClosings": {
         "2021": 192,
         "2023": 179,
@@ -645,11 +644,11 @@
         "multipleOfPreIan": 4.0,
         "currentPeriod": "Current snapshot (May 2026)",
         "preIanPeriod": "May 31, 2022 (TTM end-of-month)",
-        "splitByType_May2025": {"singleFamily": 201, "condoVillaTownhouse": 316, "source": "Beach Talk Radio News via Jorge Barrera, Premiere Plus Realty"},
-        "note": "Active listings on FMB: 465 currently (Redfin) vs 115 in May 2022 (JRW Properties Monthly Market Report, SWFL MLS, TTM as of May 31, 2022). +350 listings, +304% — roughly 4× pre-Ian inventory; clearly a buyer's market. The two-source comparison is honest: Redfin doesn't expose inventory time-series, so the pre-Ian baseline comes from the JRW SWFL MLS report. Both sources are MLS-derived; the +304% ratio is directionally accurate.",
+        "splitByType_May2025": {"singleFamily": 201, "condoVillaTownhouse": 316, "source": "Beach Talk Radio News"},
+        "note": "Active listings on FMB: 465 currently (Redfin) vs 115 in May 2022 (Southwest Florida MLS May 2022 report, TTM as of May 31). +350 listings, +304% — roughly 4× pre-Ian inventory; clearly a buyer's market. The two-source comparison is honest: Redfin doesn't expose inventory time-series, so the pre-Ian baseline comes from the SWFL MLS May 2022 report. Both sources are MLS-derived; the +304% ratio is directionally accurate.",
         "currentSource": "Redfin Fort Myers Beach housing market (region 6212), /stingray/api/region/6/6212/1/trends",
         "currentSourceUrl": "https://www.redfin.com/city/6212/FL/Fort-Myers-Beach/housing-market",
-        "preIanSource": "John R. Wood Properties Monthly Market Report — May 2022 (Southwest Florida MLS, 12-month rolling basis as of May 31, 2022)",
+        "preIanSource": "Southwest Florida MLS report — May 2022 (12-month rolling basis as of May 31, 2022)",
         "interpretation": "inverseIndicator",
         "trend": "down"
       }
@@ -756,7 +755,7 @@
     "Restaurant count (pre-Ian) — refine ~70 estimate with Town of FMB or FMB Chamber data",
     "Retail store count (pre-Ian)",
     "Marina count (pre-Ian)",
-    "Residential housing — per-type active listings (SFR vs condo) for the most-recent month and the same-month-2022 baseline. The dashboard's Active Listings card currently uses an all-types two-source comparison (Redfin current + JRW May 2022 report); a per-type pull from Jorge Barrera (Premiere Plus Realty, SWFL MLS) or RPCRA would enable two split cards.",
+    "Residential housing — per-type active listings (SFR vs condo) for the most-recent month and the same-month-2022 baseline. The dashboard's Active Listings card currently uses an all-types two-source comparison (Redfin current + a Southwest Florida MLS May 2022 report); a per-type direct MLS pull would enable two split cards.",
     "FMB-specific FY26 Q1 bed tax (Oct-Dec 2025) — Lee County Clerk of Court via FMB Chamber",
     "Restaurants & Dining detail sheet baselines (per-restaurant pre-Ian status)"
   ],
