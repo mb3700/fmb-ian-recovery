@@ -92,9 +92,10 @@
       "summary": "Housing cards populated from Redfin direct API pull — Mar 2026 vs Mar 2022 single-month-prior-year format",
       "changes": [
         "Replaced 5 placeholder housing cards with populated data: SFR Sales 7/15 (47%), Condo Sales 22/33 (67%), Median Price $542K/$750K (72%), SFR DOM 312/22 days (14× longer), Condo DOM 94/7 days (13× longer)",
+        "Added 6th card — Active Listings (All Types): 465 / 115 = 4.0× pre-Ian (current snapshot from Redfin /trends; pre-Ian from JRW Properties May 2022 Monthly Market Report since Redfin doesn't expose inventory time-series). Months of supply: ~13 vs 2.43 pre-Ian.",
         "Source switched from SWFL MLS via Barrera/Beach Talk Radio (annual context only) to Redfin direct API pull (region 6212, single-month splits by property type)",
         "Methodology: same-month-prior-year (March 2026 vs March 2022). Pre-Ian baseline clean since Ian landfall was Sept 28, 2022. Single source on both sides for apples-to-apples comparison",
-        "Card lineup: Single-Family Home Sales / Condo Sales / Median Sale Price (All) / Days on Market — SFR / Days on Market — Condo. Replaces the earlier SFR Listings, Condo Listings, Vacant Lot Sales lineup",
+        "Card lineup: Single-Family Home Sales / Condo Sales / Median Sale Price (All) / Days on Market — SFR / Days on Market — Condo / Active Listings. Replaces the earlier SFR Listings, Condo Listings, Vacant Lot Sales lineup",
         "Data Source back-card structure preserved (Sanibel-style 'Data Source / Data as of / Via' panel on dark navy)"
       ]
     },
@@ -587,6 +588,25 @@
         "note": "Median DOM for condo closings: 94 days in March 2026 vs 7 in March 2022 — 13× longer. Condos still move faster than single-family (94 vs 312 days) — the inventory glut is real but buyers find a clearing price faster on condos. Lee County overall condo DOM was 60 days (April 2026); FMB sits slightly above county-wide. Sale-to-list 92.8% (was 99.9% in March 2022).",
         "source": "Redfin Fort Myers Beach housing market (region 6212)",
         "sourceUrl": "https://www.redfin.com/city/6212/FL/Fort-Myers-Beach/housing-market",
+        "interpretation": "inverseIndicator",
+        "trend": "down"
+      },
+      {
+        "label": "Active Listings (All Types)",
+        "propertyType": "all",
+        "metricType": "active-listings",
+        "current": 465,
+        "preIan": 115,
+        "multipleOfPreIan": 4.0,
+        "currentPeriod": "Current snapshot (May 2026)",
+        "preIanPeriod": "May 31, 2022 (TTM end-of-month)",
+        "currentMonthsSupply": 13.3,
+        "preIanMonthsSupply": 2.43,
+        "splitByType_May2025": {"singleFamily": 201, "condoVillaTownhouse": 316, "vacantLots": 132, "source": "Beach Talk Radio News via Jorge Barrera, Premiere Plus Realty"},
+        "note": "Active listings on FMB: 465 currently (Redfin) vs 115 in May 2022 (JRW Properties Monthly Market Report, SWFL MLS, TTM as of May 31, 2022). Roughly 4× pre-Ian inventory. Months of supply moved from 2.43 (sellers' market) to ~13 (buyers' market) — 5× expansion. The two-source comparison is honest: Redfin doesn't expose inventory time-series, so the pre-Ian baseline comes from the JRW SWFL MLS report. Both sources are MLS-derived; the 4× ratio is directionally accurate.",
+        "currentSource": "Redfin Fort Myers Beach housing market (region 6212), /stingray/api/region/6/6212/1/trends",
+        "currentSourceUrl": "https://www.redfin.com/city/6212/FL/Fort-Myers-Beach/housing-market",
+        "preIanSource": "John R. Wood Properties Monthly Market Report — May 2022 (Southwest Florida MLS, 12-month rolling basis as of May 31, 2022)",
         "interpretation": "inverseIndicator",
         "trend": "down"
       }
