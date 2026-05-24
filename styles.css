@@ -383,6 +383,47 @@ body {
   color: rgba(255, 255, 255, 0.82);
 }
 
+/* ============ C2: Hide heavy prose behind the methodology toggle ============
+ * On standard .metric-card surfaces, the metric-note paragraph + metric-source
+ * line + refresh-status block are collapsed by default — they make cards too
+ * busy when all stacked above the toggle. The progressive-disclosure principle
+ * (north-star #3) keeps the front compact; the toggle reveals the detail.
+ *
+ * The metric-trend one-liner stays visible (it's a short directional signal
+ * and adds real value at a glance).
+ *
+ * Scope: only .metric-card. Hero rings, mix-bars, and section-level cards
+ * keep their own behavior.
+ */
+.metric-card .metric-note,
+.metric-card .metric-source,
+.metric-card .refresh-status {
+  display: none;
+}
+.metric-card:has(.kpi-method-toggle[open]) .metric-note,
+.metric-card:has(.kpi-method-toggle[open]) .metric-source,
+.metric-card:has(.kpi-method-toggle[open]) .refresh-status {
+  display: block;
+  animation: kpi-method-reveal 0.22s ease-out;
+}
+/* When revealed, give the note + source a soft tint so they read as part of
+ * the toggle's expanded panel rather than loose card content. */
+.metric-card:has(.kpi-method-toggle[open]) .metric-note {
+  background: var(--sand-white-light);
+  border-left: 3px solid var(--shrimp-pink);
+  border-radius: 6px;
+  padding: 12px 14px;
+  margin-top: 12px;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+.metric-card:has(.kpi-method-toggle[open]) .metric-source {
+  font-size: 0.78rem;
+  color: var(--text-tertiary);
+  padding: 0 14px;
+  margin-top: 6px;
+}
+
 /* Metric-card + mix-shift (dark-on-light) variant */
 .metric-card .kpi-method-toggle,
 .mix-shift .kpi-method-toggle {
