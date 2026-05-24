@@ -89,6 +89,17 @@
   "changelog": [
     {
       "date": "2026-05-23",
+      "summary": "Housing section: add 'Provisional — pending MLS verification' banner",
+      "changes": [
+        "Added a yellow refresh-banner inside the Housing Market Activity section header (matches the methodology page's bed-tax FY26 Q1 banner pattern)",
+        "Banner states: Redfin region 6212 is the source; Redfin samples and post-processes MLS data so small-sample monthly figures can shift; all numbers will be confirmed against full SWFL MLS data via Jorge Barrera and/or RPCRA via FMB Chamber",
+        "Parallel entry added to the 'Pending Chamber Clarification' panel on data-decisions.html so the verification-pending status is discoverable from the audit trail",
+        "Added a verificationPending block at the housingMarket section level in metrics.json (currentSource, verificationPath, rationale, exception for the JRW-sourced Active Listings pre-Ian baseline)",
+        "No card data changed — purely a transparency caveat. Any deltas surfaced by the MLS pull will land in the Override Log when the verification data arrives"
+      ]
+    },
+    {
+      "date": "2026-05-23",
       "summary": "Active Listings card simplified: drop days-of-supply / days-to-clear framing",
       "changes": [
         "Mark's call: keep the housing section focused on days-on-market only; do not mix in supply-clearance concepts even when using matching units",
@@ -507,6 +518,13 @@
   ],
   "housingMarket": {
     "headline": "SFR sales −53% / Condo sales −33% vs March 2022; DOM +87 to +290 days longer; listings +304%",
+    "verificationPending": {
+      "status": "provisional",
+      "currentSource": "Redfin Fort Myers Beach housing market data (region 6212)",
+      "verificationPath": "Full SWFL MLS data via Jorge Barrera (Premiere Plus Realty, 239-791-9893) and/or RPCRA via FMB Chamber",
+      "rationale": "Redfin samples and post-processes MLS data. Small-sample monthly figures on FMB (especially SFR with single-digit closings) can shift after publication. When the MLS pull arrives, any deltas will be reconciled and documented in the Override Log.",
+      "exception": "Active Listings card pre-Ian baseline is already independently sourced from John R. Wood Properties' May 2022 Monthly Market Report — not subject to the same Redfin-verification caveat."
+    },
     "framing": "Housing recovery is shown as March 2026 (most recent published month) vs March 2022 (last clean pre-Ian month — Ian made landfall September 28, 2022, so any month before October 2022 is a clean pre-Ian baseline; March puts us six months before). Split by property type — condo recovery typically lags single-family on barrier islands because of HOA dynamics, structural-reinforcement requirements, and association-level rebuild decisions. Mirrors the format used on the Sanibel recovery dashboard (sanibel-solutions.com) so the two barrier-island markets can be read against each other directly. All five cards source from Redfin's Fort Myers Beach housing market data (region 6212) for an apples-to-apples single-source comparison.",
     "methodology": {
       "comparisonPattern": "March 2026 (latest month) vs March 2022 (same-month-prior-year, pre-Ian)",
