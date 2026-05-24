@@ -113,7 +113,7 @@
       "summary": "Active Listings card simplified: drop days-of-supply / days-to-clear framing",
       "changes": [
         "Mark's call: keep the housing section focused on days-on-market only; do not mix in supply-clearance concepts even when using matching units",
-        "Active Listings card chips collapsed from two ('~395 days to clear inventory' + Lee County days-to-clear) down to one Sanibel-style qualitative tag: '↓ High inventory — buyer's market'",
+        "Active Listings card chips collapsed from two ('~395 days to clear inventory' + Lee County days-to-clear) down to one qualitative tag: '↓ High inventory — buyer's market'",
         "Lee County context block trimmed to just closing counts + median + DOM (dropped the '131 days SFR / 176 days condo to clear inventory' line and the 'FMB's ~395 days sits 3× county-wide' comparison)",
         "currentDaysSupply / preIanDaysSupply fields removed from the Active Listings metric in metrics.json (the daysSupply concept is no longer surfaced anywhere)",
         "Section lead, methodology.html, recovery-summary.md updated for the simplified phrasing"
@@ -125,7 +125,7 @@
       "changes": [
         "Dropped the Median Sale Price (All Types) card. The All-Types DOM of 100 days read as a contradiction next to SFR 312 / Condo 94 (it's a valid weighted median — condos dominate volume — but it invited the wrong math at a glance)",
         "Median price by type is preserved as a chip on each Sales card (SFR Sales chip shows '$870K, was $1,080K · −19%'; Condo Sales chip shows '$472,500, was $675K · −30%')",
-        "Active Listings chip simplified to a Sanibel-style qualitative tag ('High inventory — buyer's market'); previous supply/days-to-clear framing dropped to keep the page focused on days-on-market only",
+        "Active Listings chip simplified to a qualitative tag ('High inventory — buyer's market'); previous supply/days-to-clear framing dropped to keep the page focused on days-on-market only",
         "Lee County context block updated for the same chip phrasing (131 days SFR / 176 days condo to clear)",
         "Section lead text updated: 'four Sales/DOM cards' instead of 'five cards' (since Active Listings is two-source)",
         "Housing grid is now 5 cards instead of 6"
@@ -151,14 +151,14 @@
         "Source switched from SWFL MLS via Barrera/Beach Talk Radio (annual context only) to Redfin direct API pull (region 6212, single-month splits by property type)",
         "Methodology: same-month-prior-year (March 2026 vs March 2022). Pre-Ian baseline clean since Ian landfall was Sept 28, 2022. Single source on both sides for apples-to-apples comparison",
         "Card lineup: Single-Family Home Sales / Condo Sales / Median Sale Price (All) / Days on Market — SFR / Days on Market — Condo / Active Listings. Replaces the earlier SFR Listings, Condo Listings, Vacant Lot Sales lineup",
-        "Data Source back-card structure preserved (Sanibel-style 'Data Source / Data as of / Via' panel on dark navy)"
+        "Data Source back-card structure preserved ('Data Source / Data as of / Via' panel on dark navy)"
       ]
     },
     {
       "date": "2026-05-23",
-      "summary": "Housing Market section rebuilt — Sanibel-mirror format with SWFL MLS sourcing",
+      "summary": "Housing Market section rebuilt — value-over-percentage format with SWFL MLS sourcing",
       "changes": [
-        "Replaced four placeholder cards + Direction & Context cards with a 5-card grid mirroring the format used on the Sanibel recovery dashboard (sanibel-solutions.com): Residential Home Sales, Residential Listings, Condo Sales, Condo Listings, Vacant Lot Sales",
+        "Replaced four placeholder cards + Direction & Context cards with a 5-card grid: Residential Home Sales, Residential Listings, Condo Sales, Condo Listings, Vacant Lot Sales",
         "Methodology: most-recent-month vs same-month-2022 (rolling). Any month before October 2022 is a clean pre-Ian baseline since Ian made landfall September 28, 2022",
         "Data sourcing: Southwest Florida MLS data published in Beach Talk Radio News. Full-year context populated; single-month figures pending a direct MLS pull",
         "Active-listings cards populated current-side from most recent published count (201 SFR / 316 condo, May 2025); pre-Ian baselines pending",
@@ -534,11 +534,10 @@
       "verificationPath": "Full Southwest Florida MLS data once received",
       "rationale": "When the MLS pull arrives, any deltas will be reconciled and documented in the Override Log."
     },
-    "framing": "Housing recovery is shown as March 2026 (most recent published month) vs March 2022 (last clean pre-Ian month — Ian made landfall September 28, 2022, so any month before October 2022 is a clean pre-Ian baseline; March puts us six months before). Split by property type — condo recovery typically lags single-family on barrier islands because of HOA dynamics, structural-reinforcement requirements, and association-level rebuild decisions. Mirrors the format used on the Sanibel recovery dashboard (sanibel-solutions.com) so the two barrier-island markets can be read against each other directly. All five cards source from Redfin's Fort Myers Beach housing market data (region 6212) for an apples-to-apples single-source comparison.",
+    "framing": "Housing recovery is shown as March 2026 (most recent published month) vs March 2022 (last clean pre-Ian month — Ian made landfall September 28, 2022, so any month before October 2022 is a clean pre-Ian baseline; March puts us six months before). Split by property type — condo recovery typically lags single-family on barrier islands because of HOA dynamics, structural-reinforcement requirements, and association-level rebuild decisions. All five cards source from Redfin's Fort Myers Beach housing market data (region 6212) for an apples-to-apples single-source comparison.",
     "methodology": {
       "comparisonPattern": "March 2026 (latest month) vs March 2022 (same-month-prior-year, pre-Ian)",
       "preIanRationale": "Hurricane Ian made landfall September 28, 2022 — any month before October 2022 is a clean pre-Ian baseline. March 2022 sits 6 months before Ian. Same-month-prior-year comparison preserves seasonality and gives an apples-to-apples single-source view from Redfin.",
-      "sanibelParallel": "Sanibel uses Sept-vs-Sept single-month closings sourced from Sanibel & Captiva Islands Association of REALTORS. FMB uses Mar-vs-Mar single-month closings sourced from Redfin city-level data (region 6212). Same single-month value-over-percentage structure.",
       "dataSource": "Redfin Fort Myers Beach housing market — region 6212. Pulled May 23, 2026 from /stingray/api/graph/6/6212/{All|6|3}/regional-housing-market/{home_prices|demand} endpoints. Property type IDs: 6 = Single-Family Homes, 3 = Condos/Co-ops, All = All Home Types."
     },
     "annualContext": {

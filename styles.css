@@ -1,32 +1,62 @@
 /* Fort Myers Beach Hurricane Ian Recovery Dashboard
- * Adapted from Sanibel Solutions' visual conventions:
- *   Typography: Libre Baskerville (headings) + Inter (body)
- *   Palette: ocean-navy + seafoam + warm-sand
+ *
+ * FMB-specific visual system, sampled from place:
+ *   - Pink-gold shrimp fleet  → brand voltage (--shrimp-pink)
+ *   - Gulf at dusk            → primary text / dark surfaces (--gulf-deep)
+ *   - Estero Island sand      → page background (--sand-white)
+ *   - Sea oats on dunes       → soft accents (--sea-oat)
+ *   - Mangroves               → semantic "positive trend" (--mangrove)
+ *
+ * Brand voltage rule: --shrimp-pink carries primary CTAs, key links, and accents only.
+ * It is the single brand color (Airbnb Rausch / Stripe indigo equivalent). Don't decorate with it.
+ *
+ * Typography: Libre Baskerville (headings) + Inter (body). Tabular numerals enforced globally.
+ *
+ * Migration note: legacy --ocean-navy / --seafoam / --warm-sand tokens are aliased to the
+ * new FMB tokens so existing rules keep working. Future commits should reference the new
+ * tokens directly; the aliases can be removed once usage is fully migrated.
  */
 
 :root {
-  --ocean-navy: hsl(215, 32%, 17%);
-  --ocean-deep: #0c4a6e;
-  --ocean-100: hsl(185, 65%, 95%);
-  --ocean-200: hsl(185, 65%, 88%);
-  --ocean-700: var(--ocean-deep);
-  --seafoam: #2d9eb9;
-  --seafoam-dark: #1c7a92;
-  --warm-sand: hsl(35, 30%, 90%);
-  --warm-sand-light: hsl(35, 30%, 96%);
-  --text-primary: var(--ocean-navy);
-  --text-secondary: hsl(215, 12%, 38%);
-  --text-tertiary: hsl(215, 12%, 55%);
-  --border-light: hsl(35, 30%, 88%);
-  --shadow-sm: 0 1px 2px hsl(215 32% 17% / 0.04);
-  --shadow-md: 0 4px 12px hsl(215 32% 17% / 0.06);
-  --shadow-lg: 0 8px 24px hsl(215 32% 17% / 0.08);
+  /* === FMB palette (canonical) === */
+  --gulf-deep: #0a3a5c;            /* Gulf at dusk — primary text, dark surfaces */
+  --pier-weather: #2d5d6e;         /* Weathered pier pilings — secondary text */
+  --shrimp-pink: #d97757;          /* Pink-gold shrimp shell — BRAND VOLTAGE (single-use) */
+  --shrimp-pink-deep: #b85b3e;     /* Deeper coral for hovers / white-on-pink contrast */
+  --shrimp-pink-soft: #f5d4c4;     /* Soft fill for callouts, badges */
+  --sand-white: #f5efe6;           /* Estero Island sand — page background */
+  --sand-white-light: #faf6ef;     /* Lighter sand for cards */
+  --sea-oat: #c9b88a;              /* Sea oats on dunes — borders, dividers */
+  --mangrove: #3a6a4a;             /* Mangrove green — semantic: positive trend */
+  --surge-red: #b8423a;            /* Storm surge / warning red */
 
-  --good: #2A8C4D;
-  --warn: #E0A100;
-  --bad: #C0392B;
+  /* === Legacy token aliases (do not use in new rules; will be removed) === */
+  --ocean-navy: var(--gulf-deep);
+  --ocean-deep: var(--gulf-deep);
+  --ocean-100: var(--sand-white-light);
+  --ocean-200: var(--sand-white);
+  --ocean-700: var(--gulf-deep);
+  --seafoam: var(--shrimp-pink);
+  --seafoam-dark: var(--shrimp-pink-deep);
+  --warm-sand: var(--sea-oat);
+  --warm-sand-light: var(--sand-white-light);
+
+  /* === Text, borders, shadows === */
+  --text-primary: var(--gulf-deep);
+  --text-secondary: hsl(206, 30%, 32%);
+  --text-tertiary: hsl(206, 18%, 48%);
+  --border-light: hsl(36, 30%, 80%);
+  --shadow-sm: 0 1px 2px hsl(206 50% 18% / 0.05);
+  --shadow-md: 0 4px 12px hsl(206 50% 18% / 0.07);
+  --shadow-lg: 0 8px 24px hsl(206 50% 18% / 0.10);
+
+  /* === Semantic colors === */
+  --good: var(--mangrove);
+  --warn: #c89400;                 /* deeper gold, harmonizes with shrimp-pink */
+  --bad: var(--surge-red);
   --neutral: #6B6B6B;
 
+  /* === Typography === */
   --font-heading: 'Libre Baskerville', Georgia, serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
 }
@@ -37,7 +67,9 @@ body {
   font-family: var(--font-body);
   line-height: 1.6;
   color: var(--text-primary);
-  background: #FAFAF7;
+  background: var(--sand-white);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1, "ss01" 1;
 }
 
 /* ============ BETA BANNER ============ */
@@ -130,9 +162,11 @@ body {
   font-family: var(--font-heading);
   font-size: 2.4rem;
   font-weight: 700;
-  color: var(--seafoam);
+  color: var(--shrimp-pink);
   display: block;
   line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
 }
 .editorial-stat-label {
   font-size: 0.85rem;
@@ -255,9 +289,11 @@ main {
   font-family: var(--font-heading);
   font-size: 2.2rem;
   font-weight: 700;
-  color: var(--ocean-navy);
+  color: var(--gulf-deep);
   line-height: 1.1;
   margin-bottom: 4px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
 }
 .metric-value .baseline {
   color: var(--text-tertiary);
@@ -724,7 +760,7 @@ main {
   margin-top: 0;
 }
 
-/* ============ Housing section — Sanibel-style Data Source back card ============ */
+/* ============ Housing section — Data Source back card ============ */
 /* Front: keep card body context visible (uses .card-context, not .metric-note, so JS doesn't flip it) */
 #housing-market .card-context {
   margin: 14px 0 0;
@@ -733,7 +769,7 @@ main {
   line-height: 1.6;
 }
 
-/* Back: dark navy panel matching the Sanibel dashboard's source cards */
+/* Back: dark navy panel for source attribution */
 #housing-market .metric-card-back {
   background: var(--ocean-navy);
   color: #f3f6fb;
