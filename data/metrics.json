@@ -305,7 +305,7 @@
           "sourceFile": "Accommodations as ofMarch 18,, 2026.xlsx",
           "interpretation": "trueRecovery",
           "trend": "up",
-          "trendLabel": "Stronger than the Google-Places business database alone suggests"
+          "trendLabel": null
         },
         {
           "label": "Hotel Properties Operating",
@@ -431,7 +431,7 @@
           "unit": "businesses",
           "recoveryPercent": null,
           "note": "294 currently operational of 299 tracked. Pre-Ian baseline pending — Town of FMB business tax receipts.",
-          "source": "Current: fmb-baseline-report-march-2026.xlsx (Google Places-verified businesses).",
+          "source": "Current: fmb-baseline-report-march-2026.xlsx.",
           "sourceUrl": null,
           "interpretation": "trueRecovery",
           "trend": "neutral",
