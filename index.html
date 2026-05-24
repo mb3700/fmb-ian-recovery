@@ -402,137 +402,174 @@
     <div class="section-header">
       <h2>Housing Market Activity</h2>
       <p class="section-lead">
-        Housing recovery is shown here as pre-Ian (2022) vs current (2026), split by property
-        type. Condo recovery typically lags single-family residential on barrier islands — HOA
-        dynamics, structural reinforcement requirements, and association-level rebuild decisions
-        slow individual-unit return. FMB's heavy condo and timeshare inventory makes the split
-        material here. The four placeholder cards below show those comparisons (Residential vs
-        Condo × Active Listings vs Annual Sales), pending RPCRA data via the FMB Chamber. The
-        two cards beneath are direction and context indicators we have today.
+        Housing recovery is shown as the most recent month vs the same month in 2022 (pre-Ian;
+        Ian made landfall September 28, 2022, so any month before October 2022 is a clean
+        pre-Ian baseline). Split by property type because condo recovery typically lags
+        single-family on barrier islands — HOA dynamics, structural reinforcement requirements,
+        and association-level rebuild decisions slow individual-unit return. FMB's heavy condo
+        and timeshare inventory makes the split material. Mirrors the format used on the
+        <a href="https://sanibel-solutions.com/dashboard" target="_blank" style="color: var(--seafoam-dark);">Sanibel recovery dashboard</a>
+        so the two barrier-island markets can be read against each other directly. Active
+        listings cards show the most recent published count on the current side; closing-count
+        and pre-Ian-baseline figures are pending an MLS pull from Jorge Barrera (Premiere Plus
+        Realty) and RPCRA via the FMB Chamber.
       </p>
     </div>
 
-    <h3 class="section-subheading">
-      Residential (single-family)
-    </h3>
     <div class="metric-grid">
 
-      <!-- Residential — Active Listings (placeholder) -->
+      <!-- Residential Home Sales -->
       <div class="metric-card">
-        <div class="metric-label"><span class="metric-icon home"></span>Residential — Active Listings</div>
+        <div class="metric-label"><span class="metric-icon home"></span>Residential Home Sales</div>
         <div class="metric-value">—<span class="baseline"> / —</span></div>
-        <div class="metric-recovery pending">Pre-Ian + current pending — RPCRA request</div>
+        <div class="metric-recovery pending">Most-recent-month vs same month 2022 — pending</div>
         <div class="metric-note">
-          Active single-family residential listings on Fort Myers Beach: pre-Ian (2022) baseline
-          vs current (2026). Both numbers pending RPCRA / Lee County Property Appraiser via FMB
-          Chamber.
+          Single-family residential closings on Fort Myers Beach: most recent month vs the
+          same month in 2022. Full-year context from SWFL MLS: 192 SFR closed in 2021 (last
+          clean pre-Ian year), 179 in 2023, 70 in 2024, 38 closed in Jan–May 2025. The
+          single-month figures sit at this granularity in SWFL MLS but have not been
+          published publicly; requested from Jorge Barrera and RPCRA.
         </div>
-        <div class="metric-trend neutral">— Awaiting RPCRA data</div>
+        <div class="metric-trend neutral">— Awaiting single-month figures</div>
+        <div class="metric-source">
+          <strong>Source:</strong> Southwest Florida MLS via Jorge Barrera (Premiere Plus
+          Realty), published in
+          <a href="https://beachtalkradionews.com/is-the-beach-real-estate-market-hot-or-cold/" target="_blank">Beach Talk Radio News</a>
+          (June 24, 2025).
+        </div>
         <div class="refresh-status">
-          <strong>Refresh in progress:</strong> Pre-Ian and current FMB-specific active-listing
-          counts for single-family residential requested from RPCRA via FMB Chamber.
+          <strong>Refresh in progress:</strong> Most-recent-month and same-month-2022
+          single-family closings requested from Jorge Barrera (Premiere Plus Realty) and
+          RPCRA via FMB Chamber.
         </div>
       </div>
 
-      <!-- Residential — Annual Sales (placeholder) -->
+      <!-- Residential Listings -->
       <div class="metric-card">
-        <div class="metric-label"><span class="metric-icon dollar"></span>Residential — Annual Sales Volume</div>
-        <div class="metric-value">—<span class="baseline"> / —</span></div>
-        <div class="metric-recovery pending">Pre-Ian + current pending — RPCRA request</div>
+        <div class="metric-label"><span class="metric-icon home"></span>Residential Listings</div>
+        <div class="metric-value">201<span class="baseline"> / —</span></div>
+        <div class="metric-recovery pending">Pre-Ian baseline pending</div>
         <div class="metric-note">
-          Single-family residential closings on FMB: 2022 full-year (pre-Ian baseline) vs
-          trailing-12-month (current). The transaction-volume side of residential recovery.
+          Active single-family residential listings on FMB. Current side shows the most
+          recent published count (201 active, May 2025; SFR inventory reported at 21.03
+          months of supply in March 2026 and 19.79 months in December 2025 — listing
+          count has stayed roughly flat near 200). Pre-Ian (May 2022) baseline pending.
         </div>
-        <div class="metric-trend neutral">— Awaiting RPCRA data</div>
+        <div class="metric-trend neutral">— High inventory (21.03 months supply, March 2026)</div>
+        <div class="metric-source">
+          <strong>Source:</strong> Current — Southwest Florida MLS via Jorge Barrera
+          (Premiere Plus Realty), reported in
+          <a href="https://beachtalkradionews.com/is-the-beach-real-estate-market-hot-or-cold/" target="_blank">Beach Talk Radio News</a>
+          (June 24, 2025). Pre-Ian baseline pending.
+        </div>
         <div class="refresh-status">
-          <strong>Refresh in progress:</strong> 2022 monthly closings + trailing-12-month total
-          for single-family residential requested from RPCRA via FMB Chamber.
+          <strong>Refresh in progress:</strong> Same-month-2022 SFR active-listing count
+          requested from Jorge Barrera and RPCRA via FMB Chamber.
+        </div>
+      </div>
+
+      <!-- Condo Sales -->
+      <div class="metric-card">
+        <div class="metric-label"><span class="metric-icon building"></span>Condo Sales</div>
+        <div class="metric-value">—<span class="baseline"> / —</span></div>
+        <div class="metric-recovery pending">Most-recent-month vs same month 2022 — pending</div>
+        <div class="metric-note">
+          Condo, villa, and townhouse closings on FMB: most recent month vs the same month
+          in 2022. Full-year context from SWFL MLS: 320 closed in 2020, 401 in 2021 (last
+          clean pre-Ian year), 232 in 2022 (Ian year), 197 in 2023, 166 in 2024, 58 in
+          Jan–May 2025. Condo recovery typically lags single-family because of HOA dynamics,
+          structural-reinforcement requirements, and association-level rebuild votes.
+        </div>
+        <div class="metric-trend neutral">— Awaiting single-month figures</div>
+        <div class="metric-source">
+          <strong>Source:</strong> Southwest Florida MLS via Jorge Barrera (Premiere Plus
+          Realty), published in
+          <a href="https://beachtalkradionews.com/is-the-beach-real-estate-market-hot-or-cold/" target="_blank">Beach Talk Radio News</a>
+          (June 24, 2025).
+        </div>
+        <div class="refresh-status">
+          <strong>Refresh in progress:</strong> Most-recent-month and same-month-2022 condo
+          closings requested from Jorge Barrera and RPCRA via FMB Chamber.
+        </div>
+      </div>
+
+      <!-- Condo Listings -->
+      <div class="metric-card">
+        <div class="metric-label"><span class="metric-icon building"></span>Condo Listings</div>
+        <div class="metric-value">316<span class="baseline"> / —</span></div>
+        <div class="metric-recovery pending">Pre-Ian baseline pending</div>
+        <div class="metric-note">
+          Active condo, villa, and townhouse listings on FMB. Current: 316 active (May 2025;
+          ~23 months of supply reported February 2025). Pre-Ian (May 2022) baseline pending.
+        </div>
+        <div class="metric-trend neutral">— High inventory (~23 months supply, Feb 2025)</div>
+        <div class="metric-source">
+          <strong>Source:</strong> Current — Southwest Florida MLS via Jorge Barrera
+          (Premiere Plus Realty), reported in
+          <a href="https://beachtalkradionews.com/is-the-beach-real-estate-market-hot-or-cold/" target="_blank">Beach Talk Radio News</a>
+          (June 24, 2025). Pre-Ian baseline pending.
+        </div>
+        <div class="refresh-status">
+          <strong>Refresh in progress:</strong> Same-month-2022 condo active-listing count
+          requested from Jorge Barrera and RPCRA via FMB Chamber.
+        </div>
+      </div>
+
+      <!-- Vacant Lot Sales -->
+      <div class="metric-card">
+        <div class="metric-label"><span class="metric-icon map"></span>Vacant Lot Sales</div>
+        <div class="metric-value">—<span class="baseline"> / —</span></div>
+        <div class="metric-recovery pending">Most-recent-month vs same month 2022 — pending</div>
+        <div class="metric-note">
+          Vacant lot closings on FMB: most recent month vs the same month in 2022. Annual
+          context from SWFL MLS: 66 lots sold in 2023, 32 in 2024, 8 in Jan–June 2025.
+          Active lot inventory: 132 lots (June 2025), down from 144 (February 2025). Lot
+          sales lead the rebuild cycle — falling annual lot volume tracks the construction
+          surge winding down.
+        </div>
+        <div class="metric-trend neutral">— Awaiting single-month figures</div>
+        <div class="metric-source">
+          <strong>Source:</strong> Southwest Florida MLS via Jorge Barrera (Premiere Plus
+          Realty), published in
+          <a href="https://beachtalkradionews.com/is-the-beach-real-estate-market-hot-or-cold/" target="_blank">Beach Talk Radio News</a>
+          (June 24, 2025).
+        </div>
+        <div class="refresh-status">
+          <strong>Refresh in progress:</strong> Most-recent-month and same-month-2022
+          vacant lot closings requested from Jorge Barrera and RPCRA via FMB Chamber.
         </div>
       </div>
 
     </div>
 
-    <h3 class="section-subheading">
-      Condo &amp; Timeshare
-    </h3>
-    <div class="metric-grid">
-
-      <!-- Condo — Active Listings (placeholder) -->
-      <div class="metric-card">
-        <div class="metric-label"><span class="metric-icon building"></span>Condo — Active Listings</div>
-        <div class="metric-value">—<span class="baseline"> / —</span></div>
-        <div class="metric-recovery pending">Pre-Ian + current pending — RPCRA request</div>
-        <div class="metric-note">
-          Active condo and timeshare listings on FMB: pre-Ian vs current. The condo story
-          typically lags residential because HOA decisions, structural reinforcement, and
-          association-level rebuild votes slow individual-unit return.
-        </div>
-        <div class="metric-trend neutral">— Awaiting RPCRA data</div>
-        <div class="refresh-status">
-          <strong>Refresh in progress:</strong> Pre-Ian and current FMB-specific active-listing
-          counts for condos and timeshares requested from RPCRA via FMB Chamber.
-        </div>
+    <!-- Lee County context card -->
+    <div class="mix-shift" style="margin-top: 28px;">
+      <div class="mix-shift-title">Lee County context — April 2026</div>
+      <div class="mix-shift-sub">
+        How FMB's barrier-island figures sit relative to the broader Lee County market.
       </div>
 
-      <!-- Condo — Annual Sales (placeholder) -->
-      <div class="metric-card">
-        <div class="metric-label"><span class="metric-icon dollar"></span>Condo — Annual Sales Volume</div>
-        <div class="metric-value">—<span class="baseline"> / —</span></div>
-        <div class="metric-recovery pending">Pre-Ian + current pending — RPCRA request</div>
-        <div class="metric-note">
-          Condo closings on FMB: 2022 full-year (pre-Ian) vs trailing-12-month (current).
-          Typically recovers more slowly than residential because of association-level constraints.
-        </div>
-        <div class="metric-trend neutral">— Awaiting RPCRA data</div>
-        <div class="refresh-status">
-          <strong>Refresh in progress:</strong> 2022 monthly closings + trailing-12-month total
-          for condo properties requested from RPCRA via FMB Chamber.
-        </div>
-      </div>
+      <p style="margin-top: 16px; color: var(--text-secondary); font-size: 0.92rem; line-height: 1.7;">
+        Lee County overall (April 2026): <strong>313 single-family closings</strong> at $465K
+        median, 49 days on market, 4.3 months of supply; <strong>297 condo/townhome
+        closings</strong> at $246.5K median, 60 days on market, 5.8 months of supply.
+      </p>
 
-    </div>
+      <p style="margin-top: 12px; color: var(--text-secondary); font-size: 0.92rem; line-height: 1.7;">
+        FMB-specific April 2026 totals (all property types combined): <strong>526 closings
+        in the trailing 12 months</strong> at $614.2K median sold price, with 667 currently
+        listed. FMB's 21–23 months of supply by type sits 5–6× the county-wide level. The
+        county is normalizing toward a balanced market; FMB still has a barrier-island
+        recovery overhang.
+      </p>
 
-    <h3 class="section-subheading">
-      Direction &amp; Context (what we have today)
-    </h3>
-    <div class="metric-grid">
-
-      <!-- Home sales (most recent month, YoY direction) -->
-      <div class="metric-card">
-        <div class="metric-label"><span class="metric-icon trend-up"></span>Home Sales — recent month (YoY direction)</div>
-        <div class="metric-value">44<span class="baseline"> / 26</span></div>
-        <div class="metric-recovery good">+69% year-over-year (February 2026)</div>
-        <div class="progress-bar"><div class="progress-fill" style="width: 100%; background: var(--good);"></div></div>
-        <div class="metric-note">
-          44 homes sold in February 2026 versus 26 in February 2025 — a 69% YoY increase. The trend
-          is sustained: December 2025 (37 closings) was also up 68% over December 2024 (22). Sales
-          volume is rising as rebuilt homes and condos come online and inventory normalizes.
-          <strong>This is a YoY direction indicator, not a recovery %.</strong> See the placeholder
-          cards above for the pre-Ian-vs-current comparison once RPCRA data arrives.
-        </div>
-        <div class="metric-trend up">↑ Strong YoY growth across multiple months — buyer activity returning</div>
-        <div class="metric-source">
-          Sources: <a href="https://www.redfin.com/city/6212/FL/Fort-Myers-Beach/housing-market" target="_blank">Redfin Fort Myers Beach housing market</a> (Feb 2026, accessed May 2026); MLS reporting via <a href="https://agentsgather.com/fort-myers-beach-rebuild-where-things-stand-in-september-2025/" target="_blank">agentsgather.com</a> (Dec 2024 vs Dec 2025).
-        </div>
-      </div>
-
-      <!-- Median price + DOM (pre-Ian vs current, current known, pre-Ian pending) -->
-      <div class="metric-card">
-        <div class="metric-label"><span class="metric-icon bar-chart"></span>Median Price + Days on Market — pre-Ian vs current</div>
-        <div class="metric-value">$580K<span class="baseline"> · 134 DOM</span></div>
-        <div class="metric-recovery pending">Pre-Ian baseline pending; current from Redfin</div>
-        <div class="metric-note">
-          Current values from Redfin (Feb 2026): median price $580K (−30.7% YoY); 134 days on
-          market (up from 91). Pre-Ian (2022) baselines for median price + DOM pending from RPCRA
-          — when received, will show the pre-Ian-vs-current comparison. Median price + DOM are
-          shown here as context indicators (excluded from any recovery %).
-        </div>
-        <div class="metric-trend neutral">— Context only; price decline is mix-driven, not health-driven</div>
-        <div class="metric-source">
-          Current: <a href="https://www.redfin.com/city/6212/FL/Fort-Myers-Beach/housing-market" target="_blank">Redfin</a>, February 2026. Pre-Ian baseline: pending RPCRA.
-        </div>
-      </div>
-
+      <p style="margin-top: 14px; color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6; font-style: italic;">
+        Sources: Lee County aggregates —
+        <a href="https://www.teamhawley.com/blog/2026/5/14/fort-myers-housing-market-update-april-2026" target="_blank" style="color: var(--seafoam-dark);">Florida Realtors / RPCRA April 2026 monthly market detail</a>;
+        FMB zip totals —
+        <a href="https://www.realtytrac.com/market-trends/fort-myers-beach-fl-33931/" target="_blank" style="color: var(--seafoam-dark);">Realtytrac 33931 market trends</a>
+        (April 2026).
+      </p>
     </div>
   </section>
 

@@ -151,7 +151,7 @@ Several categories appear on the dashboard as **context** but are deliberately n
 
 | Excluded from recovery % | Reason |
 |----------|--------|
-| Real estate **listings** (not sales) | High inventory signals distress, not recovery (inverse indicator). Sales counts are different — those will be included in housing recovery once pre-Ian baseline is verified. |
+| Real estate **listings** (not sales) | High inventory signals distress, not recovery (inverse indicator). Shown alongside sales as context — the FMB months-of-supply by type (21–23) is 5–6× the county-wide level (4.3–5.8 in April 2026). |
 | All permit activity (issued / closed / fund revenue) | Shown as "Rebuilding Activity" context. Measures reconstruction surge, not return to normalcy — rebuilding activity is not the same as recovery. |
 | Open permits / backlog | Inverse indicator — high backlog is bad, not good. |
 | Half-Cent Sales Tax / Emergency Fund / FDEM disaster reimbursements | Shown as fiscal-pressure context. Declining recovery-funding flows are expected as the post-Ian eligibility window closes; not a recovery metric. |
@@ -168,6 +168,7 @@ Several categories appear on the dashboard as **context** but are deliberately n
 - **Vacation rental licenses:** Lee County Tax Collector (current 1,982 active + 160 delinquent — historical baseline still needed for license-based comparison).
 - **Population:** US Census Bureau QuickFacts and 2024 American Community Survey.
 - **Restaurant pre-Ian count:** TripAdvisor historical rankings (~70 listed) — to be refined with Town of FMB records.
+- **Housing Market Activity:** Southwest Florida MLS via Jorge Barrera (Premiere Plus Realty), published in Beach Talk Radio News. Lee County aggregates from Florida Realtors / RPCRA monthly market detail. FMB zip totals from Realtytrac (33931). Single-month figures pending Barrera / RPCRA direct pull via FMB Chamber.
 - **Secondary citations:** Beach Talk Radio News (hotel destruction context, with FMB Chamber attribution).
 
 ---
@@ -207,7 +208,7 @@ This dashboard is updated quarterly. Each update refreshes current values from t
 >
 > **1. Bed tax FY26 Q1.** FMB-specific FY26 Q1 (Oct–Dec 2025) bed tax data requested from the Lee County Clerk of Court via the FMB Chamber. Public Lee County reports contain aggregate county totals only — Tourist Development Tax data is exempt from public records by Florida statute, so FMB-specific figures require a direct request.
 >
-> **2. Pre-Ian housing baseline.** Pre-Ian (2022) FMB-specific residential and condo data — listings, monthly closings, median price, days on market — requested from RPCRA / Lee County Property Appraiser via the FMB Chamber. With the baselines verified, the Housing Market section will populate the four placeholder cards and compute recovery percentages by property type. Today, that section shows YoY direction only (Feb 2026 +69%, Dec 2025 +68%) plus current Redfin context.
+> **2. Housing — single-month figures by property type.** The Housing Market section was rebuilt to mirror the format used on the Sanibel recovery dashboard: most-recent-month vs same-month-2022 (any month before October 2022 is a clean pre-Ian baseline since Ian made landfall Sept 28, 2022). Full-year context is populated from SWFL MLS via Jorge Barrera at Premiere Plus Realty (Beach Talk Radio News): SFR closings 2021=192 / 2024=70; condo 2021=401 / 2024=166; lots 2024=32. Outstanding: single-month closings and same-month-2022 active listings for single-family, condo/villa/townhouse, and vacant lots. Requested from Jorge Barrera (Premiere Plus Realty, the source already cited) and RPCRA via the FMB Chamber. When received, the five cards populate the recovery percentages directly.
 
 ---
 

@@ -19,18 +19,21 @@
 > **1. Bed tax — FMB-specific FY26 Q1 (October–December 2025).**
 > The dashboard currently shows FY25 YTD-through-August data from the file you provided. The Lee County Clerk's publicly-published TDC reports contain only county aggregates (which makes sense given the statutory confidentiality of TDT returns). To extend the 4-year recovery trajectory — 15% → 37% → 48% — into FY26, we'd need the FMB-specific Oct, Nov, Dec 2025 collections in the same format as the spreadsheet you sent through August. The format I'm working from is *Tourist Tax Breakdown - Add'l needed - Data through August 2025.xlsx.*
 >
-> **2. Pre-Ian vs current housing data (RPCRA / Lee County Property Appraiser), split by property type.**
-> The dashboard's Housing Market section currently shows YoY growth from Redfin — Feb 2026 closings (44) were up 69% over Feb 2025 (26); December 2025 (37) was up 68% over December 2024 (22). YoY change tells direction, not recovery. The correct comparison is pre-Ian (2022) vs current (2026), **and importantly split between residential and condo** — condo recovery typically lags single-family residential on barrier islands because of HOA dynamics, structural reinforcement, and association-level rebuild decisions. FMB's heavy condo and timeshare inventory makes the split material.
+> **2. Pre-Ian vs current housing data (RPCRA / SWFL MLS), split by property type.**
+> The dashboard's Housing Market section has been rebuilt to mirror the format Sanibel uses on its recovery dashboard — current-month value vs same-month-2022 (pre-Ian) baseline, split by property type. Five cards in the grid: Residential Home Sales, Residential Listings, Condo Sales, Condo Listings, Vacant Lot Sales. Any month before October 2022 is a clean pre-Ian baseline because Ian made landfall September 28, 2022.
 >
-> An FMB-specific MLS pull from RPCRA would let us populate four placeholder cards already on the dashboard:
+> The full-year context is already populated from Beach Talk Radio News (Jorge Barrera at Premiere Plus Realty, sourcing SWFL MLS) — for example, single-family closings went 192 (2021) → 179 (2023) → 70 (2024); condos went 401 (2021) → 232 (2022) → 197 (2023) → 166 (2024). What we still need are the **single-month figures** to populate the actual current-vs-pre-Ian comparisons:
 >
->   - **Residential — Active Listings:** single-family active listings on a pre-Ian date (e.g., June 2022) and a current date (e.g., end of Q1 2026).
->   - **Residential — Annual Sales:** 2022 monthly closing counts for single-family (pre-Ian full-year baseline), plus a trailing-12-month total.
->   - **Condo — Active Listings:** same as above for condos and timeshares.
->   - **Condo — Annual Sales:** same as above for condos and timeshares.
->   - **Median price + days on market:** 2022 annual averages on FMB (residential + condo if separable) to compare to Feb 2026 Redfin values ($580K median, 134 DOM).
+>   - **Single-family closings**: most-recent-month (April or May 2026) AND the same month in 2022.
+>   - **Single-family active listings**: most recent count (refresh of the May 2025 number of ~201) AND the same month in 2022.
+>   - **Condo/villa/townhouse closings**: same — most-recent-month + same-month-2022.
+>   - **Condo/villa/townhouse active listings**: same — refresh of May 2025 count (~316) + same-month-2022.
+>   - **Vacant lot closings**: same — most-recent-month + same-month-2022.
+>   - **Median sale price (YTD or current month)**: by property type if separable. Sanibel's analogous cards show median price YTD as the trend line.
 >
-> Even a partial pull (e.g., just the 2022 monthly closings split by type) would let us populate the most important cards. The dashboard's "Data Decisions" page documents every override and pending request, so anything received is properly sourced.
+> Even a partial pull (just the same-month-2022 baselines, since we have most current-side numbers) would let us complete every recovery percentage on the cards. The dashboard's "Data Decisions" page documents every pending request, so anything received is properly sourced.
+>
+> **Alternate channel — Jorge Barrera (Premiere Plus Realty):** If the RPCRA path is slow, Jorge Barrera at Premiere Plus Realty is the source the dashboard already cites — he compiles the SWFL MLS pulls that Beach Talk Radio News publishes. A direct ask to Barrera for the single-month figures above would close most of the gap without waiting on RPCRA. Happy to reach out to him directly if that helps.
 >
 > No rush on either — the dashboard is explicitly flagged "refresh in progress" until the data arrives. Sharing now so the request is queued.
 >
@@ -56,12 +59,12 @@
 - Vercel auto-deploys; live within ~30 seconds.
 - New numbers will populate:
   - The bed-tax trajectory chart (FY26 Q1 added as a 5th bar) and the sister-city comparison table
-  - The two housing placeholder cards (Active Listings and Annual Sales Volume) currently showing "— / —"
-  - The pre-Ian columns on the Median Price + DOM card
-  - A new top-level "Housing Recovery %" computation in the Housing Market section once both pre-Ian and current values are in
+  - The five housing cards (Residential Home Sales, Residential Listings, Condo Sales, Condo Listings, Vacant Lot Sales) — pre-Ian baseline and current-month values fill in the recovery percentages
+  - The annual median sale price by type can fold into each sales card as the trend line (matches the Sanibel format)
 
 ## Alternative contacts if Jacki can't deliver
 
-- **Lee County Clerk of Court Inspector General Department:** 239-533-2190 (cited in their TDT FAQ as the contact for non-public data inquiries).
-- **Lee County Property Appraiser** (Matthew H. Caldwell): for housing data and parcel-level FMB residential statistics.
-- **Royal Palm Coast Realtor Association (RPCRA):** publishes Lee County housing reports but FMB-specific cuts likely require direct request.
+- **Jorge Barrera, Premiere Plus Realty:** 239-791-9893. Compiles the SWFL MLS pulls already published in Beach Talk Radio News. Most direct path to single-month closings + active listings by type.
+- **Lee County Clerk of Court Inspector General Department:** 239-533-2190 (cited in their TDT FAQ as the contact for non-public data inquiries) — for bed tax only.
+- **Lee County Property Appraiser** (Matthew H. Caldwell): for closed-sales data (deed transfers); does NOT have active MLS listings.
+- **Royal Palm Coast Realtor Association (RPCRA):** publishes Lee County housing reports but FMB-specific cuts likely require direct request to marketing@rpcra.org.
