@@ -291,6 +291,35 @@ body {
   font-size: 0.78rem;
   margin-top: 4px;
 }
+
+/* ============ KPI METHODOLOGY CAPTION (Tier 2 #8) ============
+ * Fact-only "How it's measured" caption beneath each KPI. Definition + scope
+ * + source — never interpretation. White-on-dark variant for the hero;
+ * a dark-on-light variant will be added when this pattern reaches the
+ * metric cards in later batches.
+ */
+.recovery-ring .kpi-method,
+.recovery-count-card .kpi-method {
+  margin-top: 10px;
+  font-family: var(--font-body);
+  font-size: 0.74rem;
+  line-height: 1.5;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.55);
+  max-width: 280px;
+  text-align: center;
+}
+.recovery-ring .kpi-method::before,
+.recovery-count-card .kpi-method::before {
+  content: "How it's measured · ";
+  display: inline;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  font-size: 0.62rem;
+  color: rgba(255, 255, 255, 0.7);
+}
 @media (max-width: 768px) {
   .recovery-rings { gap: 24px; }
   .ring-svg { width: 150px; height: 150px; }
