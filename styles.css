@@ -292,33 +292,95 @@ body {
   margin-top: 4px;
 }
 
-/* ============ KPI METHODOLOGY CAPTION (Tier 2 #8) ============
- * Fact-only "How it's measured" caption beneath each KPI. Definition + scope
- * + source — never interpretation. White-on-dark variant for the hero;
- * a dark-on-light variant will be added when this pattern reaches the
- * metric cards in later batches.
+/* ============ KPI METHODOLOGY TOGGLE (Tier 2 #8) ============
+ * Fact-only "How it's measured" reveal beneath each KPI. Native <details>
+ * element — no JS, fully accessible (keyboard + screen reader), works on
+ * mobile. Collapsed state is a small pill; expanded state reveals a
+ * soft-tinted callout with a shrimp-pink left border.
+ *
+ * White-on-dark variant scoped to .recovery-ring / .recovery-count-card
+ * (the hero). A dark-on-light variant will be added when this pattern
+ * reaches the metric cards in later batches.
  */
-.recovery-ring .kpi-method,
-.recovery-count-card .kpi-method {
-  margin-top: 10px;
-  font-family: var(--font-body);
-  font-size: 0.74rem;
-  line-height: 1.5;
-  font-style: italic;
-  color: rgba(255, 255, 255, 0.55);
-  max-width: 280px;
-  text-align: center;
+.kpi-method-toggle {
+  margin-top: 12px;
+  display: inline-block;
 }
-.recovery-ring .kpi-method::before,
-.recovery-count-card .kpi-method::before {
-  content: "How it's measured · ";
-  display: inline;
-  font-style: normal;
+.kpi-method-toggle summary {
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.68rem;
   font-weight: 600;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.18s ease;
+  user-select: none;
+}
+.kpi-method-toggle summary::-webkit-details-marker { display: none; }
+.kpi-method-toggle summary::marker { content: ""; }
+.kpi-method-toggle summary .i-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1.2px solid currentColor;
   font-size: 0.62rem;
-  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 700;
+  line-height: 1;
+}
+.kpi-method-body {
+  margin-top: 10px;
+  padding: 12px 14px;
+  border-left: 3px solid var(--shrimp-pink);
+  border-radius: 6px;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  font-style: italic;
+  max-width: 300px;
+  text-align: left;
+  animation: kpi-method-reveal 0.22s ease-out;
+}
+@keyframes kpi-method-reveal {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Hero (white-on-dark) variant */
+.recovery-ring .kpi-method-toggle summary,
+.recovery-count-card .kpi-method-toggle summary {
+  color: rgba(255, 255, 255, 0.62);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+.recovery-ring .kpi-method-toggle summary:hover,
+.recovery-count-card .kpi-method-toggle summary:hover,
+.recovery-ring .kpi-method-toggle summary:focus-visible,
+.recovery-count-card .kpi-method-toggle summary:focus-visible {
+  color: var(--shrimp-pink);
+  border-color: rgba(217, 119, 87, 0.55);
+  background: rgba(217, 119, 87, 0.08);
+  outline: none;
+}
+.recovery-ring .kpi-method-toggle[open] summary,
+.recovery-count-card .kpi-method-toggle[open] summary {
+  color: var(--shrimp-pink);
+  border-color: var(--shrimp-pink);
+  background: rgba(217, 119, 87, 0.12);
+}
+.recovery-ring .kpi-method-body,
+.recovery-count-card .kpi-method-body {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.82);
 }
 @media (max-width: 768px) {
   .recovery-rings { gap: 24px; }
