@@ -212,6 +212,17 @@
 
           <div class="changelog-entry">
             <div class="changelog-date">May 23, 2026</div>
+            <div class="changelog-title">Active Listings card simplified: drop days-of-supply / days-to-clear framing</div>
+            <ul>
+              <li>Page now sticks to a single time concept — days on market — throughout the housing section. The supply-clearance framing (even using matching day units) was a distinct concept that risked confusing readers; dropped per Mark's call.</li>
+              <li>Active Listings card now has one Sanibel-style chip: <strong>"↓ High inventory — buyer's market"</strong>.</li>
+              <li>Lee County context block trimmed to just closing counts + median + DOM. The "FMB's ~395 days to clear vs county-wide 131-176" comparison is gone.</li>
+              <li>data/metrics.json: removed currentDaysSupply / preIanDaysSupply fields from the Active Listings metric.</li>
+            </ul>
+          </div>
+
+          <div class="changelog-entry">
+            <div class="changelog-date">May 23, 2026</div>
             <div class="changelog-title">Housing cards: drop "Median Sale Price (All Types)" — confusing alongside SFR/condo split</div>
             <ul>
               <li>Dropped the Median Sale Price (All Types) card. The All-Types DOM of 100 days read as a contradiction next to SFR 312 / Condo 94 (it's a valid weighted median — condos dominate volume — but it invited the wrong math at a glance).</li>

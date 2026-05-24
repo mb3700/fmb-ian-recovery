@@ -89,11 +89,22 @@
   "changelog": [
     {
       "date": "2026-05-23",
+      "summary": "Active Listings card simplified: drop days-of-supply / days-to-clear framing",
+      "changes": [
+        "Mark's call: keep the housing section focused on days-on-market only; do not mix in supply-clearance concepts even when using matching units",
+        "Active Listings card chips collapsed from two ('~395 days to clear inventory' + Lee County days-to-clear) down to one Sanibel-style qualitative tag: '↓ High inventory — buyer's market'",
+        "Lee County context block trimmed to just closing counts + median + DOM (dropped the '131 days SFR / 176 days condo to clear inventory' line and the 'FMB's ~395 days sits 3× county-wide' comparison)",
+        "currentDaysSupply / preIanDaysSupply fields removed from the Active Listings metric in metrics.json (the daysSupply concept is no longer surfaced anywhere)",
+        "Section lead, methodology.html, recovery-summary.md updated for the simplified phrasing"
+      ]
+    },
+    {
+      "date": "2026-05-23",
       "summary": "Housing cards: drop 'Median Sale Price (All Types)' — confusing alongside SFR/condo split",
       "changes": [
         "Dropped the Median Sale Price (All Types) card. The All-Types DOM of 100 days read as a contradiction next to SFR 312 / Condo 94 (it's a valid weighted median — condos dominate volume — but it invited the wrong math at a glance)",
         "Median price by type is preserved as a chip on each Sales card (SFR Sales chip shows '$870K, was $1,080K · −19%'; Condo Sales chip shows '$472,500, was $675K · −30%')",
-        "Active Listings supply chip relabeled from '~395 days of supply' to '~395 days to clear inventory at current sales pace' to keep the day unit but distinguish from days-on-market",
+        "Active Listings chip simplified to a Sanibel-style qualitative tag ('High inventory — buyer's market'); previous supply/days-to-clear framing dropped to keep the page focused on days-on-market only",
         "Lee County context block updated for the same chip phrasing (131 days SFR / 176 days condo to clear)",
         "Section lead text updated: 'four Sales/DOM cards' instead of 'five cards' (since Active Listings is two-source)",
         "Housing grid is now 5 cards instead of 6"
@@ -616,10 +627,8 @@
         "multipleOfPreIan": 4.0,
         "currentPeriod": "Current snapshot (May 2026)",
         "preIanPeriod": "May 31, 2022 (TTM end-of-month)",
-        "currentDaysSupply": 395,
-        "preIanDaysSupply": 74,
         "splitByType_May2025": {"singleFamily": 201, "condoVillaTownhouse": 316, "source": "Beach Talk Radio News via Jorge Barrera, Premiere Plus Realty"},
-        "note": "Active listings on FMB: 465 currently (Redfin) vs 115 in May 2022 (JRW Properties Monthly Market Report, SWFL MLS, TTM as of May 31, 2022). +350 listings, +304% — roughly 4× pre-Ian inventory. Days of supply moved from 74 (sellers' market) to ~395 (buyers' market) — a 321-day expansion. The two-source comparison is honest: Redfin doesn't expose inventory time-series, so the pre-Ian baseline comes from the JRW SWFL MLS report. Both sources are MLS-derived; the +304% ratio is directionally accurate.",
+        "note": "Active listings on FMB: 465 currently (Redfin) vs 115 in May 2022 (JRW Properties Monthly Market Report, SWFL MLS, TTM as of May 31, 2022). +350 listings, +304% — roughly 4× pre-Ian inventory; clearly a buyer's market. The two-source comparison is honest: Redfin doesn't expose inventory time-series, so the pre-Ian baseline comes from the JRW SWFL MLS report. Both sources are MLS-derived; the +304% ratio is directionally accurate.",
         "currentSource": "Redfin Fort Myers Beach housing market (region 6212), /stingray/api/region/6/6212/1/trends",
         "currentSourceUrl": "https://www.redfin.com/city/6212/FL/Fort-Myers-Beach/housing-market",
         "preIanSource": "John R. Wood Properties Monthly Market Report — May 2022 (Southwest Florida MLS, 12-month rolling basis as of May 31, 2022)",
