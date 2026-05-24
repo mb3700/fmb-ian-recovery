@@ -1055,57 +1055,9 @@
   </div>
 </footer>
 
-<!-- Card flip: front shows numbers, back shows prose (source + methodology) -->
-<script>
-(function() {
-  var proseSelectors = '.metric-note, .metric-source, .refresh-status';
-  document.querySelectorAll('main .metric-card').forEach(function(card) {
-    var proseEls = card.querySelectorAll(proseSelectors);
-    if (proseEls.length === 0) return; // skip cards with no back content
-
-    var inner = document.createElement('div');
-    inner.className = 'metric-card-inner';
-    var front = document.createElement('div');
-    front.className = 'metric-card-front';
-    var back = document.createElement('div');
-    back.className = 'metric-card-back';
-
-    Array.from(card.children).forEach(function(child) {
-      if (child.matches && child.matches(proseSelectors)) back.appendChild(child);
-      else front.appendChild(child);
-    });
-
-    var flipBtn = document.createElement('button');
-    flipBtn.className = 'card-flip-btn';
-    flipBtn.setAttribute('type', 'button');
-    flipBtn.setAttribute('aria-label', 'Show source and methodology');
-    flipBtn.setAttribute('aria-expanded', 'false');
-    flipBtn.setAttribute('title', 'Source & details');
-    flipBtn.textContent = 'i';
-    var closeBtn = document.createElement('button');
-    closeBtn.className = 'card-flip-btn back-btn';
-    closeBtn.setAttribute('type', 'button');
-    closeBtn.setAttribute('aria-label', 'Back to the number');
-    closeBtn.setAttribute('aria-expanded', 'true');
-    closeBtn.setAttribute('title', 'Back to the number');
-    closeBtn.textContent = '×';
-
-    function toggle() {
-      var flipped = card.classList.toggle('flipped');
-      flipBtn.setAttribute('aria-expanded', flipped ? 'true' : 'false');
-      closeBtn.setAttribute('aria-expanded', flipped ? 'true' : 'false');
-    }
-    flipBtn.addEventListener('click', toggle);
-    closeBtn.addEventListener('click', toggle);
-
-    front.insertBefore(flipBtn, front.firstChild);
-    back.insertBefore(closeBtn, back.firstChild);
-    inner.appendChild(front);
-    inner.appendChild(back);
-    card.appendChild(inner);
-  });
-})();
-</script>
+<!-- Card-flip mechanism removed 2026-05-24: dual "i" affordances (flip + methodology
+     toggle) were confusing. metric-note + source now render always-visible; the
+     <details class="kpi-method-toggle"> pill is the single info affordance per card. -->
 
 <!-- Scroll-spy: highlight the sticky-nav link for the section currently in view -->
 <script>
