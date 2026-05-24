@@ -168,7 +168,7 @@ Several categories appear on the dashboard as **context** but are deliberately n
 - **Vacation rental licenses:** Lee County Tax Collector (current 1,982 active + 160 delinquent — historical baseline still needed for license-based comparison).
 - **Population:** US Census Bureau QuickFacts and 2024 American Community Survey.
 - **Restaurant pre-Ian count:** TripAdvisor historical rankings (~70 listed) — to be refined with Town of FMB records.
-- **Housing Market Activity:** Southwest Florida MLS via Jorge Barrera (Premiere Plus Realty), published in Beach Talk Radio News. Lee County aggregates from Florida Realtors / RPCRA monthly market detail. FMB zip totals from Realtytrac (33931). Single-month figures pending Barrera / RPCRA direct pull via FMB Chamber.
+- **Housing Market Activity:** Redfin Fort Myers Beach housing market (region 6212) — single-month closings, median sale price, and days on market split by property type. Same-month-prior-year comparison (Mar 2026 vs Mar 2022). Annual context (5-year SFR/condo trajectory): Southwest Florida MLS via Jorge Barrera (Premiere Plus Realty), published in Beach Talk Radio News. Lee County aggregates from Florida Realtors / RPCRA monthly market detail. FMB zip totals from Realtytrac (33931).
 - **Secondary citations:** Beach Talk Radio News (hotel destruction context, with FMB Chamber attribution).
 
 ---
@@ -208,7 +208,7 @@ This dashboard is updated quarterly. Each update refreshes current values from t
 >
 > **1. Bed tax FY26 Q1.** FMB-specific FY26 Q1 (Oct–Dec 2025) bed tax data requested from the Lee County Clerk of Court via the FMB Chamber. Public Lee County reports contain aggregate county totals only — Tourist Development Tax data is exempt from public records by Florida statute, so FMB-specific figures require a direct request.
 >
-> **2. Housing — single-month figures by property type.** The Housing Market section was rebuilt to mirror the format used on the Sanibel recovery dashboard: most-recent-month vs same-month-2022 (any month before October 2022 is a clean pre-Ian baseline since Ian made landfall Sept 28, 2022). Full-year context is populated from SWFL MLS via Jorge Barrera at Premiere Plus Realty (Beach Talk Radio News): SFR closings 2021=192 / 2024=70; condo 2021=401 / 2024=166; lots 2024=32. Outstanding: single-month closings and same-month-2022 active listings for single-family, condo/villa/townhouse, and vacant lots. Requested from Jorge Barrera (Premiere Plus Realty, the source already cited) and RPCRA via the FMB Chamber. When received, the five cards populate the recovery percentages directly.
+> **2. Housing — populated from Redfin direct (May 23, 2026).** Single-month, single-source, by property type. Mar 2026 vs Mar 2022 — SFR sales 7/15 (47%), Condo sales 22/33 (67%), Median price $542K/$750K (72%), SFR DOM 312 vs 22 days (14× longer), Condo DOM 94 vs 7 days (13× longer). All five cards sourced from Redfin's Fort Myers Beach housing market chart (region 6212). Optional future refinement: Jorge Barrera (Premiere Plus Realty) could provide SWFL MLS-direct splits including vacant lots if a Sanibel-perfect 6-card grid is desired.
 
 ---
 
