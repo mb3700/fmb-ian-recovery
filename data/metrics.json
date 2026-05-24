@@ -89,6 +89,18 @@
   "changelog": [
     {
       "date": "2026-05-23",
+      "summary": "Housing cards: drop 'Median Sale Price (All Types)' — confusing alongside SFR/condo split",
+      "changes": [
+        "Dropped the Median Sale Price (All Types) card. The All-Types DOM of 100 days read as a contradiction next to SFR 312 / Condo 94 (it's a valid weighted median — condos dominate volume — but it invited the wrong math at a glance)",
+        "Median price by type is preserved as a chip on each Sales card (SFR Sales chip shows '$870K, was $1,080K · −19%'; Condo Sales chip shows '$472,500, was $675K · −30%')",
+        "Active Listings supply chip relabeled from '~395 days of supply' to '~395 days to clear inventory at current sales pace' to keep the day unit but distinguish from days-on-market",
+        "Lee County context block updated for the same chip phrasing (131 days SFR / 176 days condo to clear)",
+        "Section lead text updated: 'four Sales/DOM cards' instead of 'five cards' (since Active Listings is two-source)",
+        "Housing grid is now 5 cards instead of 6"
+      ]
+    },
+    {
+      "date": "2026-05-23",
       "summary": "Housing cards reframed: delta vs pre-Ian (negative when worse), red 'gap' progress bars",
       "changes": [
         "Headline framing flipped from 'X% of March 2022' (reads positive) to '−X% vs March 2022' (reads as actual contraction). SFR sales now −53%, Condo sales −33%, Median Price (All) −28%, all with red gap bars filling the loss",
@@ -483,7 +495,7 @@
     }
   ],
   "housingMarket": {
-    "headline": "SFR sales −53% / Condo sales −33% / Median price −28% vs March 2022; DOM +87 to +290 days longer; listings +304%",
+    "headline": "SFR sales −53% / Condo sales −33% vs March 2022; DOM +87 to +290 days longer; listings +304%",
     "framing": "Housing recovery is shown as March 2026 (most recent published month) vs March 2022 (last clean pre-Ian month — Ian made landfall September 28, 2022, so any month before October 2022 is a clean pre-Ian baseline; March puts us six months before). Split by property type — condo recovery typically lags single-family on barrier islands because of HOA dynamics, structural-reinforcement requirements, and association-level rebuild decisions. Mirrors the format used on the Sanibel recovery dashboard (sanibel-solutions.com) so the two barrier-island markets can be read against each other directly. All five cards source from Redfin's Fort Myers Beach housing market data (region 6212) for an apples-to-apples single-source comparison.",
     "methodology": {
       "comparisonPattern": "March 2026 (latest month) vs March 2022 (same-month-prior-year, pre-Ian)",
@@ -552,27 +564,6 @@
         "source": "Redfin Fort Myers Beach housing market (region 6212)",
         "sourceUrl": "https://www.redfin.com/city/6212/FL/Fort-Myers-Beach/housing-market",
         "interpretation": "trueRecovery",
-        "trend": "neutral"
-      },
-      {
-        "label": "Median Sale Price (All Types)",
-        "propertyType": "all",
-        "metricType": "median-price",
-        "current": 542000,
-        "preIan": 750000,
-        "deltaAbsolute": -208000,
-        "deltaPercent": -28,
-        "currentPeriod": "March 2026",
-        "preIanPeriod": "March 2022",
-        "currentDaysOnMarket": 100,
-        "preIanDaysOnMarket": 11,
-        "domDeltaDays": 89,
-        "homesSoldAboveListCurrent": 0,
-        "homesSoldAboveListPreIan": 30.8,
-        "note": "All-types median sale price: $542K in March 2026 vs $750K in March 2022 — down 28% ($208K). The decline is mix-driven rather than market-health (fewer high-end SFR rebuilt and closed). Days on market: 100 vs 11 — 89 days longer. 0% of FMB homes sold above list (was 30.8% pre-Ian).",
-        "source": "Redfin Fort Myers Beach housing market (region 6212)",
-        "sourceUrl": "https://www.redfin.com/city/6212/FL/Fort-Myers-Beach/housing-market",
-        "interpretation": "context",
         "trend": "neutral"
       },
       {

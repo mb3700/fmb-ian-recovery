@@ -212,6 +212,18 @@
 
           <div class="changelog-entry">
             <div class="changelog-date">May 23, 2026</div>
+            <div class="changelog-title">Housing cards: drop "Median Sale Price (All Types)" — confusing alongside SFR/condo split</div>
+            <ul>
+              <li>Dropped the Median Sale Price (All Types) card. The All-Types DOM of 100 days read as a contradiction next to SFR 312 / Condo 94 (it's a valid weighted median — condos dominate volume — but it invited the wrong math at a glance).</li>
+              <li>Median price by type is preserved as a chip on each Sales card: SFR Sales shows <strong>$870K (was $1,080K · −19%)</strong>; Condo Sales shows <strong>$472,500 (was $675K · −30%)</strong>.</li>
+              <li>Active Listings supply chip relabeled from "~395 days of supply" to <strong>"~395 days to clear inventory at current sales pace"</strong> — keeps the day unit but distinguishes it from days-on-market.</li>
+              <li>Lee County context block uses the same phrasing (131 days SFR / 176 days condo to clear).</li>
+              <li>Housing grid is now <strong>5 cards</strong> instead of 6.</li>
+            </ul>
+          </div>
+
+          <div class="changelog-entry">
+            <div class="changelog-date">May 23, 2026</div>
             <div class="changelog-title">Housing cards reframed: delta vs pre-Ian (negative when worse), red 'gap' progress bars</div>
             <ul>
               <li>Headline framing flipped from "X% of March 2022" (reads positive) to <strong>"−X% vs March 2022"</strong> (reads as actual contraction). SFR sales now <strong>−53%</strong>, Condo sales <strong>−33%</strong>, Median Price (All) <strong>−28%</strong> — each with a red gap bar filling the loss.</li>

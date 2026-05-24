@@ -413,12 +413,15 @@
         so the two barrier-island markets can be read against each other directly.
       </p>
       <p class="section-lead" style="margin-top: 14px; font-size: 0.92rem;">
-        All five cards source from
+        The four Sales / Days-on-Market cards source from
         <a href="https://www.redfin.com/city/6212/FL/Fort-Myers-Beach/housing-market" target="_blank" style="color: var(--seafoam-dark);">Redfin's Fort Myers Beach housing market data</a>
-        (region 6212) for an apples-to-apples single-source comparison. Median sale price is
-        shown alongside closing counts as context: the decline is mix-driven (fewer high-end
-        SFR rebuilt and closed) rather than a market-health signal. The dashboard treats
-        closing <em>count</em> as the primary recovery metric.
+        (region 6212) for an apples-to-apples single-source comparison. The Active Listings
+        card combines Redfin's current snapshot with John R. Wood Properties' May 2022
+        Monthly Market Report since Redfin doesn't expose listings time-series. Median sale
+        price is shown alongside closing counts on each Sales card as context: the
+        decline is mix-driven (fewer high-end SFR rebuilt and closed) rather than a
+        market-health signal. The dashboard treats closing <em>count</em> as the primary
+        recovery metric.
       </p>
     </div>
 
@@ -473,33 +476,6 @@
             <div class="data-source-field">
               <div class="data-source-label">Via:</div>
               <div class="data-source-value">Condos/Co-ops filter on the Redfin housing market chart</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Median Sale Price (All Types) -->
-      <div class="metric-card">
-        <div class="metric-label"><span class="metric-icon dollar"></span>Median Sale Price (All Types)</div>
-        <div class="metric-value">$542K<span class="baseline"> / $750K</span></div>
-        <div class="metric-recovery">−28% vs March 2022 (−$208K)</div>
-        <div class="progress-bar"><div class="progress-fill" style="width: 28%; background: var(--bad);"></div></div>
-        <div class="metric-trend down">↓ Days on market: 100 (was 11 · +89 days)</div>
-        <div class="metric-trend down">↓ 0% sold above list (was 30.8% · −30.8 pts)</div>
-        <div class="metric-source">
-          <div class="data-source-card">
-            <div class="data-source-heading">Data Source</div>
-            <div class="data-source-field">
-              <div class="data-source-label">Source:</div>
-              <div class="data-source-value">Redfin Fort Myers Beach housing market (region 6212)</div>
-            </div>
-            <div class="data-source-field">
-              <div class="data-source-label">Data as of:</div>
-              <div class="data-source-value accent"><a href="https://www.redfin.com/city/6212/FL/Fort-Myers-Beach/housing-market" target="_blank">March 2026 vs March 2022</a></div>
-            </div>
-            <div class="data-source-field">
-              <div class="data-source-label">Via:</div>
-              <div class="data-source-value">All Home Types view, Redfin housing market chart</div>
             </div>
           </div>
         </div>
@@ -565,8 +541,8 @@
         <div class="metric-value">465<span class="baseline"> / 115</span></div>
         <div class="metric-recovery">+304% vs May 2022 (+350 listings — inventory glut)</div>
         <div class="progress-bar"><div class="progress-fill" style="width: 100%; background: var(--bad);"></div></div>
-        <div class="metric-trend down">↓ ~395 days of supply (was 74 · +321 days)</div>
-        <div class="metric-trend neutral">— Lee County: 131 days SFR / 176 days condo supply</div>
+        <div class="metric-trend down">↓ ~395 days to clear inventory at current sales pace (was 74)</div>
+        <div class="metric-trend neutral">— Lee County: 131 days SFR / 176 days condo to clear</div>
         <div class="metric-source">
           <div class="data-source-card">
             <div class="data-source-heading">Data Source</div>
@@ -601,16 +577,16 @@
 
       <p style="margin-top: 16px; color: var(--text-secondary); font-size: 0.92rem; line-height: 1.7;">
         Lee County overall (April 2026): <strong>313 single-family closings</strong> at $465K
-        median, 49 days on market, 131 days of supply; <strong>297 condo/townhome
-        closings</strong> at $246.5K median, 60 days on market, 176 days of supply.
+        median, 49 days on market, 131 days to clear inventory; <strong>297 condo/townhome
+        closings</strong> at $246.5K median, 60 days on market, 176 days to clear inventory.
       </p>
 
       <p style="margin-top: 12px; color: var(--text-secondary); font-size: 0.92rem; line-height: 1.7;">
         FMB-specific April 2026 totals (all property types combined): <strong>526 closings
         in the trailing 12 months</strong> at $614.2K median sold price, with 667 currently
-        listed. FMB's ~395 days of supply sits roughly 3× the county-wide level (131–176
-        days). The county is normalizing toward a balanced market; FMB still has a
-        barrier-island recovery overhang.
+        listed. FMB's ~395 days to clear inventory sits roughly 3× the county-wide level
+        (131–176 days). The county is normalizing toward a balanced market; FMB still has
+        a barrier-island recovery overhang.
       </p>
 
       <p style="margin-top: 14px; color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6; font-style: italic;">
