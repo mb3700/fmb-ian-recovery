@@ -384,25 +384,22 @@ body {
 }
 
 /* ============ Card simplification (2026-05-24) ============
- * The metric-note prose, standalone source line, and refresh-status block
- * duplicated information already in the methodology caption. Per Mark's
- * direction to simplify what's behind the toggle, these are hidden
- * permanently on .metric-card. The methodology caption (which cites the
- * source, defines scope, and names what's included/excluded) is the
- * single fact-only block behind the toggle.
+ * On KPI cards (those with a methodology toggle), the metric-note prose,
+ * standalone source line, and refresh-status block duplicated information
+ * already in the methodology caption. Hidden permanently — the methodology
+ * caption is the single fact-only block behind the toggle.
  *
- * Visible on front: label / value / recovery % / progress bar / trend line.
- * Behind toggle: just the methodology caption.
- *
- * Scope: only .metric-card. Hero rings, mix-bars, and section-level cards
- * keep their own behavior.
+ * Scope: only .metric-card elements that CONTAIN a .kpi-method-toggle.
+ * That deliberately excludes data-decisions cards (Override Log, Pending
+ * Clarification, Changelog), which have no toggle and need their source
+ * footer line visible.
  *
  * Page-level data freshness is communicated by the .freshness-banner at the
  * top of every page, so per-card date stamps are not lost in aggregate.
  */
-.metric-card .metric-note,
-.metric-card .metric-source,
-.metric-card .refresh-status {
+.metric-card:has(.kpi-method-toggle) .metric-note,
+.metric-card:has(.kpi-method-toggle) .metric-source,
+.metric-card:has(.kpi-method-toggle) .refresh-status {
   display: none;
 }
 
@@ -1348,6 +1345,94 @@ main {
   .executive-tldr-label { font-size: 0.65rem; letter-spacing: 2px; padding-left: 36px; }
   .executive-tldr-label::before { width: 24px; }
   .freshness-banner { font-size: 0.75rem; padding: 10px 14px; line-height: 1.5; letter-spacing: 0.2px; }
+}
+
+/* ============ MOBILE: Override Log table → stacked cards ============
+ * The 5-column audit table (#, Item, Chamber March 2026, We publish,
+ * Authorizing source) bleeds badly on mobile — each row's prose-heavy
+ * cells force horizontal scroll. On ≤768px, restructure rows as cards
+ * with per-column labels (since the table thead is hidden). Scoped to
+ * #override-log so it doesn't affect other audit tables in methodology.html.
+ */
+@media (max-width: 768px) {
+  #override-log .audit-table thead { display: none; }
+  #override-log .audit-table,
+  #override-log .audit-table tbody,
+  #override-log .audit-table tr,
+  #override-log .audit-table td {
+    display: block;
+    width: 100%;
+  }
+  #override-log .audit-table tbody tr {
+    background: white !important;
+    border: 1px solid var(--border-light) !important;
+    border-radius: 8px;
+    padding: 14px 16px 16px;
+    margin-bottom: 12px;
+    position: relative;
+  }
+  #override-log .audit-table tbody tr:nth-child(odd) { background: white !important; }
+  #override-log .audit-table tbody td {
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    font-size: 0.85rem;
+    line-height: 1.55;
+    text-align: left !important;
+    width: auto !important;
+  }
+  /* # column → small pink pill, top-right corner */
+  #override-log .audit-table tbody td:nth-child(1) {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    font-size: 0.7rem !important;
+    font-weight: 700;
+    color: var(--shrimp-pink-deep) !important;
+    background: var(--shrimp-pink-soft);
+    padding: 2px 9px !important;
+    border-radius: 999px;
+    line-height: 1.5;
+  }
+  /* Item name → title, in shrimp-pink */
+  #override-log .audit-table tbody td:nth-child(2) {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--shrimp-pink-deep);
+    margin-bottom: 10px;
+    padding-right: 44px !important; /* reserve room for the # pill */
+    line-height: 1.3;
+  }
+  #override-log .audit-table tbody td:nth-child(2) small {
+    display: block;
+    font-size: 0.74rem;
+    font-weight: 400;
+    color: var(--text-tertiary);
+    font-style: italic;
+    margin-top: 2px;
+  }
+  /* Columns 3-5 → labeled blocks, separated by hairlines */
+  #override-log .audit-table tbody td:nth-child(3),
+  #override-log .audit-table tbody td:nth-child(4),
+  #override-log .audit-table tbody td:nth-child(5) {
+    padding: 10px 0 0 0 !important;
+    border-top: 1px solid var(--border-light) !important;
+    margin-top: 6px;
+  }
+  #override-log .audit-table tbody td:nth-child(3)::before { content: "Chamber March 2026"; }
+  #override-log .audit-table tbody td:nth-child(4)::before { content: "We publish"; }
+  #override-log .audit-table tbody td:nth-child(5)::before { content: "Authorizing source"; }
+  #override-log .audit-table tbody td:nth-child(3)::before,
+  #override-log .audit-table tbody td:nth-child(4)::before,
+  #override-log .audit-table tbody td:nth-child(5)::before {
+    display: block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 5px;
+  }
 }
 
 /* ============ DATA DECISIONS (audit trail) ============ */
