@@ -208,7 +208,7 @@ This dashboard is updated quarterly. Each update refreshes current values from t
 >
 > **1. Bed tax FY26 Q1.** FMB-specific FY26 Q1 (Oct–Dec 2025) bed tax data requested from the Lee County Clerk of Court via the FMB Chamber. Public Lee County reports contain aggregate county totals only — Tourist Development Tax data is exempt from public records by Florida statute, so FMB-specific figures require a direct request.
 >
-> **2. Housing — populated from Redfin direct (May 23, 2026).** Single-month, single-source, by property type. Mar 2026 vs Mar 2022 — SFR sales 7/15 (47%), Condo sales 22/33 (67%), Median price $542K/$750K (72%), SFR DOM 312 vs 22 days (14× longer), Condo DOM 94 vs 7 days (13× longer). All five cards sourced from Redfin's Fort Myers Beach housing market chart (region 6212). Optional future refinement: Jorge Barrera (Premiere Plus Realty) could provide SWFL MLS-direct splits including vacant lots if a Sanibel-perfect 6-card grid is desired.
+> **2. Housing — populated from Redfin direct (May 23, 2026).** Single-month, single-source, by property type. Mar 2026 vs Mar 2022 — SFR sales 7/15 (47%), Condo sales 22/33 (67%), Median price $542K/$750K (72%), SFR DOM 312 vs 22 days (14× longer), Condo DOM 94 vs 7 days (13× longer). Plus Active Listings (All Types) 465/115 — 4× pre-Ian inventory. Sourced from Redfin's Fort Myers Beach housing market chart (region 6212); the listings card uses a two-source comparison (Redfin current + JRW Properties May 2022 report) since Redfin's API doesn't expose inventory time-series.
 
 ---
 

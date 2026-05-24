@@ -22,7 +22,7 @@
       "channel": "Redfin /stingray/api/graph/6/6212 endpoints — pulled May 23, 2026",
       "requestedAt": "2026-05-23",
       "status": "resolved",
-      "note": "All five housing cards now populated with same-month-prior-year data from Redfin's Fort Myers Beach city-level chart API. SFR sales 7/15 (47%), Condo sales 22/33 (67%), Median price $542K/$750K (72%), SFR DOM 312/22 days, Condo DOM 94/7 days. Property-type breakdown via Redfin filter IDs: 6 = Single-Family, 3 = Condos/Co-ops, All = All Home Types. Optional future refinement: contact Jorge Barrera (Premiere Plus Realty, 239-791-9893) for true SWFL MLS-direct single-month splits including vacant lots (Redfin doesn't categorize lots separately)."
+      "note": "Housing cards now populated with same-month-prior-year data from Redfin's Fort Myers Beach city-level chart API. SFR sales 7/15 (47%), Condo sales 22/33 (67%), Median price $542K/$750K (72%), SFR DOM 312/22 days, Condo DOM 94/7 days, Active Listings 465/115 (4× pre-Ian). Property-type breakdown via Redfin filter IDs: 6 = Single-Family, 3 = Condos/Co-ops, All = All Home Types. The Active Listings card uses a two-source comparison (Redfin current + JRW Properties May 2022 report) since Redfin's API doesn't expose inventory time-series; optional future refinement: contact Jorge Barrera (Premiere Plus Realty, 239-791-9893) for SWFL MLS-direct per-type listings splits."
     }
   ],
   "headline": {
@@ -496,11 +496,6 @@
         "2024": 166,
         "2025JanMay": 58
       },
-      "vacantLotClosings": {
-        "2023": 66,
-        "2024": 32,
-        "2025JanJune": 8
-      },
       "sourceUrl": "https://beachtalkradionews.com/is-the-beach-real-estate-market-hot-or-cold/"
     },
     "metrics": [
@@ -713,7 +708,7 @@
     "Restaurant count (pre-Ian) — refine ~70 estimate with Town of FMB or FMB Chamber data",
     "Retail store count (pre-Ian)",
     "Marina count (pre-Ian)",
-    "Residential housing — most-recent-month vs same-month-2022, FMB-specific, by property type (single-family, condo/villa/townhouse, vacant lots): single-month closings + active listings + YTD median price — Jorge Barrera (Premiere Plus Realty, SWFL MLS) and RPCRA via FMB Chamber",
+    "Residential housing — per-type active listings (SFR vs condo) for the most-recent month and the same-month-2022 baseline. The dashboard's Active Listings card currently uses an all-types two-source comparison (Redfin current + JRW May 2022 report); a per-type pull from Jorge Barrera (Premiere Plus Realty, SWFL MLS) or RPCRA would enable two split cards.",
     "FMB-specific FY26 Q1 bed tax (Oct-Dec 2025) — Lee County Clerk of Court via FMB Chamber",
     "Restaurants & Dining detail sheet baselines (per-restaurant pre-Ian status)"
   ],
