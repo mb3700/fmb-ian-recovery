@@ -63,18 +63,44 @@
       </p>
     </div>
 
-    <div class="editorial-stats">
-      <div class="editorial-stat">
-        <span class="editorial-stat-value">48%</span>
-        <span class="editorial-stat-label">Bed Tax Recovery (revenue)<br>(FY25 YTD $3.85M vs FY22 YTD $8.04M)</span>
+    <!-- Recovery rings: two filled-circle KPIs + one count card.
+         Circle r=42 → circumference 263.89. stroke-dashoffset = 263.89 * (1 - pct/100).
+         48% → 137.22  ·  66% → 89.72 -->
+    <div class="recovery-rings">
+      <div class="recovery-ring">
+        <svg viewBox="0 0 100 100" class="ring-svg" role="img" aria-label="48% bed-tax revenue recovery">
+          <circle class="ring-track" cx="50" cy="50" r="42"></circle>
+          <circle class="ring-fill" cx="50" cy="50" r="42" style="stroke-dashoffset: 137.22"></circle>
+        </svg>
+        <div class="ring-center">
+          <span class="ring-value">48<span class="ring-unit">%</span></span>
+        </div>
+        <div class="ring-label">
+          Bed Tax Recovery (revenue)
+          <span class="ring-source">FY25 YTD $3.85M vs FY22 YTD $8.04M</span>
+        </div>
       </div>
-      <div class="editorial-stat">
-        <span class="editorial-stat-value">66%</span>
-        <span class="editorial-stat-label">Lodging Capacity Recovery<br>(4,159 of 6,263 pre-Ian rooms — FMB Chamber, March 2026)</span>
+
+      <div class="recovery-ring">
+        <svg viewBox="0 0 100 100" class="ring-svg" role="img" aria-label="66% lodging capacity recovery">
+          <circle class="ring-track" cx="50" cy="50" r="42"></circle>
+          <circle class="ring-fill" cx="50" cy="50" r="42" style="stroke-dashoffset: 89.72"></circle>
+        </svg>
+        <div class="ring-center">
+          <span class="ring-value">66<span class="ring-unit">%</span></span>
+        </div>
+        <div class="ring-label">
+          Lodging Capacity Recovery
+          <span class="ring-source">4,159 of 6,263 pre-Ian rooms — FMB Chamber, March 2026</span>
+        </div>
       </div>
-      <div class="editorial-stat">
-        <span class="editorial-stat-value">1,175</span>
-        <span class="editorial-stat-label">Lodging units in development<br>(909 hotel + 266 VR across 14 projects)</span>
+
+      <div class="recovery-count-card">
+        <div class="count-value">1,175</div>
+        <div class="count-label">
+          Lodging units in development
+          <span class="count-source">909 hotel + 266 VR across 14 projects</span>
+        </div>
       </div>
     </div>
   </div>

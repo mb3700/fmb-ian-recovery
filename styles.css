@@ -175,6 +175,135 @@ body {
   line-height: 1.4;
 }
 
+/* ============ HERO RECOVERY RINGS (Tier 2 #7) ============
+ * Apple-Health-style filled progress circles. Two rings (recovery %s) plus one
+ * count card. Pure SVG, no chart library. Animation: stroke-dashoffset from
+ * empty to target over 1.2s on page load. Circle r=42 → circumference 263.89.
+ * Fill % is set per-circle via inline style on stroke-dashoffset.
+ */
+.recovery-rings {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 32px;
+  padding-top: 32px;
+  margin-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.recovery-ring,
+.recovery-count-card {
+  flex: 1 1 220px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.recovery-ring {
+  position: relative;
+}
+.ring-svg {
+  width: 200px;
+  height: 200px;
+  transform: rotate(-90deg);
+  display: block;
+}
+.ring-track {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.12);
+  stroke-width: 8;
+}
+.ring-fill {
+  fill: none;
+  stroke: var(--shrimp-pink);
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-dasharray: 263.89;
+  animation: ring-fill-anim 1.2s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+@keyframes ring-fill-anim {
+  from { stroke-dashoffset: 263.89; }
+  /* `to` inherits the inline stroke-dashoffset on each circle */
+}
+.ring-center {
+  position: absolute;
+  top: 100px; /* center of 200px ring */
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ring-value {
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: white;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+.ring-unit {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  margin-left: 2px;
+}
+.ring-label {
+  margin-top: 14px;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.45;
+  max-width: 260px;
+}
+.ring-source {
+  display: block;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.78rem;
+  margin-top: 4px;
+  font-variant-numeric: tabular-nums;
+}
+.recovery-count-card {
+  padding-top: 24px; /* visually align count top with ring tops */
+}
+.count-value {
+  font-family: var(--font-heading);
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: var(--shrimp-pink);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+.count-label {
+  margin-top: 14px;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.45;
+  max-width: 260px;
+}
+.count-source {
+  display: block;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.78rem;
+  margin-top: 4px;
+}
+@media (max-width: 768px) {
+  .recovery-rings { gap: 24px; }
+  .ring-svg { width: 150px; height: 150px; }
+  .ring-center { top: 75px; }
+  .ring-value { font-size: 2.1rem; }
+  .ring-unit { font-size: 1.15rem; }
+  .count-value { font-size: 2.8rem; }
+  .recovery-count-card { padding-top: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ring-fill { animation: none; }
+}
+
 /* ============ STICKY SECTION NAV ============ */
 .section-nav {
   background: white;
