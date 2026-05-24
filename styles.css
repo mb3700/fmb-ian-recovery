@@ -426,6 +426,20 @@ body {
     margin-left: 110px;
   }
 }
+
+/* Section-level toggle: covers an entire comparison block (e.g., Sister-City
+   bed-tax comparison where all bars share methodology). Sits at the left
+   edge of the .mix-shift container — no bar-track indent. */
+.mix-shift .kpi-method-toggle.section-level,
+.mix-shift .kpi-method-toggle.section-level[open] {
+  margin-left: 0;
+  margin-top: 18px;
+}
+@media (max-width: 768px) {
+  .mix-shift .kpi-method-toggle.section-level {
+    margin-left: 0;
+  }
+}
 @media (max-width: 768px) {
   .recovery-rings { gap: 24px; }
   .ring-svg { width: 150px; height: 150px; }
