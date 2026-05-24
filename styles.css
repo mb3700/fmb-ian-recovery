@@ -383,45 +383,27 @@ body {
   color: rgba(255, 255, 255, 0.82);
 }
 
-/* ============ C2: Hide heavy prose behind the methodology toggle ============
- * On standard .metric-card surfaces, the metric-note paragraph + metric-source
- * line + refresh-status block are collapsed by default — they make cards too
- * busy when all stacked above the toggle. The progressive-disclosure principle
- * (north-star #3) keeps the front compact; the toggle reveals the detail.
+/* ============ Card simplification (2026-05-24) ============
+ * The metric-note prose, standalone source line, and refresh-status block
+ * duplicated information already in the methodology caption. Per Mark's
+ * direction to simplify what's behind the toggle, these are hidden
+ * permanently on .metric-card. The methodology caption (which cites the
+ * source, defines scope, and names what's included/excluded) is the
+ * single fact-only block behind the toggle.
  *
- * The metric-trend one-liner stays visible (it's a short directional signal
- * and adds real value at a glance).
+ * Visible on front: label / value / recovery % / progress bar / trend line.
+ * Behind toggle: just the methodology caption.
  *
  * Scope: only .metric-card. Hero rings, mix-bars, and section-level cards
  * keep their own behavior.
+ *
+ * Page-level data freshness is communicated by the .freshness-banner at the
+ * top of every page, so per-card date stamps are not lost in aggregate.
  */
 .metric-card .metric-note,
 .metric-card .metric-source,
 .metric-card .refresh-status {
   display: none;
-}
-.metric-card:has(.kpi-method-toggle[open]) .metric-note,
-.metric-card:has(.kpi-method-toggle[open]) .metric-source,
-.metric-card:has(.kpi-method-toggle[open]) .refresh-status {
-  display: block;
-  animation: kpi-method-reveal 0.22s ease-out;
-}
-/* When revealed, give the note + source a soft tint so they read as part of
- * the toggle's expanded panel rather than loose card content. */
-.metric-card:has(.kpi-method-toggle[open]) .metric-note {
-  background: var(--sand-white-light);
-  border-left: 3px solid var(--shrimp-pink);
-  border-radius: 6px;
-  padding: 12px 14px;
-  margin-top: 12px;
-  font-size: 0.88rem;
-  line-height: 1.6;
-}
-.metric-card:has(.kpi-method-toggle[open]) .metric-source {
-  font-size: 0.78rem;
-  color: var(--text-tertiary);
-  padding: 0 14px;
-  margin-top: 6px;
 }
 
 /* Metric-card + mix-shift (dark-on-light) variant */
