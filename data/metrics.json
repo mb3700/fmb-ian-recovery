@@ -89,6 +89,16 @@
   "changelog": [
     {
       "date": "2026-05-23",
+      "summary": "Housing section: remove Lee County context block",
+      "changes": [
+        "Removed the Lee County context block below the housing card grid. Time-period mismatch (April Lee County data alongside March FMB cards) and mixed aggregation (single-month vs trailing-12-month) made it confusing.",
+        "Lee County DOM reference chips on the two DOM cards kept (single-number reference points are fine; can swap in March values if available later).",
+        "Housing section now consists of: title + provisional verification banner + 6-card grid.",
+        "leeCountyContext block removed from metrics.json housingMarket."
+      ]
+    },
+    {
+      "date": "2026-05-23",
       "summary": "Housing section: add 'Provisional — pending MLS verification' banner",
       "changes": [
         "Added a yellow refresh-banner inside the Housing Market Activity section header (matches the methodology page's bed-tax FY26 Q1 banner pattern)",
@@ -652,34 +662,7 @@
         "interpretation": "inverseIndicator",
         "trend": "down"
       }
-    ],
-    "leeCountyContext": {
-      "asOf": "April 2026",
-      "singleFamily": {
-        "closings": 313,
-        "medianPrice": 465000,
-        "daysOnMarket": 49,
-        "monthsSupply": 4.3
-      },
-      "condoTownhome": {
-        "closings": 297,
-        "medianPrice": 246500,
-        "daysOnMarket": 60,
-        "monthsSupply": 5.8
-      },
-      "fmbZipTotals": {
-        "trailing12MonthClosings": 526,
-        "currentListings": 667,
-        "medianSoldPrice": 614200,
-        "asOf": "April 2026"
-      },
-      "sources": [
-        {"label": "Lee County aggregates", "source": "Florida Realtors / RPCRA April 2026 monthly market detail (via Team Hawley)", "url": "https://www.teamhawley.com/blog/2026/5/14/fort-myers-housing-market-update-april-2026"},
-        {"label": "FMB zip totals", "source": "Realtytrac 33931 market trends", "url": "https://www.realtytrac.com/market-trends/fort-myers-beach-fl-33931/"}
-      ],
-      "interpretation": "context",
-      "note": "FMB's barrier-island figures sit well outside county-wide ranges: months-of-supply by type (21–23) is 5–6× the county-wide level (4.3–5.8). The county is normalizing toward a balanced market; FMB still has a barrier-island recovery overhang."
-    }
+    ]
   },
   "rebuildingActivity": {
     "headline": "Rebuild surge winding down; recovery funding tapering",

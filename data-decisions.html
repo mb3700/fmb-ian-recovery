@@ -219,6 +219,16 @@
 
           <div class="changelog-entry">
             <div class="changelog-date">May 23, 2026</div>
+            <div class="changelog-title">Housing section: remove Lee County context block</div>
+            <ul>
+              <li>Removed the Lee County context block below the housing card grid. Time-period mismatch (April Lee County data alongside March FMB cards) and mixed aggregation (single-month vs trailing-12-month) made it confusing.</li>
+              <li>Lee County DOM reference chips on the two DOM cards kept (single-number reference points are fine; can swap in March values if available later).</li>
+              <li>Housing section now consists of: title + provisional verification banner + 6-card grid.</li>
+            </ul>
+          </div>
+
+          <div class="changelog-entry">
+            <div class="changelog-date">May 23, 2026</div>
             <div class="changelog-title">Housing section: add "Provisional — pending MLS verification" banner</div>
             <ul>
               <li>Added a yellow refresh-banner inside the Housing Market Activity section header (same visual pattern as the methodology page's bed-tax FY26 Q1 banner).</li>
